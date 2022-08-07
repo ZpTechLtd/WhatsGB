@@ -1,0 +1,97 @@
+{
+  "project_info": {
+    "project_number": "204967695054",
+    "project_id": "islamic-ringtones-f7255",
+    "storage_bucket": "islamic-ringtones-f7255.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:204967695054:android:687daf2915d01e6de7f69f",
+        "android_client_info": {
+          "package_name": "com.islamic.ringtone.arabic.nate.tunes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "204967695054-cc9rvgs3hkrceh5ligh94kk9bbucqnvq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwlA234tu1T7JWlGVKufjc8tUqBmaprUs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "204967695054-cc9rvgs3hkrceh5ligh94kk9bbucqnvq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:204967695054:android:4e22c109d984ea1ce7f69f",
+        "android_client_info": {
+          "package_name": "com.zp.tech.deleted.messages.status.saver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "204967695054-cc9rvgs3hkrceh5ligh94kk9bbucqnvq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwlA234tu1T7JWlGVKufjc8tUqBmaprUs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "204967695054-cc9rvgs3hkrceh5ligh94kk9bbucqnvq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:204967695054:android:c9cc944a689a1050e7f69f",
+        "android_client_info": {
+          "package_name": "com.zptech.islamic.ringtones"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "204967695054-cc9rvgs3hkrceh5ligh94kk9bbucqnvq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwlA234tu1T7JWlGVKufjc8tUqBmaprUs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "204967695054-cc9rvgs3hkrceh5ligh94kk9bbucqnvq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

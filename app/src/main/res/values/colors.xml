@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#0A6F4C</color>
+    <color name="purple_500">#0A6F4C</color>
+    <color name="purple_700">#0A6F4C</color>
+    <color name="teal_200">#0A6F4C</color>
+    <color name="teal_700">#0A6F4C</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#ffffff</color>
+    <color name="bottomButtonUnselected">#AFC0BA</color>
+    <color name="white_">#ffffff</color>
+    <color name="deletedMessage">#C8F67E75</color>
+    <color name="grey">#ededed</color>
+    <color name="tabUnselected">#D1D1D1</color>
+    <color name="dark_file_bg">#2C2F44</color>
+    <color name="ripple">#E4E4E4</color>
+    <color name="subTitleTextColor">#606060</color>
+    <color name="splah_bg">#D7F1E2</color>
+</resources>

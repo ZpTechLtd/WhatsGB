@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/carview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:elevation="@dimen/_2sdp"
+        android:paddingStart="@dimen/_5sdp"
+        android:paddingTop="@dimen/_3sdp"
+        android:paddingEnd="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_3sdp">
+
+        <RelativeLayout
+            android:id="@+id/rel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            app:viewPartMain="@+id/txtMessage"
+            app:viewPartSlave="@+id/txtTime">
+
+
+            <com.zp.tech.deleted.messages.status.saver.widget.CustomRegularTextView
+                android:id="@+id/txtMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="all"
+                android:linksClickable="true"
+                android:text="Hi"
+                android:textColor="@color/black"
+                android:textColorLink="@android:color/holo_blue_light"
+                android:textSize="@dimen/_11ssp" />
+
+            <com.zp.tech.deleted.messages.status.saver.widget.CustomRegularTextView
+                android:id="@+id/txtTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtMessage"
+                android:layout_alignParentEnd="true"
+                android:text="02:10 am"
+                android:textSize="@dimen/_7ssp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

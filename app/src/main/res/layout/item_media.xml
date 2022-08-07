@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.zp.tech.deleted.messages.status.saver.models.DeletedFileModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/_15sdp"
+        android:paddingEnd="@dimen/_15sdp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            app:cardUseCompatPadding="true"
+            android:layout_toStartOf="@+id/share"
+            app:cardBackgroundColor="@color/white"
+            app:rippleColor="@color/ripple"
+            app:cardCornerRadius="@dimen/_5sdp"
+            app:cardElevation="@dimen/_4sdp"
+            android:clickable="true"
+            android:focusable="true"
+            app:strokeWidth="0dp"
+            android:outlineSpotShadowColor="@color/purple_500">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/image"
+                    setImage="@{model}"
+                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_130sdp" />
+
+                <ImageView
+                    android:id="@+id/icon"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:layout_alignTop="@+id/image"
+                    android:layout_alignBottom="@+id/image"
+                    android:layout_centerInParent="true"
+                    setIcon="@{model}"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:layout_below="@+id/image"
+                    android:background="#ECEBEB" />
+
+                <com.zp.tech.deleted.messages.status.saver.widget.CustomRegularTextView
+                    android:id="@+id/txtFileName"
+                    setFileName="@{model}"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/image"
+                    android:gravity="center_horizontal"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:paddingEnd="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_8sdp"
+                    android:textSize="@dimen/_11ssp" />
+
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <ImageView
+            android:id="@+id/share"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_5sdp"
+            android:background="@drawable/circle"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_baseline_share_24"
+            />
+    </RelativeLayout>
+</layout>

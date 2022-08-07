@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/restartService"
+        android:icon="@drawable/ic_baseline_refresh_24"
+        android:title="@string/restart_service" />
+
+    <item
+        android:id="@+id/privacyPolicy"
+        android:icon="@drawable/ic_baseline_privacy_tip_24"
+        android:title="@string/privacy_policy" />
+    <item
+        android:id="@+id/rateus"
+        android:icon="@drawable/ic_baseline_star_rate_24"
+        android:title="@string/rate_us" />
+    <item
+        android:id="@+id/share"
+        android:icon="@drawable/ic_baseline_share_24"
+        android:title="@string/share" />
+
+</menu>
