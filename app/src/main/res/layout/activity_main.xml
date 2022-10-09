@@ -18,13 +18,13 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                android:background="@drawable/ic_header"
+                android:background="@color/white"
                 app:layout_constraintBottom_toBottomOf="@+id/tabLayout"/>
 
             <View
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_30sdp"
+                android:layout_height="@dimen/_40sdp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -48,8 +48,8 @@
                 android:layout_height="wrap_content"
                 android:paddingStart="@dimen/_10sdp"
                 android:text="@string/app_name"
-                android:textColor="@color/white"
-                android:textSize="@dimen/_13ssp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp"
                 app:layout_constraintBottom_toBottomOf="@+id/toolbar"
                 app:layout_constraintStart_toEndOf="@id/imgToggle"
                 app:layout_constraintTop_toTopOf="@+id/toolbar" />
@@ -57,7 +57,11 @@
             <com.google.android.material.tabs.TabLayout
                 android:id="@+id/tabLayout"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_40ssp"
+                app:tabBackground="@drawable/tab_bg"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_height="@dimen/_28sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
                 android:background="@android:color/transparent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -65,10 +69,10 @@
                 app:tabIndicatorFullWidth="false"
                 app:tabSelectedTextColor="@color/white"
                 app:tabIndicatorColor="@color/white"
-                app:tabIndicatorHeight="@dimen/_3sdp"
+                app:tabIndicatorHeight="0dp"
                 app:tabMode="scrollable"
                 app:tabTextAppearance="@style/tabTextStyle"
-                app:tabTextColor="@color/tabUnselected" />
+                app:tabTextColor="@color/black" />
 
             <androidx.viewpager2.widget.ViewPager2
                 android:id="@+id/viewPager"
@@ -95,6 +99,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="start"
+            android:background="@color/white"
             app:headerLayout="@layout/header_layout"
             app:menu="@menu/main_menu" />
 

@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.zp.tech.deleted.messages.status.saver.R
 import com.zp.tech.deleted.messages.status.saver.adapters.MediaAdapter
 import com.zp.tech.deleted.messages.status.saver.databinding.FragmentMediaBinding
+import com.zp.tech.deleted.messages.status.saver.ui.MainActivity
 import com.zp.tech.deleted.messages.status.saver.utils.ItemDecorator
 import com.zp.tech.deleted.messages.status.saver.viewModels.SharedViewModel
 import com.zp.tech.deleted.messages.status.saver.widget.EmptyDataObserver
@@ -31,6 +32,7 @@ class MediaFragment : BaseFragment() {
         viewModel!!.getDeletedMedia()
         binding!!.recyclerView.setHasFixedSize(true)
         binding!!.recyclerView.layoutManager = LinearLayoutManager(requireActivity())
+        addGesture(binding!!.recyclerView)
         binding!!.recyclerView.addItemDecoration(ItemDecorator(resources.getDimensionPixelOffset(R.dimen._10sdp)))
         binding!!.emptyView.buttonRoot.setBackgroundColor(resources.getColor(R.color.white))
         binding!!.emptyView.txtEmptyPlaceHolder.text =
@@ -46,7 +48,6 @@ class MediaFragment : BaseFragment() {
             )
         )
         binding!!.recyclerView.adapter = adapter
-
         return binding!!.root
     }
 
@@ -61,5 +62,9 @@ class MediaFragment : BaseFragment() {
             }
 
         })
+    }
+
+    fun showInterstitial(){
+        (activity as MainActivity).showAd()
     }
 }

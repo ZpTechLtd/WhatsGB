@@ -103,6 +103,7 @@ class MediaAdapter(val context: MediaFragment, var list: ArrayList<DeletedFileMo
         intent.putExtra(modelIntent, model)
         intent.putExtra(showDownloadButton, show)
         context.startActivity(intent)
+        context.showInterstitial()
     }
 
     fun openIntent(path: String) {

@@ -37,7 +37,7 @@ public class MediaFileObserver extends FileObserver {
     private String cachePath = "";
     private String savedPath = "";
 
-    private void copyToCache(File sourceFile, File destinationFile) {
+    private synchronized void copyToCache(File sourceFile, File destinationFile) {
         try {
             BufferedInputStream bis = null;
             BufferedOutputStream bos = null;
@@ -73,7 +73,7 @@ public class MediaFileObserver extends FileObserver {
         }
     }
 
-    private void copyFromCache(File sourceFile, File destinationFile) {
+    private synchronized void copyFromCache(File sourceFile, File destinationFile) {
         try {
             BufferedInputStream bis = null;
             BufferedOutputStream bos = null;

@@ -5,6 +5,7 @@ import android.app.ActivityManager
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
+import android.os.Build
 import com.zp.tech.deleted.messages.status.saver.utils.isPermissionGranted
 
 class BootReceiver : BroadcastReceiver() {
@@ -15,8 +16,10 @@ class BootReceiver : BroadcastReceiver() {
                 context.startService(Intent(context, NotificationMediaService::class.java))
             }
 
-            if (context.isPermissionGranted()){
-                context.startService(Intent(context,MediaService::class.java))
+            if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.Q) {
+                if (context.isPermissionGranted()) {
+                    context.startService(Intent(context, MediaService::class.java))
+                }
             }
         }
     }

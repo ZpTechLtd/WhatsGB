@@ -14,6 +14,7 @@ import com.zp.tech.deleted.messages.status.saver.databinding.FragmentMessagesBin
 import com.zp.tech.deleted.messages.status.saver.notificationService.NotificationMediaService.WHTAPP
 import com.zp.tech.deleted.messages.status.saver.notificationService.NotificationMediaService.WHTSBUSINESS
 import com.zp.tech.deleted.messages.status.saver.ui.MainActivity
+import com.zp.tech.deleted.messages.status.saver.utils.ItemDecorator
 import com.zp.tech.deleted.messages.status.saver.viewModels.SharedViewModel
 import com.zp.tech.deleted.messages.status.saver.widget.EmptyDataObserver
 
@@ -36,7 +37,9 @@ class MessagesFragment : BaseFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding!!.recyclerView.hasFixedSize()
+        addGesture(binding!!.recyclerView)
         binding!!.recyclerView.layoutManager = LinearLayoutManager(requireActivity())
+        binding!!.recyclerView.addItemDecoration(ItemDecorator(resources.getDimensionPixelOffset(R.dimen._10sdp)))
 		binding!!.emptyView.buttonRoot.setBackgroundColor(resources.getColor(R.color.white))
         adapter = UsersAdapter(this, ArrayList())
         adapter!!.registerAdapterDataObserver(EmptyDataObserver(binding!!.recyclerView, binding!!.emptyView.root))

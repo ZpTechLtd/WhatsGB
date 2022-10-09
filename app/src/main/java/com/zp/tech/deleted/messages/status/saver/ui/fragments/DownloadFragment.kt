@@ -19,7 +19,7 @@ import com.zp.tech.deleted.messages.status.saver.utils.GridSpacingItemDecoration
 import com.zp.tech.deleted.messages.status.saver.viewModels.SharedViewModel
 
 
-class DownloadFragment : Fragment() {
+class DownloadFragment : BaseFragment() {
     private var binding: FragmentDownloadBinding? = null
     private var viewModel: SharedViewModel? = null
     private var downloadAdapter: DownloadAdapter? = null
@@ -36,12 +36,15 @@ class DownloadFragment : Fragment() {
         binding!!.recyclerviewDownloaded.setHasFixedSize(true)
         val gridLayoutManager = GridLayoutManager(requireActivity(), 3)
         binding!!.recyclerviewDownloaded.layoutManager = gridLayoutManager
+        addGesture(binding!!.recyclerviewDownloaded)
         binding!!.recyclerviewDownloaded.addItemDecoration(GridSpacingItemDecoration(3,resources.getDimensionPixelOffset(R.dimen._10sdp),true))
 
         viewModel!!.observeDownloadStatuses().observe(requireActivity(), {
             downloadAdapter = DownloadAdapter(this, it)
             binding!!.recyclerviewDownloaded.adapter = downloadAdapter
         })
+
+
         return binding!!.root
     }
 

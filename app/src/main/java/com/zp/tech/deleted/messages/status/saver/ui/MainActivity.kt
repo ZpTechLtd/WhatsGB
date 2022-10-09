@@ -34,7 +34,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>(),
     }
 
     private var viewModel: SharedViewModel? = null
-    private val titleList = arrayListOf("Notifications", "Statuses", "Downloaded", "Deleted media")
+    private val titleList = arrayListOf("Notifications", "Statuses", "Downloaded", "Recovered Media")
     private val WHTSBUSINESS = "com.whatsapp.w4b"
     private val WHTAPP = "com.whatsapp"
     private var chatType: ChatType? = null

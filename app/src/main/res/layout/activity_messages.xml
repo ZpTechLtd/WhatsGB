@@ -15,7 +15,7 @@
             android:layout_height="@dimen/_45sdp"
             android:elevation="@dimen/_4sdp"
             app:layout_constraintTop_toTopOf="parent"
-            android:background="@color/purple_500">
+            android:background="@color/white">
 
             <ImageView
                 android:id="@+id/imgBack"
@@ -23,7 +23,8 @@
                 android:layout_height="@dimen/_35sdp"
                 android:padding="@dimen/_7sdp"
                 android:layout_centerVertical="true"
-                android:src="@drawable/ic_baseline_arrow_back_24"/>
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                app:tint="@color/black" />
 
             <ImageView
                 android:id="@+id/imgIcon"
@@ -31,7 +32,7 @@
                 android:layout_height="@dimen/_35sdp"
                 android:layout_centerVertical="true"
                 android:layout_toEndOf="@id/imgBack"
-                app:tint="@color/white" />
+                />
 
             <com.zp.tech.deleted.messages.status.saver.widget.CustomBoldTextView
                 android:id="@+id/title"
@@ -41,7 +42,7 @@
                 android:paddingStart="@dimen/_5sdp"
                 android:textSize="@dimen/_13ssp"
                 android:maxLines="1"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:ellipsize="end"
                 android:layout_toEndOf="@+id/imgIcon"/>
 

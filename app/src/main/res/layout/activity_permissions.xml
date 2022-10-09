@@ -155,6 +155,7 @@
             android:layout_marginBottom="@dimen/_15sdp"
             android:background="@drawable/ic_start"
             android:text="@string/start"
+            android:elevation="8dp"
             android:textSize="@dimen/_14ssp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

@@ -132,6 +132,7 @@ class StatusFragment : BaseFragment() {
 
 
         binding!!.recyclerviewStatuses.setHasFixedSize(true)
+        addGesture(binding!!.recyclerviewStatuses)
         val gridLayoutManager = GridLayoutManager(requireActivity(),2)
         binding!!.recyclerviewStatuses.layoutManager = gridLayoutManager
         binding!!.recyclerviewStatuses.addItemDecoration(GridSpacingItemDecoration(2,resources.getDimensionPixelOffset(R.dimen._10sdp),true))
