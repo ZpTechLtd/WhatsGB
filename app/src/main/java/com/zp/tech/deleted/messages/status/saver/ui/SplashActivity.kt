@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.text.TextUtils
-import android.util.Log
 import com.google.android.gms.tasks.OnSuccessListener
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.remoteconfig.ktx.remoteConfig
@@ -13,6 +12,9 @@ import com.google.firebase.remoteconfig.ktx.remoteConfigSettings
 import com.zp.tech.deleted.messages.status.saver.R
 import com.zp.tech.deleted.messages.status.saver.ads.PreferenceManager
 import com.zp.tech.deleted.messages.status.saver.databinding.ActivitySplashBinding
+import com.zp.tech.deleted.messages.status.saver.ui.activities.BaseActivity
+import com.zp.tech.deleted.messages.status.saver.ui.activities.MainActivity
+import com.zp.tech.deleted.messages.status.saver.ui.activities.PermissionsActivity
 import com.zp.tech.deleted.messages.status.saver.utils.isPermissionGranted
 
 class SplashActivity : BaseActivity<ActivitySplashBinding>() {
@@ -22,7 +24,10 @@ class SplashActivity : BaseActivity<ActivitySplashBinding>() {
         setLayoutResource(R.layout.activity_splash)
 
 
-        val preferenceManager= PreferenceManager(this@SplashActivity)
+        val preferenceManager = PreferenceManager(this@SplashActivity)
+        com.zp.tech.deleted.messages.status.saver.utils.PreferenceManager(this@SplashActivity)
+            .getLanguageCode()
+            ?.let { setLanguage(it) }
         val remoteConfig = Firebase.remoteConfig
         val configSettings = remoteConfigSettings {
             minimumFetchIntervalInSeconds = 0
@@ -33,19 +38,19 @@ class SplashActivity : BaseActivity<ActivitySplashBinding>() {
                 remoteConfig.fetchAndActivate()
                 handlerConfiguration = Handler(Looper.getMainLooper())
                 handlerConfiguration!!.postDelayed(Runnable {
-                    if (!TextUtils.isEmpty(remoteConfig.getString("MAX_INTERSTITIAL_Noti_and_media"))){
+                    if (!TextUtils.isEmpty(remoteConfig.getString("MAX_INTERSTITIAL_Noti_and_media"))) {
                         preferenceManager.maxInterstitial =
                             remoteConfig.getString("MAX_INTERSTITIAL_Noti_and_media")
                     }
 //                    Log.d("TAG", "onCreate:remote== ${remoteConfig.getString("MAX_INTERSTITIAL_Noti_and_media")} ")
 
-                    if (!TextUtils.isEmpty(remoteConfig.getString("MAX_NATIVE_SMALL_Noti_and_media"))){
+                    if (!TextUtils.isEmpty(remoteConfig.getString("MAX_NATIVE_SMALL_Noti_and_media"))) {
                         preferenceManager.maxNativeSmall =
                             remoteConfig.getString("MAX_NATIVE_SMALL_Noti_and_media")
                     }
 //                    Log.d("TAG", "onCreate:remote== ${remoteConfig.getString("MAX_NATIVE_SMALL_Noti_and_media")} ")
 
-                    if (!TextUtils.isEmpty(remoteConfig.getString("max_banner_Noti_and_media"))){
+                    if (!TextUtils.isEmpty(remoteConfig.getString("max_banner_Noti_and_media"))) {
                         preferenceManager.maxBanner =
                             remoteConfig.getString("max_banner_Noti_and_media")
                     }

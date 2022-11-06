@@ -17,7 +17,7 @@ import com.zp.tech.deleted.messages.status.saver.R;
 import com.zp.tech.deleted.messages.status.saver.database.Messages;
 import com.zp.tech.deleted.messages.status.saver.database.Users;
 import com.zp.tech.deleted.messages.status.saver.database.repository.MyRepository;
-import com.zp.tech.deleted.messages.status.saver.ui.MainActivity;
+import com.zp.tech.deleted.messages.status.saver.ui.activities.MainActivity;
 
 import java.text.SimpleDateFormat;
 

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Відновлення видалених повідомлень</string>
+    <string name="permission">Дозволи</string>
+    <string name="whatsgb_requires_following_permissions">Додатку потрібні такі дозволи</string>
+    <string name="storage_permission">Дозвіл на зберігання:</string>
+    <string name="storage_permission_is_require_to_save_statuses_and_recover_deleted_media">Дозвіл на зберігання потрібен для збереження статусів і відновлення видалених носіїв.</string>
+    <string name="grant">Грант</string>
+    <string name="notifications_permission">Дозвіл на сповіщення:</string>
+    <string name="notification_permission_is_require_to_recover_deleted_messages">Для відновлення видалених повідомлень потрібен дозвіл на сповіщення.</string>
+    <string name="special_permissions">Спеціальні дозволи для папок:</string>
+    <string name="special_">Через зміни в конфіденційності тепер Android 10 і новіших версій вимагає доступу до каталогів для спеціальних папок.</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="whatsapp_business">Бізнес</string>
+    <string name="restart_service">Перезапустіть службу</string>
+    <string name="privacy_policy">Політика конфіденційності</string>
+    <string name="rate_us">Оцініть нас</string>
+    <string name="share">Поділіться</string>
+    <string name="start">старт</string>
+    <string name="hello_blank_fragment">Привіт пустий фрагмент</string>
+    <string name="all_your_notifications_will_be_display_here">Тут відображатимуться всі ваші сповіщення</string>
+    <string name="statuses">Статуси</string>
+    <string name="downloaded">Завантажено</string>
+    <string name="grant_permission">Дозволити дозвіл</string>
+    <string name="image">Зображення</string>
+    <string name="video">відео</string>
+    <string name="message">повідомлення</string>
+    <string name="media_placeholder">Видалені носії не знайдено</string>
+    <string name="download">Завантажити</string>
+    <string name="chat_statuses_and_media">Чат, статуси та медіа</string>
+    <string name="please_grant_permissions">Будь ласка, надайте дозволи</string>
+    <string name="permission_denied">Дозвіл відхилено користувачем</string>
+    <string name="granted">Зрозуміло</string>
+    <string name="notifications">Сповіщення</string>
+    <string name="recover_media">Відновлені носії</string>
+    <string name="what_not_installed">WhatsApp не встановлено. Встановіть Whatsapp, щоб отримувати статуси.</string>
+    <string name="what_not_installed_notification">WhatsApp не встановлено. Щоб отримувати сповіщення, установіть Whatsapp</string>
+    <string name="bussiness_not_installed">WhatsApp Business не встановлено. Встановіть Whatsapp Business, щоб отримати статуси.</string>
+    <string name="bussiness_not_installed_notifications">WhatsApp Business не встановлено. Щоб отримувати сповіщення, установіть Whatsapp Business</string>
+    <string name="message_copied">Повідомлення скопійовано!</string>
+    <string name="details">Подробиці</string>
+    <string name="languages">Мову</string>
+</resources>

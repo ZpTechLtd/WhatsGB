@@ -1,4 +1,4 @@
-package com.zp.tech.deleted.messages.status.saver.ui
+package com.zp.tech.deleted.messages.status.saver.ui.activities
 
 import android.os.Bundle
 import androidx.lifecycle.ViewModelProvider

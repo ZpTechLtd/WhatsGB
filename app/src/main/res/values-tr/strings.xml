@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Silinen Mesajları Kurtar</string>
+    <string name="permission">izinler</string>
+    <string name="whatsgb_requires_following_permissions">Uygulama aşağıdaki izinleri gerektirir</string>
+    <string name="storage_permission">Depolama İzni:</string>
+    <string name="storage_permission_is_require_to_save_statuses_and_recover_deleted_media">Depolama İzni, durumları kaydetmek ve silinen medyayı kurtarmak için gereklidir.</string>
+    <string name="grant">Hibe etmek</string>
+    <string name="notifications_permission">Bildirim İzni:</string>
+    <string name="notification_permission_is_require_to_recover_deleted_messages">Silinen mesajları kurtarmak için bildirim izni gereklidir.</string>
+    <string name="special_permissions">Özel Klasör İzinleri:</string>
+    <string name="special_">Gizlilik değişiklikleri nedeniyle Now Android 10 ve üstü, dizinlere erişmek için özel klasör izni gerektirir.</string>
+    <string name="whatsapp">Naber</string>
+    <string name="whatsapp_business">İşletme</string>
+    <string name="restart_service">Servisi yeniden başlat</string>
+    <string name="privacy_policy">Gizlilik Politikası</string>
+    <string name="rate_us">Bizi değerlendirin</string>
+    <string name="share">Paylaşmak</string>
+    <string name="start">Başlama</string>
+    <string name="hello_blank_fragment">Merhaba boş parça</string>
+    <string name="all_your_notifications_will_be_display_here">Tüm bildirimleriniz burada görüntülenecek</string>
+    <string name="statuses">Durumlar</string>
+    <string name="downloaded">İndirildi</string>
+    <string name="grant_permission">İzne İzin Ver</string>
+    <string name="image">resim</string>
+    <string name="video">Video</string>
+    <string name="message">İleti</string>
+    <string name="media_placeholder">Silinen medya bulunamadı</string>
+    <string name="download">İndirmek</string>
+    <string name="chat_statuses_and_media">Sohbet, Durumlar ve Medya</string>
+    <string name="please_grant_permissions">Lütfen izinleri verin</string>
+    <string name="permission_denied">Kullanıcı tarafından izin verilmedi</string>
+    <string name="granted">İmtiyazlı</string>
+    <string name="notifications">Bildirimler</string>
+    <string name="recover_media">Kurtarılan Medya</string>
+    <string name="what_not_installed">WhatsApp kurulu değil, Durumları almak için lütfen Whatsapp\'ı kurun.</string>
+    <string name="what_not_installed_notification">WhatsApp yüklü değil, Bildirimleri almak için lütfen Whatsapp\'ı yükleyin</string>
+    <string name="bussiness_not_installed">WhatsApp Business kurulu değil, Durumları almak için lütfen Whatsapp Business\'ı kurun.</string>
+    <string name="bussiness_not_installed_notifications">WhatsApp Business yüklü değil, Bildirimleri almak için lütfen Whatsapp Business\'ı yükleyin</string>
+    <string name="message_copied">Mesaj Kopyalandı!</string>
+    <string name="details">Detaylar</string>
+    <string name="languages">Dil</string>
+</resources>

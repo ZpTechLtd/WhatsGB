@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Endurheimta eydd skilaboð</string>
+    <string name="permission">Heimildir</string>
+    <string name="whatsgb_requires_following_permissions">App krefst eftirfarandi heimilda</string>
+    <string name="storage_permission">Geymsluleyfi:</string>
+    <string name="storage_permission_is_require_to_save_statuses_and_recover_deleted_media">Geymsluleyfi er krafist til að vista stöður og endurheimta eyddar miðlar.</string>
+    <string name="grant">Grant</string>
+    <string name="notifications_permission">Tilkynningar leyfi:</string>
+    <string name="notification_permission_is_require_to_recover_deleted_messages">Tilkynningarheimild er nauðsynleg til að endurheimta eydd skilaboð.</string>
+    <string name="special_permissions">Sérstakar möppuheimildir:</string>
+    <string name="special_">Vegna persónuverndarbreytinga Nú þarf Android 10 og nýrri sérstaka möppuheimild til að fá aðgang að möppum.</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="whatsapp_business">Viðskipti</string>
+    <string name="restart_service">Endurræstu þjónustu</string>
+    <string name="privacy_policy">Friðhelgisstefna</string>
+    <string name="rate_us">Gefðu okkur einkunn</string>
+    <string name="share">Deila</string>
+    <string name="start">Byrjaðu</string>
+    <string name="hello_blank_fragment">Halló tómt brot</string>
+    <string name="all_your_notifications_will_be_display_here">Allar tilkynningar þínar munu birtast hér</string>
+    <string name="statuses">Stöður</string>
+    <string name="downloaded">Hlaðið niður</string>
+    <string name="grant_permission">Leyfa leyfi</string>
+    <string name="image">Mynd</string>
+    <string name="video">Myndband</string>
+    <string name="message">Skilaboð</string>
+    <string name="media_placeholder">Enginn eytt miðill fannst</string>
+    <string name="download">Sækja</string>
+    <string name="chat_statuses_and_media">Spjall, stöður og miðlar</string>
+    <string name="please_grant_permissions">Vinsamlegast veittu heimildirnar</string>
+    <string name="permission_denied">Leyfi hafnað af notanda</string>
+    <string name="granted">Veitt</string>
+    <string name="notifications">Tilkynningar</string>
+    <string name="recover_media">Endurheimt miðill</string>
+    <string name="what_not_installed">WhatsApp er ekki uppsett, vinsamlegast settu upp Whatsapp til að fá stöður.</string>
+    <string name="what_not_installed_notification">WhatsApp er ekki uppsett, vinsamlegast settu upp Whatsapp til að fá tilkynningar</string>
+    <string name="bussiness_not_installed">WhatsApp Business er ekki uppsett, vinsamlegast settu upp Whatsapp Business til að fá stöður.</string>
+    <string name="bussiness_not_installed_notifications">WhatsApp Business er ekki uppsett, vinsamlegast settu upp Whatsapp Business til að fá tilkynningar</string>
+    <string name="message_copied">Skilaboð afrituð!</string>
+    <string name="details">Upplýsingar</string>
+    <string name="languages">Tungumál</string>
+</resources>

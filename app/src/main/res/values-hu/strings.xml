@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Törölt üzenetek visszaállítása</string>
+    <string name="permission">Engedélyek</string>
+    <string name="whatsgb_requires_following_permissions">Az alkalmazáshoz a következő engedélyek szükségesek</string>
+    <string name="storage_permission">Tárolási engedély:</string>
+    <string name="storage_permission_is_require_to_save_statuses_and_recover_deleted_media">Tárolási engedély szükséges az állapotok mentéséhez és a törölt adathordozók helyreállításához.</string>
+    <string name="grant">Grant</string>
+    <string name="notifications_permission">Értesítési engedély:</string>
+    <string name="notification_permission_is_require_to_recover_deleted_messages">A törölt üzenetek visszaállításához értesítési engedély szükséges.</string>
+    <string name="special_permissions">Speciális mappaengedélyek:</string>
+    <string name="special_">Az adatvédelmi változások miatt Az Android 10 és újabb verzióihoz speciális mappaengedély szükséges a könyvtárak eléréséhez.</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="whatsapp_business">Üzleti</string>
+    <string name="restart_service">Indítsa újra a szolgáltatást</string>
+    <string name="privacy_policy">Adatvédelmi irányelvek</string>
+    <string name="rate_us">Értékelj minket</string>
+    <string name="share">Részvény</string>
+    <string name="start">Rajt</string>
+    <string name="hello_blank_fragment">Hello üres töredék</string>
+    <string name="all_your_notifications_will_be_display_here">Az összes értesítés itt jelenik meg</string>
+    <string name="statuses">Állapotok</string>
+    <string name="downloaded">Letöltve</string>
+    <string name="grant_permission">Engedélyezés</string>
+    <string name="image">Kép</string>
+    <string name="video">Videó</string>
+    <string name="message">Üzenet</string>
+    <string name="media_placeholder">Nem található törölt média</string>
+    <string name="download">Letöltés</string>
+    <string name="chat_statuses_and_media">Csevegés, állapotok és média</string>
+    <string name="please_grant_permissions">Kérjük, adja meg az engedélyeket</string>
+    <string name="permission_denied">Az engedélyt a felhasználó megtagadta</string>
+    <string name="granted">Megadott</string>
+    <string name="notifications">Értesítések</string>
+    <string name="recover_media">Helyreállított adathordozó</string>
+    <string name="what_not_installed">A WhatsApp nincs telepítve. Az állapotok megtekintéséhez kérjük, telepítse a Whatsapp-ot.</string>
+    <string name="what_not_installed_notification">A WhatsApp nincs telepítve. Az értesítések fogadásához telepítse a Whatsapp-ot</string>
+    <string name="bussiness_not_installed">A WhatsApp Business nincs telepítve. Az állapotok megtekintéséhez telepítse a WhatsApp Business szolgáltatást.</string>
+    <string name="bussiness_not_installed_notifications">A WhatsApp Business nincs telepítve. Az értesítések fogadásához telepítse a Whatsapp Business szolgáltatást</string>
+    <string name="message_copied">Üzenet másolva!</string>
+    <string name="details">Részletek</string>
+    <string name="languages">Nyelv</string>
+</resources>

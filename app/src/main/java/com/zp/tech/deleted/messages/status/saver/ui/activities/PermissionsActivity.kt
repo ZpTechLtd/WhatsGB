@@ -1,4 +1,4 @@
-package com.zp.tech.deleted.messages.status.saver.ui
+package com.zp.tech.deleted.messages.status.saver.ui.activities
 
 import android.content.Intent
 import android.content.pm.PackageManager
@@ -6,7 +6,7 @@ import android.os.Bundle
 import com.zp.tech.deleted.messages.status.saver.R
 import com.zp.tech.deleted.messages.status.saver.ads.AdsManager
 import com.zp.tech.deleted.messages.status.saver.databinding.ActivityPermissionsBinding
-import com.zp.tech.deleted.messages.status.saver.notificationService.NotificationMediaService.OBSERVER_INTENT
+import com.zp.tech.deleted.messages.status.saver.utils.IS_FROM_PERMISSIONS_SCREEN
 import com.zp.tech.deleted.messages.status.saver.utils.isPermissionGranted
 import com.zp.tech.deleted.messages.status.saver.utils.requestStoragePermission
 
@@ -18,10 +18,11 @@ class PermissionsActivity : BaseActivity<ActivityPermissionsBinding>() {
 
         binding!!.btnStart.setOnClickListener {
             if (isNotificationServiceEnabled() && isPermissionGranted()) {
-                startActivity(Intent(this, MainActivity::class.java))
+                startActivity(Intent(this, LanguageActivity::class.java).putExtra(
+                    IS_FROM_PERMISSIONS_SCREEN, true))
                 finish()
             } else {
-                showMessage("Please grant the permissions")
+                showMessage(getString(R.string.please_grant_permissions))
             }
         }
 
@@ -42,21 +43,21 @@ class PermissionsActivity : BaseActivity<ActivityPermissionsBinding>() {
     override fun onRequestPermissionsResult(
         requestCode: Int,
         permissions: Array<out String>,
-        grantResults: IntArray
+        grantResults: IntArray,
     ) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
-        if (requestCode == 1 && grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-
-        } else {
-            showMessage("Permission Denied by user")
+        if (requestCode != 1 || !grantResults.isNotEmpty() || grantResults[0] != PackageManager.PERMISSION_GRANTED) {
+            showMessage(getString(R.string.permission_denied))
         }
     }
 
     override fun onResume() {
         super.onResume()
         binding!!.btnNotification.isEnabled = !isNotificationServiceEnabled()
-        binding!!.btnNotification.text = if (isNotificationServiceEnabled()) "Granted" else "Grant"
+        binding!!.btnNotification.text =
+            if (isNotificationServiceEnabled()) getString(R.string.granted) else getString(R.string.grant)
         binding!!.btnStorage.isEnabled = !isPermissionGranted()
-        binding!!.btnStorage.text = if (isPermissionGranted()) "Granted" else "Grant"
+        binding!!.btnStorage.text =
+            if (isPermissionGranted()) getString(R.string.granted) else getString(R.string.grant)
     }
 }

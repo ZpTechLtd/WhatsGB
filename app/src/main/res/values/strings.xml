@@ -27,8 +27,21 @@
     <string name="message">Message</string>
     <string name="media_placeholder">No deleted media found</string>
     <string name="download">Download</string>
-    <string name="max_interstitial">debb6589d8c04b75</string>
-    <string name="max_native_small">790b169a0b93b2df</string>
-    <string name="max_banner">4bea053e6fc19405</string>
-    <string name="ad">Ad</string>
+    <string name="max_interstitial" translatable="false">debb6589d8c04b75</string>
+    <string name="max_native_small" translatable="false">790b169a0b93b2df</string>
+    <string name="max_banner" translatable="false">4bea053e6fc19405</string>
+    <string name="ad" translatable="false">Ad</string>
+    <string name="chat_statuses_and_media">Chat, Statuses and Media</string>
+    <string name="please_grant_permissions">Please grant the permissions</string>
+    <string name="permission_denied">Permission Denied by user</string>
+    <string name="granted">Granted</string>
+    <string name="notifications">Notifications</string>
+    <string name="recover_media">Recovered Media</string>
+    <string name="what_not_installed">WhatsApp is not installed, Please install Whatsapp to get Statuses.</string>
+    <string name="what_not_installed_notification">WhatsApp is not installed, Please install Whatsapp to get Notifications</string>
+    <string name="bussiness_not_installed">WhatsApp Business is not installed, Please install Whatsapp Business to get Statuses.</string>
+    <string name="bussiness_not_installed_notifications">WhatsApp Business is not installed, Please install Whatsapp Business to get Notifications</string>
+    <string name="message_copied">Message Copied!</string>
+    <string name="details">Details</string>
+    <string name="languages">Language</string>
 </resources>

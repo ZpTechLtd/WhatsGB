@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.zp.tech.deleted.messages.status.saver.R
 import com.zp.tech.deleted.messages.status.saver.adapters.MediaAdapter
 import com.zp.tech.deleted.messages.status.saver.databinding.FragmentMediaBinding
-import com.zp.tech.deleted.messages.status.saver.ui.MainActivity
+import com.zp.tech.deleted.messages.status.saver.ui.activities.MainActivity
 import com.zp.tech.deleted.messages.status.saver.utils.ItemDecorator
 import com.zp.tech.deleted.messages.status.saver.viewModels.SharedViewModel
 import com.zp.tech.deleted.messages.status.saver.widget.EmptyDataObserver

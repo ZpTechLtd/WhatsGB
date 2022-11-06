@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">I-recover ang Mga Na-delete na Mensahe</string>
+    <string name="permission">Mga Pahintulot</string>
+    <string name="whatsgb_requires_following_permissions">Nangangailangan ang app ng mga sumusunod na pahintulot</string>
+    <string name="storage_permission">Pahintulot sa Pag-iimbak:</string>
+    <string name="storage_permission_is_require_to_save_statuses_and_recover_deleted_media">Kinakailangan ang Pahintulot sa Pag-imbak upang mag-save ng mga katayuan at mabawi ang tinanggal na media.</string>
+    <string name="grant">Grant</string>
+    <string name="notifications_permission">Pahintulot sa Mga Notification:</string>
+    <string name="notification_permission_is_require_to_recover_deleted_messages">Kinakailangan ang pahintulot sa notification upang mabawi ang mga tinanggal na mensahe.</string>
+    <string name="special_permissions">Mga Espesyal na Pahintulot sa Folder:</string>
+    <string name="special_">Dahil sa mga pagbabago sa privacy Nangangailangan ang Android 10 at mas bago ng espesyal na pahintulot sa folder para ma-access ang mga direktoryo.</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="whatsapp_business">negosyo</string>
+    <string name="restart_service">I-restart ang Serbisyo</string>
+    <string name="privacy_policy">Patakaran sa Privacy</string>
+    <string name="rate_us">I-rate Kami</string>
+    <string name="share">Ibahagi</string>
+    <string name="start">Magsimula</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="all_your_notifications_will_be_display_here">Ipapakita dito ang lahat ng iyong notification</string>
+    <string name="statuses">Mga katayuan</string>
+    <string name="downloaded">Na-download</string>
+    <string name="grant_permission">Pahintulutan</string>
+    <string name="image">Imahe</string>
+    <string name="video">Video</string>
+    <string name="message">Mensahe</string>
+    <string name="media_placeholder">Walang nakitang tinanggal na media</string>
+    <string name="download">I-download</string>
+    <string name="max_interstitial" translatable="false">debb6589d8c04b75</string>
+    <string name="max_native_small" translatable="false">790b169a0b93b2df</string>
+    <string name="max_banner" translatable="false">4bea053e6fc19405</string>
+    <string name="ad" translatable="false">Ad</string>
+    <string name="chat_statuses_and_media">Chat, Mga Katayuan at Media</string>
+    <string name="please_grant_permissions">Mangyaring ibigay ang mga pahintulot</string>
+    <string name="permission_denied">Pahintulot Tinanggihan ng user</string>
+    <string name="granted">ipinagkaloob</string>
+    <string name="notifications">Mga abiso</string>
+    <string name="recover_media">Na-recover na Media</string>
+    <string name="what_not_installed">Hindi naka-install ang WhatsApp, Mangyaring i-install ang Whatsapp upang makakuha ng Mga Katayuan.</string>
+    <string name="what_not_installed_notification">Hindi naka-install ang WhatsApp, Mangyaring i-install ang Whatsapp upang makakuha ng Mga Notification</string>
+    <string name="bussiness_not_installed">Hindi naka-install ang WhatsApp Business, Paki-install ang Whatsapp Business para makakuha ng Mga Status.</string>
+    <string name="bussiness_not_installed_notifications">Hindi naka-install ang WhatsApp Business, Paki-install ang Whatsapp Business para makakuha ng Mga Notification</string>
+    <string name="message_copied">Nakopya ang Mensahe!</string>
+    <string name="details">Mga Detalye</string>
+    <string name="languages">Wika</string>
+</resources>

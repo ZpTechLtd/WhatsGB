@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pulihkan Pesan yang Dihapus</string>
+    <string name="permission">Izin</string>
+    <string name="whatsgb_requires_following_permissions">Aplikasi membutuhkan izin berikut</string>
+    <string name="storage_permission">Izin Penyimpanan:</string>
+    <string name="storage_permission_is_require_to_save_statuses_and_recover_deleted_media">Izin Penyimpanan diperlukan untuk menyimpan status dan memulihkan media yang dihapus.</string>
+    <string name="grant">Menganugerahkan</string>
+    <string name="notifications_permission">Izin Pemberitahuan:</string>
+    <string name="notification_permission_is_require_to_recover_deleted_messages">Izin pemberitahuan diperlukan untuk memulihkan pesan yang dihapus.</string>
+    <string name="special_permissions">Izin Folder Khusus:</string>
+    <string name="special_">Karena perubahan privasi Sekarang Android 10 dan di atasnya memerlukan izin folder khusus untuk mengakses direktori.</string>
+    <string name="whatsapp">Ada apa</string>
+    <string name="whatsapp_business">Bisnis</string>
+    <string name="restart_service">Mulai Ulang Layanan</string>
+    <string name="privacy_policy">Kebijakan pribadi</string>
+    <string name="rate_us">Nilai Kami</string>
+    <string name="share">Membagikan</string>
+    <string name="start">Awal</string>
+    <string name="hello_blank_fragment">Halo fragmen kosong</string>
+    <string name="all_your_notifications_will_be_display_here">Semua notifikasi Anda akan ditampilkan di sini</string>
+    <string name="statuses">Status</string>
+    <string name="downloaded">Diunduh</string>
+    <string name="grant_permission">Berikan izin</string>
+    <string name="image">Gambar</string>
+    <string name="video">Video</string>
+    <string name="message">Pesan</string>
+    <string name="media_placeholder">Tidak ada media yang dihapus ditemukan</string>
+    <string name="download">Unduh</string>
+    <string name="chat_statuses_and_media">Obrolan, Status, dan Media</string>
+    <string name="please_grant_permissions">Tolong berikan izinnya</string>
+    <string name="permission_denied">Izin Ditolak oleh pengguna</string>
+    <string name="granted">Diberikan</string>
+    <string name="notifications">Pemberitahuan</string>
+    <string name="recover_media">Media yang Dipulihkan</string>
+    <string name="what_not_installed">WhatsApp tidak diinstal, Silakan instal Whatsapp untuk mendapatkan Status.</string>
+    <string name="what_not_installed_notification">WhatsApp tidak terpasang, Silakan instal Whatsapp untuk mendapatkan Notifikasi</string>
+    <string name="bussiness_not_installed">WhatsApp Business belum terpasang, Silahkan install Whatsapp Business untuk mendapatkan Status.</string>
+    <string name="bussiness_not_installed_notifications">WhatsApp Business belum terpasang, Silahkan install Whatsapp Business untuk mendapatkan Notifikasi</string>
+    <string name="message_copied">Pesan Disalin!</string>
+    <string name="details">rincian</string>
+    <string name="languages">Bahasa</string>
+</resources>

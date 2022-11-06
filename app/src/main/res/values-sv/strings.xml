@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Återställ raderade meddelanden</string>
+    <string name="permission">Behörigheter</string>
+    <string name="whatsgb_requires_following_permissions">Appen kräver följande behörigheter</string>
+    <string name="storage_permission">Lagringstillstånd:</string>
+    <string name="storage_permission_is_require_to_save_statuses_and_recover_deleted_media">Lagringstillstånd krävs för att spara statusar och återställa raderade media.</string>
+    <string name="grant">Bevilja</string>
+    <string name="notifications_permission">Aviseringsbehörighet:</string>
+    <string name="notification_permission_is_require_to_recover_deleted_messages">Aviseringsbehörighet krävs för att återställa raderade meddelanden.</string>
+    <string name="special_permissions">Särskilda mappbehörigheter:</string>
+    <string name="special_">På grund av integritetsändringar Nu kräver Android 10 och senare speciell mappbehörighet för att komma åt kataloger.</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="whatsapp_business">Företag</string>
+    <string name="restart_service">Starta om tjänsten</string>
+    <string name="privacy_policy">Integritetspolicy</string>
+    <string name="rate_us">Gradera oss</string>
+    <string name="share">Dela med sig</string>
+    <string name="start">Start</string>
+    <string name="hello_blank_fragment">Hej tomt fragment</string>
+    <string name="all_your_notifications_will_be_display_here">Alla dina aviseringar kommer att visas här</string>
+    <string name="statuses">Statuser</string>
+    <string name="downloaded">Nedladdat</string>
+    <string name="grant_permission">Tillåt tillstånd</string>
+    <string name="image">Bild</string>
+    <string name="video">Video</string>
+    <string name="message">Meddelande</string>
+    <string name="media_placeholder">Inget borttaget media hittades</string>
+    <string name="download">Ladda ner</string>
+    <string name="chat_statuses_and_media">Chatt, status och media</string>
+    <string name="please_grant_permissions">Vänligen ge behörigheterna</string>
+    <string name="permission_denied">Behörighet nekad av användare</string>
+    <string name="granted">Beviljas</string>
+    <string name="notifications">Aviseringar</string>
+    <string name="recover_media">Återställd media</string>
+    <string name="what_not_installed">WhatsApp är inte installerat, installera Whatsapp för att få status.</string>
+    <string name="what_not_installed_notification">WhatsApp är inte installerat, vänligen installera Whatsapp för att få aviseringar</string>
+    <string name="bussiness_not_installed">WhatsApp Business är inte installerat, vänligen installera Whatsapp Business för att få status.</string>
+    <string name="bussiness_not_installed_notifications">WhatsApp Business är inte installerat, vänligen installera Whatsapp Business för att få aviseringar</string>
+    <string name="message_copied">Meddelande kopierat!</string>
+    <string name="details">Detaljer</string>
+    <string name="languages">Språk</string>
+</resources>

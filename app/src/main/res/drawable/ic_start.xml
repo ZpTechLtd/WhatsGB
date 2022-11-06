@@ -2,13 +2,14 @@
     android:width="50dp"
     android:height="50dp"
     android:viewportWidth="50"
-    android:viewportHeight="50">
+    android:viewportHeight="50"
+    android:autoMirrored="true">
   <group>
     <clip-path
         android:pathData="M0,0h50v50h-50z"/>
     <path
         android:pathData="M25,25m-25,0a25,25 0,1 1,50 0a25,25 0,1 1,-50 0"
-        android:fillColor="#16DC5E"/>
+        android:fillColor="#0A6F4C"/>
     <path
         android:pathData="M15.661,23.798L32.415,23.798L27.287,17.638a1.414,1.414 0,0 1,2.176 -1.808l7.063,8.476a1.681,1.681 0,0 1,0.127 0.212,0.179 0.179,0 0,0 0.1,0.184 1.357,1.357 0,0 1,0 1.017,0.179 0.179,0 0,1 -0.1,0.184 1.681,1.681 0,0 1,-0.127 0.212l-7.063,8.476a1.414,1.414 0,1 1,-2.176 -1.808L32.415,26.621L15.661,26.621a1.413,1.413 0,1 1,0 -2.825Z"
         android:fillColor="#fff"/>

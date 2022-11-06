@@ -1,4 +1,4 @@
-package com.zp.tech.deleted.messages.status.saver.ui
+package com.zp.tech.deleted.messages.status.saver.ui.activities
 
 import android.annotation.SuppressLint
 import android.app.ActivityManager
@@ -6,12 +6,12 @@ import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
+import android.content.res.Configuration
 import android.os.Build
 import android.provider.Settings
 import android.service.notification.NotificationListenerService
 import android.text.TextUtils
 import android.widget.Toast
-import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.NotificationManagerCompat
 import androidx.databinding.DataBindingUtil
@@ -20,6 +20,7 @@ import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.zp.tech.deleted.messages.status.saver.notificationService.MediaService
 import com.zp.tech.deleted.messages.status.saver.notificationService.NotificationMediaService
 import com.zp.tech.deleted.messages.status.saver.utils.isPermissionGranted
+import java.util.*
 
 
 abstract class BaseActivity<Binding : ViewDataBinding> : AppCompatActivity() {
@@ -53,7 +54,7 @@ abstract class BaseActivity<Binding : ViewDataBinding> : AppCompatActivity() {
         }
     }
 
-    fun startMediaService() {
+    private fun startMediaService() {
         if (isPermissionGranted()) {
             if (!isServiceRunning(MediaService::class.java)) {
                 startService(Intent(this, MediaService::class.java))
@@ -149,12 +150,28 @@ abstract class BaseActivity<Binding : ViewDataBinding> : AppCompatActivity() {
 
         } catch (exp: Exception) {
             return false
-        } catch (ep:NullPointerException){
+        } catch (ep: NullPointerException) {
             return false
         }
     }
 
     fun showMessage(message: String) {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
+    }
+
+    fun setLanguage(langCode: String) {
+        val config: Configuration = resources.configuration
+        val locale: Locale = if (langCode.contains("-")) {
+            val split = langCode.split("-")
+            Locale(split[0], split[1])
+        } else {
+            Locale(langCode)
+        }
+        Locale.setDefault(locale)
+        config.setLocale(locale)
+        this.resources.updateConfiguration(
+            config,
+            this.resources.displayMetrics
+        )
     }
 }

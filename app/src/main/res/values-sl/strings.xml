@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Obnovite izbrisana sporočila</string>
+    <string name="permission">Dovoljenja</string>
+    <string name="whatsgb_requires_following_permissions">Aplikacija zahteva naslednja dovoljenja</string>
+    <string name="storage_permission">Dovoljenje za shranjevanje:</string>
+    <string name="storage_permission_is_require_to_save_statuses_and_recover_deleted_media">Za shranjevanje statusov in obnovitev izbrisanih medijev je potrebno dovoljenje za shranjevanje.</string>
+    <string name="grant">Grant</string>
+    <string name="notifications_permission">Dovoljenje za obvestila:</string>
+    <string name="notification_permission_is_require_to_recover_deleted_messages">Za obnovitev izbrisanih sporočil je potrebno dovoljenje za obvestila.</string>
+    <string name="special_permissions">Posebna dovoljenja za mape:</string>
+    <string name="special_">Zaradi sprememb zasebnosti Android 10 in novejše različice zahtevajo posebno dovoljenje za dostop do imenikov.</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="whatsapp_business">Posel</string>
+    <string name="restart_service">Ponovno zaženite storitev</string>
+    <string name="privacy_policy">Politika zasebnosti</string>
+    <string name="rate_us">Ocenite nas</string>
+    <string name="share">Deliti</string>
+    <string name="start">Začetek</string>
+    <string name="hello_blank_fragment">Pozdravljeni prazen fragment</string>
+    <string name="all_your_notifications_will_be_display_here">Tukaj bodo prikazana vsa vaša obvestila</string>
+    <string name="statuses">Statusi</string>
+    <string name="downloaded">Preneseno</string>
+    <string name="grant_permission">Dovoli dovoljenje</string>
+    <string name="image">Slika</string>
+    <string name="video">Video</string>
+    <string name="message">Sporočilo</string>
+    <string name="media_placeholder">Ni izbrisanih medijev</string>
+    <string name="download">Prenesi</string>
+    <string name="chat_statuses_and_media">Klepet, statusi in mediji</string>
+    <string name="please_grant_permissions">Prosimo, podelite dovoljenja</string>
+    <string name="permission_denied">Uporabnik zavrnil dovoljenje</string>
+    <string name="granted">Odobreno</string>
+    <string name="notifications">Obvestila</string>
+    <string name="recover_media">Obnovljeni mediji</string>
+    <string name="what_not_installed">WhatsApp ni nameščen, namestite Whatsapp, da dobite statuse.</string>
+    <string name="what_not_installed_notification">WhatsApp ni nameščen. Če želite prejemati obvestila, namestite Whatsapp</string>
+    <string name="bussiness_not_installed">WhatsApp Business ni nameščen, namestite Whatsapp Business, da dobite statuse.</string>
+    <string name="bussiness_not_installed_notifications">WhatsApp Business ni nameščen. Če želite prejemati obvestila, namestite Whatsapp Business</string>
+    <string name="message_copied">Sporočilo kopirano!</string>
+    <string name="details">Podrobnosti</string>
+    <string name="languages">Jezik</string>
+</resources>

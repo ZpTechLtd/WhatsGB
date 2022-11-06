@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">削除されたメッセージを回復する</string>
+    <string name="permission">権限</string>
+    <string name="whatsgb_requires_following_permissions">アプリには次の権限が必要です</string>
+    <string name="storage_permission">ストレージ許可:</string>
+    <string name="storage_permission_is_require_to_save_statuses_and_recover_deleted_media">ステータスを保存し、削除されたメディアを復元するには、ストレージ権限が必要です。</string>
+    <string name="grant">許す</string>
+    <string name="notifications_permission">通知許可:</string>
+    <string name="notification_permission_is_require_to_recover_deleted_messages">削除されたメッセージを復元するには、通知許可が必要です。</string>
+    <string name="special_permissions">特別なフォルダのアクセス許可:</string>
+    <string name="special_">プライバシーの変更により、Android 10 以降では、ディレクトリにアクセスするための特別なフォルダー権限が必要になりました。</string>
+    <string name="whatsapp">ワッツアップ</string>
+    <string name="whatsapp_business">仕事</string>
+    <string name="restart_service">サービスの再起動</string>
+    <string name="privacy_policy">プライバシーポリシー</string>
+    <string name="rate_us">私たちを評価してください</string>
+    <string name="share">シェア</string>
+    <string name="start">始める</string>
+    <string name="hello_blank_fragment">こんにちは空白のフラグメント</string>
+    <string name="all_your_notifications_will_be_display_here">すべての通知がここに表示されます</string>
+    <string name="statuses">ステータス</string>
+    <string name="downloaded">ダウンロード済み</string>
+    <string name="grant_permission">許可を許可</string>
+    <string name="image">画像</string>
+    <string name="video">ビデオ</string>
+    <string name="message">メッセージ</string>
+    <string name="media_placeholder">削除されたメディアが見つかりません</string>
+    <string name="download">ダウンロード</string>
+    <string name="chat_statuses_and_media">チャット、ステータス、メディア</string>
+    <string name="please_grant_permissions">権限を付与してください</string>
+    <string name="permission_denied">ユーザーによって許可が拒否されました</string>
+    <string name="granted">承諾する</string>
+    <string name="notifications">通知</string>
+    <string name="recover_media">回収されたメディア</string>
+    <string name="what_not_installed">WhatsApp がインストールされていません。ステータスを取得するには、Whatsapp をインストールしてください。</string>
+    <string name="what_not_installed_notification">WhatsApp がインストールされていません。通知を受け取るには、Whatsapp をインストールしてください</string>
+    <string name="bussiness_not_installed">WhatsApp ビジネスがインストールされていません。ステータスを取得するには、Whatsapp ビジネスをインストールしてください。</string>
+    <string name="bussiness_not_installed_notifications">WhatsApp ビジネスがインストールされていません。通知を受け取るには、Whatsapp ビジネスをインストールしてください</string>
+    <string name="message_copied">メッセージをコピーしました!</string>
+    <string name="details">詳細</string>
+    <string name="languages">言語</string>
+</resources>

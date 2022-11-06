@@ -7,7 +7,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/shadow_view"
-        tools:context=".ui.ImageViewActivity">
+        tools:context=".ui.activities.ImageViewActivity">
 
         <com.zp.tech.deleted.messages.status.saver.widget.zoomableImage.ZoomageView
             android:id="@+id/image"

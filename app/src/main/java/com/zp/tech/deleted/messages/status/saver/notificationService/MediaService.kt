@@ -1,6 +1,5 @@
 package com.zp.tech.deleted.messages.status.saver.notificationService
 
-import android.annotation.SuppressLint
 import android.app.Service
 import android.content.Intent
 import android.os.Build
@@ -47,10 +46,10 @@ class MediaService : Service() {
                 val whatsDirectories: List<String> = getPaths(NotificationMediaService.WHTAPP)
                 val businessDirectories: List<String> =
                     getPaths(NotificationMediaService.WHTSBUSINESS)
-                if (!whatsDirectories.isEmpty()) {
+                if (whatsDirectories.isNotEmpty()) {
                     pathsList!!.addAll(whatsDirectories)
                 }
-                if (!businessDirectories.isEmpty()) {
+                if (businessDirectories.isNotEmpty()) {
                     pathsList!!.addAll(businessDirectories)
                 }
             }

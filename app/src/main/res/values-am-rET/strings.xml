@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">የተሰረዙ መልዕክቶችን መልሰው ያግኙ</string>
+    <string name="permission">ፈቃዶች</string>
+    <string name="whatsgb_requires_following_permissions">መተግበሪያ የሚከተሉትን ፈቃዶች ይፈልጋል</string>
+    <string name="storage_permission">የማከማቻ ፍቃድ፡</string>
+    <string name="storage_permission_is_require_to_save_statuses_and_recover_deleted_media">ሁኔታዎችን ለማስቀመጥ እና የተሰረዙ ሚዲያዎችን ለማግኘት የማከማቻ ፍቃድ ያስፈልጋል።</string>
+    <string name="grant">ግራንት</string>
+    <string name="notifications_permission">የማሳወቂያዎች ፍቃድ፡</string>
+    <string name="notification_permission_is_require_to_recover_deleted_messages">የተሰረዙ መልዕክቶችን መልሶ ለማግኘት የማሳወቂያ ፈቃድ ያስፈልጋል።</string>
+    <string name="special_permissions">ልዩ የአቃፊ ፈቃዶች፡-</string>
+    <string name="special_">በግላዊነት ለውጦች ምክንያት አሁን አንድሮይድ 10 እና ከዚያ በላይ ማውጫዎችን ለመድረስ ልዩ የአቃፊ ፍቃድ ይፈልጋል።</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="whatsapp_business">Business</string>
+    <string name="restart_service">አገልግሎቱን እንደገና ያስጀምሩ</string>
+    <string name="privacy_policy">የ ግል የሆነ</string>
+    <string name="rate_us">ደረጃ ይስጡን።</string>
+    <string name="share">አጋራ</string>
+    <string name="start">ጀምር</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="all_your_notifications_will_be_display_here">ሁሉም ማሳወቂያዎችዎ እዚህ ይታያሉ</string>
+    <string name="statuses">ሁኔታዎች</string>
+    <string name="downloaded">ወርዷል</string>
+    <string name="grant_permission">ፍቃድ ፍቀድ</string>
+    <string name="image">ምስል</string>
+    <string name="video">ቪዲዮ</string>
+    <string name="message">መልእክት</string>
+    <string name="media_placeholder">ምንም የተሰረዘ ሚዲያ አልተገኘም።</string>
+    <string name="download">አውርድ</string>
+    <string name="chat_statuses_and_media">ውይይት፣ ሁኔታዎች እና ሚዲያ</string>
+    <string name="please_grant_permissions">እባክዎ ፈቃዶቹን ይስጡ</string>
+    <string name="permission_denied">ፍቃድ በተጠቃሚ ተከልክሏል።</string>
+    <string name="granted">ተሰጥቷል።</string>
+    <string name="notifications">ማሳወቂያዎች</string>
+    <string name="recover_media">የተመለሰ ሚዲያ</string>
+    <string name="what_not_installed">ዋትስአፕ አልተጫነም እባኮትን ስታውስ ለማግኘት ዋትስአፕን ይጫኑ።</string>
+    <string name="what_not_installed_notification">ዋትስአፕ አልተጫነም እባክህ ማሳወቂያዎችን ለማግኘት Whatsapp ጫን</string>
+    <string name="bussiness_not_installed">የዋትስአፕ ቢዝነስ አልተጫነም እባኮትን ስታውስ ለማግኘት የዋትስአፕ ቢዝነስን ይጫኑ።</string>
+    <string name="bussiness_not_installed_notifications">የዋትስአፕ ቢዝነስ አልተጫነም፣እባክዎ ማሳወቂያዎችን ለማግኘት የዋትስአፕ ንግድን ይጫኑ</string>
+    <string name="message_copied">መልእክት ተቀድቷል!</string>
+    <string name="details">ዝርዝሮች</string>
+    <string name="languages">Taal</string>
+</resources>

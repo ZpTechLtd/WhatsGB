@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Atkurti ištrintus pranešimus</string>
+    <string name="permission">Leidimai</string>
+    <string name="whatsgb_requires_following_permissions">Programai reikalingi šie leidimai</string>
+    <string name="storage_permission">Saugojimo leidimas:</string>
+    <string name="storage_permission_is_require_to_save_statuses_and_recover_deleted_media">Norint išsaugoti būsenas ir atkurti ištrintas laikmenas, reikalingas saugyklos leidimas.</string>
+    <string name="grant">Suteikti</string>
+    <string name="notifications_permission">Pranešimų leidimas:</string>
+    <string name="notification_permission_is_require_to_recover_deleted_messages">Norint atkurti ištrintus pranešimus, reikalingas pranešimų leidimas.</string>
+    <string name="special_permissions">Specialūs aplanko leidimai:</string>
+    <string name="special_">Dėl privatumo pakeitimų Dabar 10 ir naujesnės versijos „Android“ reikalingas specialus aplanko leidimas pasiekti katalogus.</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="whatsapp_business">Verslas</string>
+    <string name="restart_service">Iš naujo paleiskite paslaugą</string>
+    <string name="privacy_policy">Privatumo politika</string>
+    <string name="rate_us">Įvertinkite mus</string>
+    <string name="share">Dalintis</string>
+    <string name="start">Pradėti</string>
+    <string name="hello_blank_fragment">Sveiki, tuščias fragmentas</string>
+    <string name="all_your_notifications_will_be_display_here">Čia bus rodomi visi jūsų pranešimai</string>
+    <string name="statuses">Būsenos</string>
+    <string name="downloaded">Atsisiųsta</string>
+    <string name="grant_permission">Leisti leidimą</string>
+    <string name="image">Vaizdas</string>
+    <string name="video">Vaizdo įrašas</string>
+    <string name="message">Pranešimas</string>
+    <string name="media_placeholder">Nerasta ištrintų laikmenų</string>
+    <string name="download">parsisiųsti</string>
+    <string name="chat_statuses_and_media">Pokalbiai, būsenos ir medija</string>
+    <string name="please_grant_permissions">Suteikite leidimus</string>
+    <string name="permission_denied">Vartotojas atmetė leidimą</string>
+    <string name="granted">Suteikta</string>
+    <string name="notifications">Pranešimai</string>
+    <string name="recover_media">Atkurta laikmena</string>
+    <string name="what_not_installed">„WhatsApp“ neįdiegta, įdiekite „WhatsApp“, kad gautumėte būsenas.</string>
+    <string name="what_not_installed_notification">„WhatsApp“ neįdiegta, įdiekite „WhatsApp“, kad gautumėte pranešimus</string>
+    <string name="bussiness_not_installed">WhatsApp Business neįdiegtas. Įdiekite Whatsapp Business, kad gautumėte būsenas.</string>
+    <string name="bussiness_not_installed_notifications">„WhatsApp Business“ neįdiegta. Įdiekite „WhatsApp Business“, kad gautumėte pranešimus</string>
+    <string name="message_copied">Pranešimas nukopijuotas!</string>
+    <string name="details">Detalės</string>
+    <string name="languages">Kalba</string>
+</resources>

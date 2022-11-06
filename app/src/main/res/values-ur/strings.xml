@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">حذف شدہ پیغامات کو بازیافت کریں۔</string>
+    <string name="permission">اجازتیں</string>
+    <string name="whatsgb_requires_following_permissions">ایپ کو درج ذیل اجازتوں کی ضرورت ہے۔</string>
+    <string name="storage_permission">ذخیرہ کرنے کی اجازت:</string>
+    <string name="storage_permission_is_require_to_save_statuses_and_recover_deleted_media">اسٹیٹس کو محفوظ کرنے اور حذف شدہ میڈیا کو بازیافت کرنے کے لیے اسٹوریج کی اجازت درکار ہے۔</string>
+    <string name="grant">عطا</string>
+    <string name="notifications_permission">اطلاعات کی اجازت:</string>
+    <string name="notification_permission_is_require_to_recover_deleted_messages">حذف شدہ پیغامات کی بازیافت کے لیے اطلاع کی اجازت درکار ہے۔</string>
+    <string name="special_permissions">خصوصی فولڈر کی اجازت:</string>
+    <string name="special_">رازداری کی تبدیلیوں کی وجہ سے اب اینڈرائیڈ 10 اور اس سے اوپر والے کو ڈائریکٹریز تک رسائی کے لیے خصوصی فولڈر کی اجازت درکار ہے۔</string>
+    <string name="whatsapp">واٹس ایپ</string>
+    <string name="whatsapp_business">کاروبار</string>
+    <string name="restart_service">سروس دوبارہ شروع کریں۔</string>
+    <string name="privacy_policy">رازداری کی پالیسی</string>
+    <string name="rate_us">ہمیں درجہ دیں۔</string>
+    <string name="share">بانٹیں</string>
+    <string name="start">شروع کریں۔</string>
+    <string name="hello_blank_fragment">ہیلو خالی ٹکڑا</string>
+    <string name="all_your_notifications_will_be_display_here">آپ کی تمام اطلاعات یہاں ڈسپلے ہوں گی۔</string>
+    <string name="statuses">سٹیٹس</string>
+    <string name="downloaded">ڈاؤن لوڈ کیا گیا۔</string>
+    <string name="grant_permission">اجازت دیں۔</string>
+    <string name="image">تصویر</string>
+    <string name="video">ویڈیو</string>
+    <string name="message">پیغام</string>
+    <string name="media_placeholder">کوئی حذف شدہ میڈیا نہیں ملا</string>
+    <string name="download">ڈاؤن لوڈ کریں</string>
+    <string name="chat_statuses_and_media">چیٹ، سٹیٹس اور میڈیا</string>
+    <string name="please_grant_permissions">براہ کرم اجازتیں دیں۔</string>
+    <string name="permission_denied">صارف کے ذریعہ اجازت سے انکار</string>
+    <string name="granted">عطا کیا</string>
+    <string name="notifications">اطلاعات</string>
+    <string name="recover_media">بازیافت شدہ میڈیا</string>
+    <string name="what_not_installed">واٹس ایپ انسٹال نہیں ہے، اسٹیٹس حاصل کرنے کے لیے براہ کرم واٹس ایپ انسٹال کریں۔</string>
+    <string name="what_not_installed_notification">واٹس ایپ انسٹال نہیں ہے، نوٹیفیکیشن حاصل کرنے کے لیے براہ کرم واٹس ایپ انسٹال کریں۔</string>
+    <string name="bussiness_not_installed">واٹس ایپ بزنس انسٹال نہیں ہے، اسٹیٹس حاصل کرنے کے لیے براہ کرم واٹس ایپ بزنس انسٹال کریں۔</string>
+    <string name="bussiness_not_installed_notifications">واٹس ایپ بزنس انسٹال نہیں ہے، نوٹیفیکیشن حاصل کرنے کے لیے براہ کرم واٹس ایپ بزنس انسٹال کریں۔</string>
+    <string name="message_copied">پیغام کاپی ہو گیا!</string>
+    <string name="details">تفصیلات</string>
+    <string name="languages">زبان</string>
+</resources>

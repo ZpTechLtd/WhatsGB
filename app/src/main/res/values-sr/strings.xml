@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Опорави избрисане поруке</string>
+    <string name="permission">Дозволе</string>
+    <string name="whatsgb_requires_following_permissions">Апликација захтева следеће дозволе</string>
+    <string name="storage_permission">Дозвола за складиштење:</string>
+    <string name="storage_permission_is_require_to_save_statuses_and_recover_deleted_media">Дозвола за складиштење је потребна за чување статуса и опоравак избрисаних медија.</string>
+    <string name="grant">Одобрити</string>
+    <string name="notifications_permission">Дозвола за обавештења:</string>
+    <string name="notification_permission_is_require_to_recover_deleted_messages">За опоравак избрисаних порука потребна је дозвола за обавештења.</string>
+    <string name="special_permissions">Дозволе за посебне фасцикле:</string>
+    <string name="special_">Због промена приватности Сада Андроид 10 и новији захтевају посебну дозволу фолдера за приступ директоријумима.</string>
+    <string name="whatsapp">ВхатсАпп</string>
+    <string name="whatsapp_business">Посао</string>
+    <string name="restart_service">Поново покрените услугу</string>
+    <string name="privacy_policy">Правила о приватности</string>
+    <string name="rate_us">Оцените нас</string>
+    <string name="share">Објави</string>
+    <string name="start">Почетак</string>
+    <string name="hello_blank_fragment">Здраво, празан фрагмент</string>
+    <string name="all_your_notifications_will_be_display_here">Овде ће бити приказана сва ваша обавештења</string>
+    <string name="statuses">Статуси</string>
+    <string name="downloaded">Преузето</string>
+    <string name="grant_permission">Дозволи дозволу</string>
+    <string name="image">Слика</string>
+    <string name="video">Видео</string>
+    <string name="message">Порука</string>
+    <string name="media_placeholder">Није пронађен ниједан избрисани медиј</string>
+    <string name="download">Преузимање</string>
+    <string name="chat_statuses_and_media">Ћаскање, статуси и медији</string>
+    <string name="please_grant_permissions">Дајте дозволе</string>
+    <string name="permission_denied">Корисник је одбио дозволу</string>
+    <string name="granted">Одобрено</string>
+    <string name="notifications">Обавештења</string>
+    <string name="recover_media">Рецоверед Медиа</string>
+    <string name="what_not_installed">ВхатсАпп није инсталиран, инсталирајте ВхатсАпп да бисте добили статусе.</string>
+    <string name="what_not_installed_notification">ВхатсАпп није инсталиран, инсталирајте ВхатсАпп да бисте добијали обавештења</string>
+    <string name="bussiness_not_installed">ВхатсАпп Бусинесс није инсталиран, инсталирајте ВхатсАпп Бусинесс да бисте добили статусе.</string>
+    <string name="bussiness_not_installed_notifications">ВхатсАпп Бусинесс није инсталиран, инсталирајте ВхатсАпп Бусинесс да бисте добијали обавештења</string>
+    <string name="message_copied">Порука је копирана!</string>
+    <string name="details">Детаљи</string>
+    <string name="languages">Језик</string>
+</resources>

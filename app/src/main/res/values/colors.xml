@@ -12,8 +12,11 @@
     <color name="deletedMessage">#C8F67E75</color>
     <color name="grey">#CDEDEDED</color>
     <color name="tabUnselected">#D1D1D1</color>
+    <color name="lightTextColor">#A2A2A2</color>
     <color name="dark_file_bg">#2C2F44</color>
     <color name="ripple">#E4E4E4</color>
     <color name="subTitleTextColor">#606060</color>
+    <color name="permissionSubTitleColor">#515151</color>
     <color name="splah_bg">#D7F1E2</color>
+    <color name="menubg">#0E9E6C</color>
 </resources>

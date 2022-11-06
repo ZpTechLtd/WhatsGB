@@ -26,7 +26,7 @@ import java.io.BufferedOutputStream;
 import static android.content.Context.NOTIFICATION_SERVICE;
 
 import com.zp.tech.deleted.messages.status.saver.R;
-import com.zp.tech.deleted.messages.status.saver.ui.MainActivity;
+import com.zp.tech.deleted.messages.status.saver.ui.activities.MainActivity;
 
 import org.apache.commons.io.FileUtils;
 

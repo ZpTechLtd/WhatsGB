@@ -18,7 +18,6 @@ import androidx.databinding.DataBindingUtil
 import androidx.documentfile.provider.DocumentFile
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.zp.tech.deleted.messages.status.saver.R
 import com.zp.tech.deleted.messages.status.saver.adapters.DownloadAdapter
 import com.zp.tech.deleted.messages.status.saver.adapters.LiveStatusAdapter
@@ -27,10 +26,10 @@ import com.zp.tech.deleted.messages.status.saver.notificationService.Notificatio
 import com.zp.tech.deleted.messages.status.saver.viewModels.SharedViewModel
 import com.zp.tech.deleted.messages.status.saver.models.StatusModel
 import com.zp.tech.deleted.messages.status.saver.ui.*
+import com.zp.tech.deleted.messages.status.saver.ui.activities.*
 
 import com.zp.tech.deleted.messages.status.saver.utils.Constants
 import com.zp.tech.deleted.messages.status.saver.utils.GridSpacingItemDecoration
-import com.zp.tech.deleted.messages.status.saver.utils.ItemDecoratorHorizontal
 
 class StatusFragment : BaseFragment() {
 
@@ -206,7 +205,7 @@ class StatusFragment : BaseFragment() {
                     viewModel!!.observeStatusType().value = MainActivity.ChatType.WHATSAPP
 
                 } else {
-                    showDialog("WhatsApp is not installed, Please install Whatsapp to get Statuses.")
+                    showDialog(getString(R.string.what_not_installed))
                 }
             }
 
@@ -240,7 +239,7 @@ class StatusFragment : BaseFragment() {
                     viewModel!!.setStatusType(MainActivity.ChatType.BUSINESS)
                     viewModel!!.observeStatusType().value = MainActivity.ChatType.BUSINESS
                 } else {
-                    showDialog("WhatsApp Business is not installed, Please install Whatsapp Business to get Statuses.")
+                    showDialog(getString(R.string.bussiness_not_installed))
                 }
 
             }

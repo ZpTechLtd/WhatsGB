@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Recuperați mesajele șterse</string>
+    <string name="permission">Permisiuni</string>
+    <string name="whatsgb_requires_following_permissions">Aplicația necesită următoarele permisiuni</string>
+    <string name="storage_permission">Permisiunea de stocare:</string>
+    <string name="storage_permission_is_require_to_save_statuses_and_recover_deleted_media">Permisiunea de stocare este necesară pentru a salva stările și a recupera suporturile șterse.</string>
+    <string name="grant">Acorda</string>
+    <string name="notifications_permission">Permisiunea notificărilor:</string>
+    <string name="notification_permission_is_require_to_recover_deleted_messages">Permisiunea de notificare este necesară pentru a recupera mesajele șterse.</string>
+    <string name="special_permissions">Permisiuni speciale pentru foldere:</string>
+    <string name="special_">Datorită modificărilor de confidențialitate Acum Android 10 și mai sus necesită permisiunea specială a folderului pentru a accesa directoarele.</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="whatsapp_business">Afacere</string>
+    <string name="restart_service">Reporniți serviciul</string>
+    <string name="privacy_policy">Politica de confidențialitate</string>
+    <string name="rate_us">Evaluați-ne</string>
+    <string name="share">Acțiune</string>
+    <string name="start">Porni</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="all_your_notifications_will_be_display_here">Toate notificările vor fi afișate aici</string>
+    <string name="statuses">Stările</string>
+    <string name="downloaded">Descărcat</string>
+    <string name="grant_permission">Permiteți permisiunea</string>
+    <string name="image">Imagine</string>
+    <string name="video">Video</string>
+    <string name="message">Mesaj</string>
+    <string name="media_placeholder">Nu s-a găsit niciun suport șters</string>
+    <string name="download">Descărca</string>
+    <string name="chat_statuses_and_media">Chat, stări și media</string>
+    <string name="please_grant_permissions">Vă rugăm să acordați permisiunile</string>
+    <string name="permission_denied">Permisiunea refuzată de utilizator</string>
+    <string name="granted">Acordat</string>
+    <string name="notifications">Notificări</string>
+    <string name="recover_media">Recuperate mass-media</string>
+    <string name="what_not_installed">WhatsApp nu este instalat, Vă rugăm să instalați Whatsapp pentru a obține stări.</string>
+    <string name="what_not_installed_notification">WhatsApp nu este instalat, Vă rugăm să instalați Whatsapp pentru a primi notificări</string>
+    <string name="bussiness_not_installed">WhatsApp Business nu este instalat, Vă rugăm să instalați Whatsapp Business pentru a obține Stări.</string>
+    <string name="bussiness_not_installed_notifications">WhatsApp Business nu este instalat, Vă rugăm să instalați Whatsapp Business pentru a primi notificări</string>
+    <string name="message_copied">Mesaj copiat!</string>
+    <string name="details">Detalii</string>
+    <string name="languages">Limba</string>
+</resources>

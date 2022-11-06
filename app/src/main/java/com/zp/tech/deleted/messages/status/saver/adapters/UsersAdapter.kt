@@ -1,7 +1,6 @@
 package com.zp.tech.deleted.messages.status.saver.adapters
 
 import android.annotation.SuppressLint
-import android.content.Context
 import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
@@ -11,10 +10,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.zp.tech.deleted.messages.status.saver.R
 import com.zp.tech.deleted.messages.status.saver.database.Users
 import com.zp.tech.deleted.messages.status.saver.databinding.ItemUsersBinding
-import com.zp.tech.deleted.messages.status.saver.ui.MessagesActivity
+import com.zp.tech.deleted.messages.status.saver.ui.activities.MessagesActivity
 import com.zp.tech.deleted.messages.status.saver.ui.fragments.MessagesFragment
 import java.text.SimpleDateFormat
-import kotlin.math.abs
 
 class UsersAdapter(private val context: MessagesFragment, private var list: List<Users>) :
     RecyclerView.Adapter<UsersAdapter.UserHolder>() {

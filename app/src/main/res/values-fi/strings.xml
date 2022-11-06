@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Palauta poistetut viestit</string>
+    <string name="permission">Käyttöoikeudet</string>
+    <string name="whatsgb_requires_following_permissions">Sovellus vaatii seuraavat käyttöoikeudet</string>
+    <string name="storage_permission">Tallennuslupa:</string>
+    <string name="storage_permission_is_require_to_save_statuses_and_recover_deleted_media">Tallennuslupa vaaditaan tilojen tallentamiseen ja poistetun median palauttamiseen.</string>
+    <string name="grant">Myöntää</string>
+    <string name="notifications_permission">Ilmoituslupa:</string>
+    <string name="notification_permission_is_require_to_recover_deleted_messages">Poistettujen viestien palauttaminen edellyttää ilmoituslupaa.</string>
+    <string name="special_permissions">Erityiset kansion käyttöoikeudet:</string>
+    <string name="special_">Tietosuojamuutosten vuoksi Android 10 ja uudemmat versiot vaativat erityisen kansion käyttöoikeuden hakemistoihin.</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="whatsapp_business">Liiketoimintaa</string>
+    <string name="restart_service">Käynnistä palvelu uudelleen</string>
+    <string name="privacy_policy">Tietosuojakäytäntö</string>
+    <string name="rate_us">Anna meille arvosana</string>
+    <string name="share">Jaa</string>
+    <string name="start">alkaa</string>
+    <string name="hello_blank_fragment">Hei tyhjä fragmentti</string>
+    <string name="all_your_notifications_will_be_display_here">Kaikki ilmoituksesi näkyvät täällä</string>
+    <string name="statuses">Tilat</string>
+    <string name="downloaded">Ladattu</string>
+    <string name="grant_permission">Salli lupa</string>
+    <string name="image">Kuva</string>
+    <string name="video">Video</string>
+    <string name="message">Viesti</string>
+    <string name="media_placeholder">Poistettua mediaa ei löytynyt</string>
+    <string name="download">ladata</string>
+    <string name="max_interstitial" translatable="false">debb6589d8c04b75</string>
+    <string name="max_native_small" translatable="false">790b169a0b93b2df</string>
+    <string name="max_banner" translatable="false">4bea053e6fc19405</string>
+    <string name="ad" translatable="false">Ad</string>
+    <string name="chat_statuses_and_media">Chat, tilat ja media</string>
+    <string name="please_grant_permissions">Ole hyvä ja anna luvat</string>
+    <string name="permission_denied">Käyttäjä evännyt luvan</string>
+    <string name="granted">Myönnetty</string>
+    <string name="notifications">Ilmoitukset</string>
+    <string name="recover_media">Palautettu media</string>
+    <string name="what_not_installed">WhatsAppia ei ole asennettu. Asenna Whatsapp saadaksesi tilat.</string>
+    <string name="what_not_installed_notification">WhatsAppia ei ole asennettu. Asenna Whatsapp saadaksesi ilmoitukset</string>
+    <string name="bussiness_not_installed">WhatsApp Business ei ole asennettu. Asenna Whatsapp Business saadaksesi tilat.</string>
+    <string name="bussiness_not_installed_notifications">WhatsApp Business ei ole asennettu. Asenna Whatsapp Business saadaksesi ilmoitukset</string>
+    <string name="message_copied">Viesti kopioitu!</string>
+    <string name="details">Yksityiskohdat</string>
+    <string name="languages">Kieli</string>
+</resources>

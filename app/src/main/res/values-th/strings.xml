@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">กู้คืนข้อความที่ถูกลบ</string>
+    <string name="permission">สิทธิ์</string>
+    <string name="whatsgb_requires_following_permissions">แอพต้องการการอนุญาตดังต่อไปนี้</string>
+    <string name="storage_permission">อนุญาตการจัดเก็บ:</string>
+    <string name="storage_permission_is_require_to_save_statuses_and_recover_deleted_media">จำเป็นต้องได้รับอนุญาตในการจัดเก็บเพื่อบันทึกสถานะและกู้คืนสื่อที่ถูกลบ</string>
+    <string name="grant">ยินยอม</string>
+    <string name="notifications_permission">อนุญาตการแจ้งเตือน:</string>
+    <string name="notification_permission_is_require_to_recover_deleted_messages">ต้องได้รับอนุญาตจากการแจ้งเตือนเพื่อกู้คืนข้อความที่ถูกลบ</string>
+    <string name="special_permissions">สิทธิ์พิเศษของโฟลเดอร์:</string>
+    <string name="special_">เนื่องจากการเปลี่ยนแปลงความเป็นส่วนตัว ตอนนี้ Android 10 ขึ้นไปต้องได้รับอนุญาตจากโฟลเดอร์พิเศษเพื่อเข้าถึงไดเรกทอรี</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="whatsapp_business">ธุรกิจ</string>
+    <string name="restart_service">เริ่มบริการใหม่</string>
+    <string name="privacy_policy">นโยบายความเป็นส่วนตัว</string>
+    <string name="rate_us">ให้คะแนนเรา</string>
+    <string name="share">แบ่งปัน</string>
+    <string name="start">เริ่ม</string>
+    <string name="hello_blank_fragment">สวัสดีเศษกระดาษเปล่า</string>
+    <string name="all_your_notifications_will_be_display_here">การแจ้งเตือนทั้งหมดของคุณจะแสดงที่นี่</string>
+    <string name="statuses">สถานะ</string>
+    <string name="downloaded">ดาวน์โหลดแล้ว</string>
+    <string name="grant_permission">อนุญาติ</string>
+    <string name="image">ภาพ</string>
+    <string name="video">วีดีโอ</string>
+    <string name="message">ข้อความ</string>
+    <string name="media_placeholder">ไม่พบสื่อที่ถูกลบ</string>
+    <string name="download">ดาวน์โหลด</string>
+    <string name="chat_statuses_and_media">แชท สถานะ และสื่อ</string>
+    <string name="please_grant_permissions">โปรดให้สิทธิ์</string>
+    <string name="permission_denied">สิทธิ์ถูกปฏิเสธโดยผู้ใช้</string>
+    <string name="granted">ได้รับ</string>
+    <string name="notifications">การแจ้งเตือน</string>
+    <string name="recover_media">สื่อที่กู้คืน</string>
+    <string name="what_not_installed">ไม่ได้ติดตั้ง WhatsApp โปรดติดตั้ง Whatsapp เพื่อรับสถานะ</string>
+    <string name="what_not_installed_notification">ไม่ได้ติดตั้ง WhatsApp โปรดติดตั้ง Whatsapp เพื่อรับการแจ้งเตือน</string>
+    <string name="bussiness_not_installed">ไม่ได้ติดตั้ง WhatsApp Business โปรดติดตั้ง Whatsapp Business เพื่อรับสถานะ</string>
+    <string name="bussiness_not_installed_notifications">ไม่ได้ติดตั้ง WhatsApp Business โปรดติดตั้ง Whatsapp Business เพื่อรับการแจ้งเตือน</string>
+    <string name="message_copied">คัดลอกข้อความแล้ว!</string>
+    <string name="details">รายละเอียด</string>
+    <string name="languages">ภาษา</string>
+</resources>

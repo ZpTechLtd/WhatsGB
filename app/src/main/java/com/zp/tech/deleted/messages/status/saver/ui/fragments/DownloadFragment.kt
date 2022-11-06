@@ -2,7 +2,6 @@ package com.zp.tech.deleted.messages.status.saver.ui.fragments
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -14,6 +13,7 @@ import com.zp.tech.deleted.messages.status.saver.adapters.DownloadAdapter
 import com.zp.tech.deleted.messages.status.saver.databinding.FragmentDownloadBinding
 import com.zp.tech.deleted.messages.status.saver.models.StatusModel
 import com.zp.tech.deleted.messages.status.saver.ui.*
+import com.zp.tech.deleted.messages.status.saver.ui.activities.*
 import com.zp.tech.deleted.messages.status.saver.utils.Constants
 import com.zp.tech.deleted.messages.status.saver.utils.GridSpacingItemDecoration
 import com.zp.tech.deleted.messages.status.saver.viewModels.SharedViewModel

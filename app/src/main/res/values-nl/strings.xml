@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Herstel verwijderde berichten</string>
+    <string name="permission">Rechten</string>
+    <string name="whatsgb_requires_following_permissions">App vereist volgende machtigingen</string>
+    <string name="storage_permission">Opslag toestemming:</string>
+    <string name="storage_permission_is_require_to_save_statuses_and_recover_deleted_media">Opslag Permissie is vereist om statussen op te slaan en verwijderde media te herstellen.</string>
+    <string name="grant">Studiebeurs</string>
+    <string name="notifications_permission">Meldingen Toestemming:</string>
+    <string name="notification_permission_is_require_to_recover_deleted_messages">Meldingstoestemming is vereist om verwijderde berichten te herstellen.</string>
+    <string name="special_permissions">Speciale mapmachtigingen:</string>
+    <string name="special_">Vanwege privacywijzigingen vereist Android 10 en hoger nu speciale maprechten voor toegang tot mappen.</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="whatsapp_business">Bedrijf</string>
+    <string name="restart_service">Service opnieuw starten</string>
+    <string name="privacy_policy">Privacybeleid</string>
+    <string name="rate_us">Beoordeel ons</string>
+    <string name="share">Deel</string>
+    <string name="start">Begin</string>
+    <string name="hello_blank_fragment">Hallo leeg fragment</string>
+    <string name="all_your_notifications_will_be_display_here">Al uw meldingen worden hier weergegeven</string>
+    <string name="statuses">Statussen</string>
+    <string name="downloaded">gedownload</string>
+    <string name="grant_permission">Toestemming toestaan</string>
+    <string name="image">Afbeelding</string>
+    <string name="video">Video</string>
+    <string name="message">Bericht</string>
+    <string name="media_placeholder">Geen verwijderde media gevonden</string>
+    <string name="download">Downloaden</string>
+    <string name="chat_statuses_and_media">Chatten, statussen en media</string>
+    <string name="please_grant_permissions">Verleen de machtigingen a.u.b.</string>
+    <string name="permission_denied">Toestemming geweigerd door gebruiker</string>
+    <string name="granted">Toegekend</string>
+    <string name="notifications">Meldingen</string>
+    <string name="recover_media">Herstelde media</string>
+    <string name="what_not_installed">WhatsApp is niet geïnstalleerd. Installeer WhatsApp om statussen te krijgen.</string>
+    <string name="what_not_installed_notification">WhatsApp is niet geïnstalleerd, installeer WhatsApp om meldingen te ontvangen</string>
+    <string name="bussiness_not_installed">WhatsApp Business is niet geïnstalleerd. Installeer WhatsApp Business om statussen te krijgen.</string>
+    <string name="bussiness_not_installed_notifications">WhatsApp Business is niet geïnstalleerd. Installeer WhatsApp Business om meldingen te ontvangen</string>
+    <string name="message_copied">Bericht gekopieerd!</string>
+    <string name="details">Details</string>
+    <string name="languages">Taal</string>
+</resources>

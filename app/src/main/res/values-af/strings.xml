@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Herstel geskrapte boodskappe</string>
+    <string name="permission">Toestemmings</string>
+    <string name="whatsgb_requires_following_permissions">App vereis volgende toestemmings</string>
+    <string name="storage_permission">Bergingstoestemming:</string>
+    <string name="storage_permission_is_require_to_save_statuses_and_recover_deleted_media">Bergingstoestemming is nodig om statusse te stoor en geskrapte media te herstel.</string>
+    <string name="grant">Grant</string>
+    <string name="notifications_permission">Kennisgewingstoestemming:</string>
+    <string name="notification_permission_is_require_to_recover_deleted_messages">Kennisgewing toestemming is nodig om geskrap boodskappe te herstel.</string>
+    <string name="special_permissions">Spesiale vouertoestemmings:</string>
+    <string name="special_">As gevolg van privaatheidsveranderinge, vereis Android 10 en hoër nou spesiale vouertoestemming om toegang tot dopgehou te kry.</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="whatsapp_business">Besigheid</string>
+    <string name="restart_service">Herbegin diens</string>
+    <string name="privacy_policy">Privaatheidsbeleid</string>
+    <string name="rate_us">Gradeer ons</string>
+    <string name="share">Deel</string>
+    <string name="start">Begin</string>
+    <string name="hello_blank_fragment">Hallo leë fragment</string>
+    <string name="all_your_notifications_will_be_display_here">Al jou kennisgewings sal hier vertoon word</string>
+    <string name="statuses">Statusse</string>
+    <string name="downloaded">Afgelaai</string>
+    <string name="grant_permission">Laat toestemming toe</string>
+    <string name="image">Beeld</string>
+    <string name="video">Video</string>
+    <string name="message">Boodskap</string>
+    <string name="media_placeholder">Geen uitgevee media gevind nie</string>
+    <string name="download">Aflaai</string>
+    <string name="chat_statuses_and_media">Klets, status en media</string>
+    <string name="please_grant_permissions">Gee asseblief die toestemmings</string>
+    <string name="permission_denied">Toestemming deur gebruiker geweier</string>
+    <string name="granted">Toegegee</string>
+    <string name="notifications">Kennisgewings</string>
+    <string name="recover_media">Herwin media</string>
+    <string name="what_not_installed">WhatsApp is nie geïnstalleer nie, installeer asseblief Whatsapp om statusse te kry.</string>
+    <string name="what_not_installed_notification">WhatsApp is nie geïnstalleer nie, installeer asseblief Whatsapp om kennisgewings te kry</string>
+    <string name="bussiness_not_installed">WhatsApp Business is nie geïnstalleer nie, installeer asseblief Whatsapp Business om statusse te kry.</string>
+    <string name="bussiness_not_installed_notifications">WhatsApp Business is nie geïnstalleer nie, installeer asseblief Whatsapp Business om kennisgewings te kry</string>
+    <string name="message_copied">Boodskap gekopieer!</string>
+    <string name="details">Besonderhede</string>
+    <string name="languages">Taal</string>
+</resources>

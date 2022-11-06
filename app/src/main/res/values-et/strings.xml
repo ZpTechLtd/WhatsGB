@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Kustutatud sõnumite taastamine</string>
+    <string name="permission">load</string>
+    <string name="whatsgb_requires_following_permissions">Rakendus nõuab järgmisi lubasid</string>
+    <string name="storage_permission">Salvestusluba:</string>
+    <string name="storage_permission_is_require_to_save_statuses_and_recover_deleted_media">Olekute salvestamiseks ja kustutatud meediumide taastamiseks on vaja salvestusluba.</string>
+    <string name="grant">Toetus</string>
+    <string name="notifications_permission">Märguannete luba:</string>
+    <string name="notification_permission_is_require_to_recover_deleted_messages">Kustutatud kirjade taastamiseks on vaja teavitusluba.</string>
+    <string name="special_permissions">Kaustade eriload:</string>
+    <string name="special_">Privaatsusmuudatuste tõttu vajavad Android 10 ja uuemad versioonid kataloogidele juurdepääsuks spetsiaalset kaustaluba.</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="whatsapp_business">Äri</string>
+    <string name="restart_service">Taaskäivitage teenus</string>
+    <string name="privacy_policy">Privaatsuspoliitika</string>
+    <string name="rate_us">Hinda meid</string>
+    <string name="share">Jaga</string>
+    <string name="start">Alusta</string>
+    <string name="hello_blank_fragment">Tere tühi fragment</string>
+    <string name="all_your_notifications_will_be_display_here">Siin kuvatakse kõik teie märguanded</string>
+    <string name="statuses">Olekud</string>
+    <string name="downloaded">Alla laaditud</string>
+    <string name="grant_permission">Luba luba</string>
+    <string name="image">Pilt</string>
+    <string name="video">Video</string>
+    <string name="message">Sõnum</string>
+    <string name="media_placeholder">Kustutatud meediat ei leitud</string>
+    <string name="download">Lae alla</string>
+    <string name="chat_statuses_and_media">Vestlus, olekud ja meedia</string>
+    <string name="please_grant_permissions">Palun andke load</string>
+    <string name="permission_denied">Kasutaja keelas luba</string>
+    <string name="granted">Lubatud</string>
+    <string name="notifications">Märguanded</string>
+    <string name="recover_media">Taastatud meedia</string>
+    <string name="what_not_installed">WhatsApp pole installitud, olekute saamiseks installige WhatsApp.</string>
+    <string name="what_not_installed_notification">WhatsApp pole installitud, installige WhatsApp, et saada märguandeid</string>
+    <string name="bussiness_not_installed">WhatsApp Business pole installitud, olekute saamiseks installige WhatsApp Business.</string>
+    <string name="bussiness_not_installed_notifications">WhatsApp Business pole installitud. Teavituste saamiseks installige WhatsApp Business</string>
+    <string name="message_copied">Sõnum kopeeritud!</string>
+    <string name="details">üksikasjad</string>
+    <string name="languages">Üksikasjad</string>
+</resources>

@@ -14,7 +14,7 @@ import com.zp.tech.deleted.messages.status.saver.database.Users
 import com.zp.tech.deleted.messages.status.saver.database.repository.MyRepository
 import com.zp.tech.deleted.messages.status.saver.models.DeletedFileModel
 import com.zp.tech.deleted.messages.status.saver.models.StatusModel
-import com.zp.tech.deleted.messages.status.saver.ui.MainActivity
+import com.zp.tech.deleted.messages.status.saver.ui.activities.MainActivity
 import com.zp.tech.deleted.messages.status.saver.utils.PreferenceManager
 import kotlinx.coroutines.launch
 import java.io.File

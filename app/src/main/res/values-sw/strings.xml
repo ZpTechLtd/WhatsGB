@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Rejesha Ujumbe Uliofutwa</string>
+    <string name="permission">Ruhusa</string>
+    <string name="whatsgb_requires_following_permissions">Programu inahitaji ruhusa zifuatazo</string>
+    <string name="storage_permission">Ruhusa ya Kuhifadhi:</string>
+    <string name="storage_permission_is_require_to_save_statuses_and_recover_deleted_media">Ruhusa ya Kuhifadhi inahitajika ili kuhifadhi hali na kurejesha maudhui yaliyofutwa.</string>
+    <string name="grant">Ruzuku</string>
+    <string name="notifications_permission">Ruhusa ya Arifa:</string>
+    <string name="notification_permission_is_require_to_recover_deleted_messages">Ruhusa ya arifa inahitajika ili kurejesha ujumbe uliofutwa.</string>
+    <string name="special_permissions">Ruhusa Maalum za Folda:</string>
+    <string name="special_">Kwa sababu ya mabadiliko ya faragha Sasa Android 10 na hapo juu inahitaji ruhusa maalum ya folda kufikia saraka.</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="whatsapp_business">Biashara</string>
+    <string name="restart_service">Anzisha tena Huduma</string>
+    <string name="privacy_policy">Sera ya Faragha</string>
+    <string name="rate_us">Tukadirie</string>
+    <string name="share">Shiriki</string>
+    <string name="start">Anza</string>
+    <string name="hello_blank_fragment">Habari kipande tupu</string>
+    <string name="all_your_notifications_will_be_display_here">Arifa zako zote zitaonyeshwa hapa</string>
+    <string name="statuses">Hadhi</string>
+    <string name="downloaded">Imepakuliwa</string>
+    <string name="grant_permission">Ruhusu Ruhusa</string>
+    <string name="image">Picha</string>
+    <string name="video">Video</string>
+    <string name="message">Ujumbe</string>
+    <string name="media_placeholder">Hakuna midia iliyofutwa iliyopatikana</string>
+    <string name="download">Pakua</string>
+    <string name="chat_statuses_and_media">Gumzo, Hadhi na Vyombo vya Habari</string>
+    <string name="please_grant_permissions">Tafadhali toa ruhusa</string>
+    <string name="permission_denied">Ruhusa imekataliwa na mtumiaji</string>
+    <string name="granted">Imekubaliwa</string>
+    <string name="notifications">Arifa</string>
+    <string name="recover_media">Midia Iliyorejeshwa</string>
+    <string name="what_not_installed">WhatsApp haijasakinishwa, Tafadhali sakinisha Whatsapp ili kupata Status.</string>
+    <string name="what_not_installed_notification">WhatsApp haijasakinishwa, Tafadhali sakinisha Whatsapp ili kupata Arifa</string>
+    <string name="bussiness_not_installed">Biashara ya WhatsApp haijasakinishwa, Tafadhali sakinisha Biashara ya Whatsapp ili kupata Status.</string>
+    <string name="bussiness_not_installed_notifications">Biashara ya WhatsApp haijasakinishwa, Tafadhali sakinisha Biashara ya Whatsapp ili kupata Arifa</string>
+    <string name="message_copied">Ujumbe Umenakiliwa!</string>
+    <string name="details">Maelezo</string>
+    <string name="languages">Lugha</string>
+</resources>

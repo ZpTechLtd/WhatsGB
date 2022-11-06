@@ -43,7 +43,7 @@ class MessageViewDialog(val context: Context, val message: String) {
             copyText()
         }
         builder.setView(view)
-        builder.setTitle("Details")
+        builder.setTitle(context.getString(R.string.details))
         builder.show()
     }
 
@@ -52,6 +52,6 @@ class MessageViewDialog(val context: Context, val message: String) {
             context.getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
         val clip = ClipData.newPlainText("message copied", message)
         clipboard.setPrimaryClip(clip)
-        Toast.makeText(context,"Message Copied!",Toast.LENGTH_SHORT).show()
+        Toast.makeText(context,context.getString(R.string.message_copied),Toast.LENGTH_SHORT).show()
     }
 }

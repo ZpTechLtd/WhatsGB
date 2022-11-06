@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Gjenopprett slettede meldinger</string>
+    <string name="permission">Tillatelser</string>
+    <string name="whatsgb_requires_following_permissions">Appen krever følgende tillatelser</string>
+    <string name="storage_permission">Lagringstillatelse:</string>
+    <string name="storage_permission_is_require_to_save_statuses_and_recover_deleted_media">Lagringstillatelse kreves for å lagre statuser og gjenopprette slettede medier.</string>
+    <string name="grant">Stipend</string>
+    <string name="notifications_permission">Varslingstillatelse:</string>
+    <string name="notification_permission_is_require_to_recover_deleted_messages">Varslingstillatelse kreves for å gjenopprette slettede meldinger.</string>
+    <string name="special_permissions">Spesielle mappetillatelser:</string>
+    <string name="special_">På grunn av personvernendringer krever Android 10 og nyere spesiell mappetillatelse for å få tilgang til kataloger.</string>
+    <string name="whatsapp">Hva skjer</string>
+    <string name="whatsapp_business">Virksomhet</string>
+    <string name="restart_service">Start tjenesten på nytt</string>
+    <string name="privacy_policy">Personvernerklæring</string>
+    <string name="rate_us">Rangere oss</string>
+    <string name="share">Dele</string>
+    <string name="start">Start</string>
+    <string name="hello_blank_fragment">Hei tomt fragment</string>
+    <string name="all_your_notifications_will_be_display_here">Alle varslene dine vises her</string>
+    <string name="statuses">Statuser</string>
+    <string name="downloaded">Lastet ned</string>
+    <string name="grant_permission">Tillat tillatelse</string>
+    <string name="image">Bilde</string>
+    <string name="video">Video</string>
+    <string name="message">Beskjed</string>
+    <string name="media_placeholder">Fant ingen slettede medier</string>
+    <string name="download">nedlasting</string>
+    <string name="chat_statuses_and_media">Chat, statuser og media</string>
+    <string name="please_grant_permissions">Vennligst gi tillatelsene</string>
+    <string name="permission_denied">Tillatelse nektet av bruker</string>
+    <string name="granted">Gitt</string>
+    <string name="notifications">Varsler</string>
+    <string name="recover_media">Gjenopprettet media</string>
+    <string name="what_not_installed">WhatsApp er ikke installert, installer Whatsapp for å få statuser.</string>
+    <string name="what_not_installed_notification">WhatsApp er ikke installert, installer Whatsapp for å få varsler</string>
+    <string name="bussiness_not_installed">WhatsApp Business er ikke installert. Installer Whatsapp Business for å få statuser.</string>
+    <string name="bussiness_not_installed_notifications">WhatsApp Business er ikke installert. Installer Whatsapp Business for å få varsler</string>
+    <string name="message_copied">Melding kopiert!</string>
+    <string name="details">Detaljer</string>
+    <string name="languages">Språk</string>
+</resources>

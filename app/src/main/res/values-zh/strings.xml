@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">恢复已删除的邮件</string>
+    <string name="permission">权限</string>
+    <string name="whatsgb_requires_following_permissions">应用程序需要以下权限</string>
+    <string name="storage_permission">存储权限：</string>
+    <string name="storage_permission_is_require_to_save_statuses_and_recover_deleted_media">需要存储权限才能保存状态和恢复已删除的媒体。</string>
+    <string name="grant">授予</string>
+    <string name="notifications_permission">通知权限：</string>
+    <string name="notification_permission_is_require_to_recover_deleted_messages">需要通知权限才能恢复已删除的消息。</string>
+    <string name="special_permissions">特殊文件夹权限：</string>
+    <string name="special_">由于隐私更改现在 Android 10 及更高版本需要特殊文件夹权限才能访问目录。</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="whatsapp_business">商业</string>
+    <string name="restart_service">重启服务</string>
+    <string name="privacy_policy">隐私政策</string>
+    <string name="rate_us">评价我们</string>
+    <string name="share">分享</string>
+    <string name="start">开始</string>
+    <string name="hello_blank_fragment">你好空白片段</string>
+    <string name="all_your_notifications_will_be_display_here">您的所有通知都将显示在此处</string>
+    <string name="statuses">状态</string>
+    <string name="downloaded">已下载</string>
+    <string name="grant_permission">允许权限</string>
+    <string name="image">图片</string>
+    <string name="video">视频</string>
+    <string name="message">信息</string>
+    <string name="media_placeholder">未找到已删除的媒体</string>
+    <string name="download">下载</string>
+    <string name="chat_statuses_and_media">聊天、状态和媒体</string>
+    <string name="please_grant_permissions">请授予权限</string>
+    <string name="permission_denied">权限被用户拒绝</string>
+    <string name="granted">的确</string>
+    <string name="notifications">通知</string>
+    <string name="recover_media">恢复的媒体</string>
+    <string name="what_not_installed">WhatsApp 未安装，请安装 Whatsapp 以获取状态。</string>
+    <string name="what_not_installed_notification">WhatsApp 未安装，请安装 Whatsapp 以获取通知</string>
+    <string name="bussiness_not_installed">WhatsApp Business 未安装，请安装 Whatsapp Business 以获取状态。</string>
+    <string name="bussiness_not_installed_notifications">WhatsApp Business 未安装，请安装 Whatsapp Business 以获取通知</string>
+    <string name="message_copied">留言已复制！</string>
+    <string name="details">细节</string>
+    <string name="languages">语</string>
+</resources>

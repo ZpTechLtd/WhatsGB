@@ -6,71 +6,96 @@
         android:id="@+id/root"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_60sdp"
-        android:layout_marginStart="@dimen/_10sdp"
-        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
         android:elevation="4dp"
-        app:strokeColor="@color/white"
-        app:cardBackgroundColor="@color/white">
+        app:cardBackgroundColor="@color/white"
+        app:strokeColor="@color/white">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_65sdp">
+            android:layout_height="@dimen/_60sdp">
 
 
             <ImageView
                 android:id="@+id/icon"
-                android:layout_width="@dimen/_40sdp"
-                android:layout_height="@dimen/_40sdp"
-                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginStart="@dimen/_8sdp"
                 android:padding="@dimen/_3sdp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <com.vanniktech.emoji.EmojiTextView
-                android:id="@+id/txtTitle"
+            <RelativeLayout
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/_7sdp"
-                android:ellipsize="end"
-                android:maxLines="1"
-                android:paddingEnd="@dimen/_10sdp"
-                android:text="Faixan Akram"
-                android:textColor="@color/black"
-                android:textSize="@dimen/_13ssp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toStartOf="@+id/txtDate"
-                app:layout_constraintStart_toEndOf="@+id/icon"
-                app:layout_constraintTop_toTopOf="@+id/icon" />
-
-            <com.vanniktech.emoji.EmojiTextView
-                android:id="@+id/txtMessage"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/_7sdp"
-                android:ellipsize="end"
-                android:maxLines="1"
-                android:paddingTop="@dimen/_4sdp"
-                android:paddingEnd="@dimen/_10sdp"
-                android:text="asjfajskfjklasf"
-                android:textColor="@color/subTitleTextColor"
-                android:textSize="@dimen/_11ssp"
+                android:layout_height="0dp"
+                android:gravity="center_vertical"
+                app:layout_constraintBottom_toBottomOf="@+id/icon"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/icon"
-                app:layout_constraintTop_toBottomOf="@+id/txtTitle" />
+                app:layout_constraintTop_toTopOf="@+id/icon">
 
+                <RelativeLayout
+                    android:id="@+id/rlTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="@dimen/_7sdp"
+                    android:layout_marginEnd="@dimen/_7sdp"
+                    android:layout_toStartOf="@+id/txtDate"
+                    android:gravity="center_vertical">
 
-            <com.zp.tech.deleted.messages.status.saver.widget.CustomRegularTextView
-                android:id="@+id/txtDate"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="@dimen/_10sdp"
-                android:paddingTop="@dimen/_5sdp"
-                android:text="12:10 am"
-                android:textColor="@color/subTitleTextColor"
-                android:textSize="@dimen/_8ssp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/icon" />
+                    <com.vanniktech.emoji.EmojiTextView
+                        android:id="@+id/txtTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:paddingEnd="@dimen/_10sdp"
+                        android:text="Faizan Akram"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13ssp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rlTitle"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="@dimen/_7sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:gravity="center_vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rlTitle">
+
+                    <com.vanniktech.emoji.EmojiTextView
+                        android:id="@+id/txtMessage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:paddingTop="@dimen/_1sdp"
+                        android:text="Hi there"
+                        android:textColor="@color/subTitleTextColor"
+                        android:textSize="@dimen/_11ssp" />
+                </RelativeLayout>
+
+                <com.zp.tech.deleted.messages.status.saver.widget.CustomRegularTextView
+                    android:id="@+id/txtDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/rlTitle"
+                    android:layout_alignBottom="@+id/rlTitle"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:gravity="center_vertical"
+                    android:text="12:10 am"
+                    android:textColor="@color/subTitleTextColor"
+                    android:textSize="@dimen/_8ssp" />
+
+            </RelativeLayout>
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

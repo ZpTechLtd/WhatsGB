@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">हटाए गए संदेशों को पुनर्प्राप्त करें</string>
+    <string name="permission">अनुमतियां</string>
+    <string name="whatsgb_requires_following_permissions">ऐप को निम्नलिखित अनुमतियों की आवश्यकता है</string>
+    <string name="storage_permission">भंडारण अनुमति:</string>
+    <string name="storage_permission_is_require_to_save_statuses_and_recover_deleted_media">स्थिति को सहेजने और हटाए गए मीडिया को पुनर्प्राप्त करने के लिए संग्रहण अनुमति की आवश्यकता होती है।</string>
+    <string name="grant">देना</string>
+    <string name="notifications_permission">अधिसूचना अनुमति:</string>
+    <string name="notification_permission_is_require_to_recover_deleted_messages">हटाए गए संदेशों को पुनर्प्राप्त करने के लिए अधिसूचना अनुमति की आवश्यकता है।</string>
+    <string name="special_permissions">विशेष फ़ोल्डर अनुमतियाँ:</string>
+    <string name="special_">गोपनीयता परिवर्तन के कारण अब Android 10 और इसके बाद के संस्करण को निर्देशिकाओं तक पहुँचने के लिए विशेष फ़ोल्डर अनुमति की आवश्यकता है।</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="whatsapp_business">व्यवसाय</string>
+    <string name="restart_service">सेवा पुनरारंभ करें</string>
+    <string name="privacy_policy">गोपनीयता नीति</string>
+    <string name="rate_us">हमें रेटिंग दें</string>
+    <string name="share">शेयर करना</string>
+    <string name="start">शुरू</string>
+    <string name="hello_blank_fragment">नमस्ते खाली टुकड़ा</string>
+    <string name="all_your_notifications_will_be_display_here">आपकी सभी सूचनाएं यहां प्रदर्शित होंगी</string>
+    <string name="statuses">वे स्थितियां</string>
+    <string name="downloaded">डाउनलोड</string>
+    <string name="grant_permission">अनुमति दें</string>
+    <string name="image">छवि</string>
+    <string name="video">वीडियो</string>
+    <string name="message">संदेश</string>
+    <string name="media_placeholder">कोई मिटाया हुआ मीडिया नहीं मिला</string>
+    <string name="download">डाउनलोड</string>
+    <string name="chat_statuses_and_media">चैट, स्टेटस और मीडिया</string>
+    <string name="please_grant_permissions">कृपया अनुमति प्रदान करें</string>
+    <string name="permission_denied">उपयोगकर्ता द्वारा अस्वीकृत अनुमति</string>
+    <string name="granted">स्वीकृत</string>
+    <string name="notifications">सूचनाएं</string>
+    <string name="recover_media">बरामद मीडिया</string>
+    <string name="what_not_installed">व्हाट्सएप इंस्टॉल नहीं है, कृपया स्टेटस प्राप्त करने के लिए व्हाट्सएप इंस्टॉल करें।</string>
+    <string name="what_not_installed_notification">व्हाट्सएप इंस्टॉल नहीं है, कृपया सूचनाएं प्राप्त करने के लिए व्हाट्सएप इंस्टॉल करें</string>
+    <string name="bussiness_not_installed">व्हाट्सएप बिजनेस स्थापित नहीं है, कृपया स्टेटस प्राप्त करने के लिए व्हाट्सएप बिजनेस इंस्टॉल करें।</string>
+    <string name="bussiness_not_installed_notifications">व्हाट्सएप बिजनेस स्थापित नहीं है, कृपया सूचनाएं प्राप्त करने के लिए व्हाट्सएप बिजनेस स्थापित करें</string>
+    <string name="message_copied">संदेश कॉपी किया गया!</string>
+    <string name="details">विवरण</string>
+    <string name="languages">भाषा</string>
+</resources>

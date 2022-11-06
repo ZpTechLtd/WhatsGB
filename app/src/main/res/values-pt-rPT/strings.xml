@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Recuperar Mensagens Eliminadas</string>
+    <string name="permission">Permissões</string>
+    <string name="whatsgb_requires_following_permissions">App requer após permissões</string>
+    <string name="storage_permission">Permissão de armazenamento:</string>
+    <string name="storage_permission_is_require_to_save_statuses_and_recover_deleted_media">A Permissão de Armazenamento é necessária para guardar os status e recuperar os meios de comunicação apagados.</string>
+    <string name="grant">Concessão</string>
+    <string name="notifications_permission">Permissão de notificações:</string>
+    <string name="notification_permission_is_require_to_recover_deleted_messages">A permissão de notificação é necessária para recuperar mensagens eliminadas.</string>
+    <string name="special_permissions">Permissões especiais de pasta:</string>
+    <string name="special_">Devido a alterações de privacidade Agora o Android 10 ou acima requer permissão especial para aceder a diretórios.</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="whatsapp_business">Negócios</string>
+    <string name="restart_service">Reiniciar o serviço</string>
+    <string name="privacy_policy">Política de Privacidade</string>
+    <string name="rate_us">Classificar-nos</string>
+    <string name="share">Partilhar</string>
+    <string name="start">Começar</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="all_your_notifications_will_be_display_here">Todas as suas notificações serão exibidas aqui</string>
+    <string name="statuses">Estatutos</string>
+    <string name="downloaded">Descarregado</string>
+    <string name="grant_permission">Permitir permissão</string>
+    <string name="image">Imagem</string>
+    <string name="video">Vídeo</string>
+    <string name="message">Mensagem</string>
+    <string name="media_placeholder">Nenhum meio de comunicação apagado encontrado</string>
+    <string name="download">Baixar</string>
+    <string name="chat_statuses_and_media">Chat, Statuses e Media</string>
+    <string name="please_grant_permissions">Por favor, conceda as permissões</string>
+    <string name="permission_denied">Permissão Negada pelo utilizador</string>
+    <string name="granted">Concedido</string>
+    <string name="notifications">Notificações</string>
+    <string name="recover_media">Meios de comunicação recuperados</string>
+    <string name="what_not_installed">O WhatsApp não está instalado, por favor instale o Whatsapp para obter statuses.</string>
+    <string name="what_not_installed_notification">WhatsApp não está instalado, por favor instale o Whatsapp para obter Notificações</string>
+    <string name="bussiness_not_installed">O WhatsApp Business não está instalado, por favor instale o Whatsapp Business para obter statuses.</string>
+    <string name="bussiness_not_installed_notifications">WhatsApp Business não está instalado, por favor instale o Whatsapp Business para obter Notificações</string>
+    <string name="message_copied">Mensagem copiada!</string>
+    <string name="details">Detalhes</string>
+    <string name="languages">Linguagem</string>
+</resources>

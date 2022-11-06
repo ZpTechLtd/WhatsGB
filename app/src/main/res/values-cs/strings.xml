@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Obnovit smazané zprávy</string>
+    <string name="permission">Oprávnění</string>
+    <string name="whatsgb_requires_following_permissions">Aplikace vyžaduje následující oprávnění</string>
+    <string name="storage_permission">Oprávnění k ukládání:</string>
+    <string name="storage_permission_is_require_to_save_statuses_and_recover_deleted_media">K ukládání stavů a ​​obnově smazaných médií je vyžadováno oprávnění k úložišti.</string>
+    <string name="grant">Grant</string>
+    <string name="notifications_permission">Oprávnění k oznámení:</string>
+    <string name="notification_permission_is_require_to_recover_deleted_messages">K obnovení smazaných zpráv je vyžadováno oprávnění k oznámení.</string>
+    <string name="special_permissions">Zvláštní oprávnění ke složce:</string>
+    <string name="special_">Kvůli změnám ochrany soukromí nyní Android 10 a vyšší vyžaduje zvláštní oprávnění ke složce pro přístup k adresářům.</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="whatsapp_business">podnikání</string>
+    <string name="restart_service">Restartujte službu</string>
+    <string name="privacy_policy">Zásady ochrany osobních údajů</string>
+    <string name="rate_us">Ohodnoťte nás</string>
+    <string name="share">Podíl</string>
+    <string name="start">Start</string>
+    <string name="hello_blank_fragment">Ahoj prázdný fragment</string>
+    <string name="all_your_notifications_will_be_display_here">Zde se zobrazí všechna vaše oznámení</string>
+    <string name="statuses">Stavy</string>
+    <string name="downloaded">Staženo</string>
+    <string name="grant_permission">Povolit oprávnění</string>
+    <string name="image">obraz</string>
+    <string name="video">Video</string>
+    <string name="message">Zpráva</string>
+    <string name="media_placeholder">Nebylo nalezeno žádné smazané médium</string>
+    <string name="download">Stažení</string>
+    <string name="chat_statuses_and_media">Chat, stavy a média</string>
+    <string name="please_grant_permissions">Udělte prosím oprávnění</string>
+    <string name="permission_denied">Oprávnění odepřeno uživatelem</string>
+    <string name="granted">Přiznáno</string>
+    <string name="notifications">Oznámení</string>
+    <string name="recover_media">Obnovená média</string>
+    <string name="what_not_installed">WhatsApp není nainstalován, nainstalujte si prosím Whatsapp, abyste získali stavy.</string>
+    <string name="what_not_installed_notification">WhatsApp není nainstalován, nainstalujte si prosím Whatsapp, abyste mohli dostávat oznámení</string>
+    <string name="bussiness_not_installed">WhatsApp Business není nainstalován, nainstalujte si prosím Whatsapp Business, abyste získali stavy.</string>
+    <string name="bussiness_not_installed_notifications">WhatsApp Business není nainstalován, nainstalujte si prosím Whatsapp Business, abyste mohli dostávat oznámení</string>
+    <string name="message_copied">Zpráva zkopírována!</string>
+    <string name="details">Podrobnosti</string>
+    <string name="languages">Jazyk</string>
+</resources>

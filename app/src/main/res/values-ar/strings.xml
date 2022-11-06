@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">استعادة الرسائل المحذوفة</string>
+    <string name="permission">أذونات</string>
+    <string name="whatsgb_requires_following_permissions">يتطلب التطبيق الأذونات التالية</string>
+    <string name="storage_permission">إذن التخزين:</string>
+    <string name="storage_permission_is_require_to_save_statuses_and_recover_deleted_media">مطلوب إذن التخزين لحفظ الحالات واستعادة الوسائط المحذوفة.</string>
+    <string name="grant">منحة</string>
+    <string name="notifications_permission">إذن الإخطارات:</string>
+    <string name="notification_permission_is_require_to_recover_deleted_messages">إذن الإخطار مطلوب لاستعادة الرسائل المحذوفة.</string>
+    <string name="special_permissions">أذونات المجلد الخاصة:</string>
+    <string name="special_">نظرًا لتغييرات الخصوصية ، يتطلب الآن Android 10 وما فوق إذنًا خاصًا للمجلد للوصول إلى الأدلة.</string>
+    <string name="whatsapp">ال WhatsApp</string>
+    <string name="whatsapp_business">اعمال</string>
+    <string name="restart_service">إعادة تشغيل الخدمة</string>
+    <string name="privacy_policy">سياسة الخصوصية</string>
+    <string name="rate_us">قيمنا</string>
+    <string name="share">يشارك</string>
+    <string name="start">بداية</string>
+    <string name="hello_blank_fragment">مرحبا جزء فارغ</string>
+    <string name="all_your_notifications_will_be_display_here">سيتم عرض جميع الإخطارات الخاصة بك هنا</string>
+    <string name="statuses">الحالات</string>
+    <string name="downloaded">تم التنزيل</string>
+    <string name="grant_permission">السماح إذن</string>
+    <string name="image">صورة</string>
+    <string name="video">فيديو</string>
+    <string name="message">رسالة</string>
+    <string name="media_placeholder">لم يتم العثور على وسائط محذوفة</string>
+    <string name="download">تحميل</string>
+    <string name="chat_statuses_and_media">الدردشة والأوضاع ووسائل الإعلام</string>
+    <string name="please_grant_permissions">الرجاء منح الأذونات</string>
+    <string name="permission_denied">تم رفض الإذن من قبل المستخدم</string>
+    <string name="granted">ممنوح</string>
+    <string name="notifications">إشعارات</string>
+    <string name="recover_media">الوسائط المستردة</string>
+    <string name="what_not_installed">لم يتم تثبيت WhatsApp ، يرجى تثبيت Whatsapp للحصول على الحالات.</string>
+    <string name="what_not_installed_notification">لم يتم تثبيت WhatsApp ، يرجى تثبيت Whatsapp للحصول على الإشعارات</string>
+    <string name="bussiness_not_installed">لم يتم تثبيت WhatsApp Business ، يرجى تثبيت Whatsapp Business للحصول على الحالات.</string>
+    <string name="bussiness_not_installed_notifications">لم يتم تثبيت WhatsApp Business ، يرجى تثبيت Whatsapp Business للحصول على الإخطارات</string>
+    <string name="message_copied">تم نسخ الرسالة!</string>
+    <string name="details">تفاصيل</string>
+    <string name="languages">لغة</string>
+</resources>

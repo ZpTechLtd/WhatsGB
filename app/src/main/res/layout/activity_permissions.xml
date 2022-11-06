@@ -5,157 +5,168 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.PermissionsActivity">
+        tools:context=".ui.activities.PermissionsActivity">
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnStart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="@dimen/_90sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:src="@drawable/ic_staer_illustration"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintBottom_toTopOf="@+id/btnStart">
-                <ImageView
-                    android:id="@+id/icon"
-                    android:layout_width="@dimen/_90sdp"
-                    android:layout_height="@dimen/_90sdp"
-                    android:src="@drawable/ic_staer_illustration"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    android:layout_marginTop="@dimen/_20sdp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
+
+            <com.zp.tech.deleted.messages.status.saver.widget.CustomBoldTextView
+                android:id="@+id/lbPermissions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="@string/permission"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/icon" />
+
+            <com.zp.tech.deleted.messages.status.saver.widget.CustomMediumTextView
+                android:id="@+id/lbOverView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/whatsgb_requires_following_permissions"
+                android:textColor="@color/subTitleTextColor"
+                android:textSize="@dimen/_11ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lbPermissions" />
+
+
+            <RelativeLayout
+                android:id="@+id/relNotification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                app:layout_constraintTop_toBottomOf="@+id/lbOverView">
 
                 <com.zp.tech.deleted.messages.status.saver.widget.CustomBoldTextView
-                    android:id="@+id/lbPermissions"
+                    android:id="@+id/lnNotification"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/permission"
+                    android:text="@string/notifications_permission"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/_14ssp"
-                    android:layout_marginTop="@dimen/_20sdp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/icon" />
+                    android:textSize="@dimen/_13ssp" />
 
-                <com.zp.tech.deleted.messages.status.saver.widget.CustomMediumTextView
-                    android:id="@+id/lbOverView"
+                <com.zp.tech.deleted.messages.status.saver.widget.CustomRegularTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lnNotification"
+                    android:layout_toStartOf="@+id/btnNotification"
+                    android:paddingTop="@dimen/_2sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:text="@string/notification_permission_is_require_to_recover_deleted_messages"
+                    android:textColor="@color/subTitleTextColor"
+                    android:textSize="@dimen/_10ssp"
+
+                    />
+
+                <Button
+                    android:id="@+id/btnNotification"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/greenbox"
+                    android:text="@string/grant"
+                    android:textSize="@dimen/_12ssp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:background="#ededed"
+                app:layout_constraintBottom_toTopOf="@+id/relStorage"
+                app:layout_constraintTop_toBottomOf="@+id/relNotification" />
+
+
+            <RelativeLayout
+                android:id="@+id/relStorage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                app:layout_constraintTop_toBottomOf="@+id/relNotification">
+
+                <com.zp.tech.deleted.messages.status.saver.widget.CustomBoldTextView
+                    android:id="@+id/lbstorage"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/whatsgb_requires_following_permissions"
+                    android:text="@string/storage_permission"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp" />
+
+                <com.zp.tech.deleted.messages.status.saver.widget.CustomRegularTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lbstorage"
+                    android:layout_toStartOf="@+id/btnStorage"
+                    android:paddingTop="@dimen/_2sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:text="@string/storage_permission_is_require_to_save_statuses_and_recover_deleted_media"
                     android:textColor="@color/subTitleTextColor"
-                    android:textSize="@dimen/_11ssp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/lbPermissions" />
+                    android:textSize="@dimen/_10ssp"
+
+                    />
+
+                <Button
+                    android:id="@+id/btnStorage"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/greenbox"
+                    android:text="@string/grant"
+                    android:textSize="@dimen/_12ssp" />
+
+            </RelativeLayout>
 
 
-                <RelativeLayout
-                    android:id="@+id/relNotification"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_15sdp"
-                    android:layout_marginTop="@dimen/_50sdp"
-                    android:layout_marginEnd="@dimen/_15sdp"
-                    app:layout_constraintTop_toBottomOf="@+id/lbOverView">
+            <RelativeLayout
+                android:id="@+id/relAds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/relStorage">
 
-                    <com.zp.tech.deleted.messages.status.saver.widget.CustomBoldTextView
-                        android:id="@+id/lnNotification"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/notifications_permission"
-                        android:textColor="@color/black"
-                        android:textSize="@dimen/_12ssp" />
+            </RelativeLayout>
 
-                    <com.zp.tech.deleted.messages.status.saver.widget.CustomRegularTextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/lnNotification"
-                        android:layout_toStartOf="@+id/btnNotification"
-                        android:paddingTop="@dimen/_2sdp"
-                        android:paddingEnd="@dimen/_10sdp"
-                        android:text="@string/notification_permission_is_require_to_recover_deleted_messages"
-                        android:textColor="@color/subTitleTextColor"
-                        android:textSize="@dimen/_10ssp"
-
-                        />
-
-                    <Button
-                        android:id="@+id/btnNotification"
-                        android:layout_width="@dimen/_70sdp"
-                        android:layout_height="@dimen/_30sdp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:background="@drawable/greenbox"
-                        android:text="@string/grant"
-                        android:textSize="@dimen/_12ssp" />
-
-                </RelativeLayout>
-
-
-                <RelativeLayout
-                    android:id="@+id/relStorage"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_15sdp"
-                    android:layout_marginTop="@dimen/_20sdp"
-                    android:layout_marginEnd="@dimen/_15sdp"
-                    app:layout_constraintTop_toBottomOf="@+id/relNotification">
-
-                    <com.zp.tech.deleted.messages.status.saver.widget.CustomBoldTextView
-                        android:id="@+id/lbstorage"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/storage_permission"
-                        android:textColor="@color/black"
-                        android:textSize="@dimen/_12ssp" />
-
-                    <com.zp.tech.deleted.messages.status.saver.widget.CustomRegularTextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/lbstorage"
-                        android:layout_toStartOf="@+id/btnStorage"
-                        android:paddingTop="@dimen/_2sdp"
-                        android:paddingEnd="@dimen/_10sdp"
-                        android:text="@string/storage_permission_is_require_to_save_statuses_and_recover_deleted_media"
-                        android:textColor="@color/subTitleTextColor"
-                        android:textSize="@dimen/_10ssp"
-
-                        />
-
-                    <Button
-                        android:id="@+id/btnStorage"
-                        android:layout_width="@dimen/_70sdp"
-                        android:layout_height="@dimen/_30sdp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:background="@drawable/greenbox"
-                        android:text="@string/grant"
-                        android:textSize="@dimen/_12ssp" />
-
-                </RelativeLayout>
-
-
-                <RelativeLayout
-                    android:id="@+id/relAds"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:layout_constraintTop_toBottomOf="@+id/relStorage"
-                    app:layout_constraintBottom_toBottomOf="parent">
-
-                </RelativeLayout>
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
 
         <ImageView
             android:id="@+id/btnStart"
-            android:layout_width="@dimen/_50sdp"
-            android:layout_height="@dimen/_50sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginHorizontal="@dimen/_15sdp"
             android:layout_marginBottom="@dimen/_15sdp"
-            android:background="@drawable/ic_start"
-            android:text="@string/start"
+            android:background="@drawable/button_bg"
             android:elevation="8dp"
+            android:src="@drawable/ic_baseline_check_24"
+            android:text="@string/start"
             android:textSize="@dimen/_14ssp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

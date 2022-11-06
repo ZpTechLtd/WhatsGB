@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Восстановить удаленные сообщения</string>
+    <string name="permission">Разрешения</string>
+    <string name="whatsgb_requires_following_permissions">Приложение требует следующих разрешений</string>
+    <string name="storage_permission">Разрешение на хранение:</string>
+    <string name="storage_permission_is_require_to_save_statuses_and_recover_deleted_media">Разрешение на хранение требуется для сохранения статусов и восстановления удаленных носителей.</string>
+    <string name="grant">Грант</string>
+    <string name="notifications_permission">Разрешение на уведомления:</string>
+    <string name="notification_permission_is_require_to_recover_deleted_messages">Разрешение на уведомление требуется для восстановления удаленных сообщений.</string>
+    <string name="special_permissions">Разрешения для специальных папок:</string>
+    <string name="special_">Из-за изменений в конфиденциальности теперь Android 10 и более поздние версии требуют специального разрешения для доступа к каталогам.</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="whatsapp_business">Бизнес</string>
+    <string name="restart_service">Перезапустить службу</string>
+    <string name="privacy_policy">Политика конфиденциальности</string>
+    <string name="rate_us">Оцените нас</string>
+    <string name="share">Делиться</string>
+    <string name="start">Начинать</string>
+    <string name="hello_blank_fragment">Привет пустой фрагмент</string>
+    <string name="all_your_notifications_will_be_display_here">Все ваши уведомления будут отображаться здесь</string>
+    <string name="statuses">Статусы</string>
+    <string name="downloaded">Скачано</string>
+    <string name="grant_permission">Разрешить разрешение</string>
+    <string name="image">Изображение</string>
+    <string name="video">видео</string>
+    <string name="message">Сообщение</string>
+    <string name="media_placeholder">Удаленных медиафайлов не найдено</string>
+    <string name="download">Скачать</string>
+    <string name="chat_statuses_and_media">Чат, статусы и медиа</string>
+    <string name="please_grant_permissions">Пожалуйста, предоставьте разрешения</string>
+    <string name="permission_denied">Разрешение отклонено пользователем</string>
+    <string name="granted">Предоставленный</string>
+    <string name="notifications">Уведомления</string>
+    <string name="recover_media">Восстановленные носители</string>
+    <string name="what_not_installed">WhatsApp не установлен. Установите WhatsApp, чтобы получать статусы.</string>
+    <string name="what_not_installed_notification">WhatsApp не установлен. Чтобы получать уведомления, установите WhatsApp.</string>
+    <string name="bussiness_not_installed">WhatsApp Business не установлен. Установите WhatsApp Business, чтобы получать статусы.</string>
+    <string name="bussiness_not_installed_notifications">WhatsApp Business не установлен. Чтобы получать уведомления, установите WhatsApp Business.</string>
+    <string name="message_copied">Сообщение скопировано!</string>
+    <string name="details">Подробности</string>
+    <string name="languages">Язык</string>
+</resources>

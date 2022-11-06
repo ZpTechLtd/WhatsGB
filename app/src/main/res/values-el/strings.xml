@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ανάκτηση διαγραμμένων μηνυμάτων</string>
+    <string name="permission">Άδειες</string>
+    <string name="whatsgb_requires_following_permissions">Η εφαρμογή απαιτεί τα ακόλουθα δικαιώματα</string>
+    <string name="storage_permission">Άδεια αποθήκευσης:</string>
+    <string name="storage_permission_is_require_to_save_statuses_and_recover_deleted_media">Απαιτείται άδεια αποθήκευσης για την αποθήκευση καταστάσεων και την ανάκτηση των διαγραμμένων μέσων.</string>
+    <string name="grant">Χορήγηση</string>
+    <string name="notifications_permission">Άδεια ειδοποιήσεων:</string>
+    <string name="notification_permission_is_require_to_recover_deleted_messages">Απαιτείται άδεια ειδοποίησης για την ανάκτηση των διαγραμμένων μηνυμάτων.</string>
+    <string name="special_permissions">Δικαιώματα ειδικών φακέλων:</string>
+    <string name="special_">Λόγω αλλαγών απορρήτου Τώρα το Android 10 και άνω απαιτεί ειδική άδεια φακέλου για πρόσβαση σε καταλόγους.</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="whatsapp_business">Επιχείρηση</string>
+    <string name="restart_service">Επανεκκινήστε την υπηρεσία</string>
+    <string name="privacy_policy">Πολιτική Απορρήτου</string>
+    <string name="rate_us">Βαθμολογήστε μας</string>
+    <string name="share">Μερίδιο</string>
+    <string name="start">Αρχή</string>
+    <string name="hello_blank_fragment">Γεια σου κενό κομμάτι</string>
+    <string name="all_your_notifications_will_be_display_here">Όλες οι ειδοποιήσεις σας θα εμφανίζονται εδώ</string>
+    <string name="statuses">Καταστάσεις</string>
+    <string name="downloaded">Λήψη</string>
+    <string name="grant_permission">Να επιτρέπεται η άδεια</string>
+    <string name="image">Εικόνα</string>
+    <string name="video">βίντεο</string>
+    <string name="message">Μήνυμα</string>
+    <string name="media_placeholder">Δεν βρέθηκαν διαγραμμένα μέσα</string>
+    <string name="download">Κατεβάστε</string>
+    <string name="chat_statuses_and_media">Συνομιλία, καταστάσεις και πολυμέσα</string>
+    <string name="please_grant_permissions">Παρακαλούμε δώστε τις άδειες</string>
+    <string name="permission_denied">Η άδεια δεν επιτρέπεται από τον χρήστη</string>
+    <string name="granted">Χορηγείται</string>
+    <string name="notifications">Ειδοποιήσεις</string>
+    <string name="recover_media">Ανακτημένα μέσα</string>
+    <string name="what_not_installed">Το WhatsApp δεν είναι εγκατεστημένο, εγκαταστήστε το Whatsapp για να λάβετε καταστάσεις.</string>
+    <string name="what_not_installed_notification">Το WhatsApp δεν είναι εγκατεστημένο, Εγκαταστήστε το Whatsapp για να λαμβάνετε Ειδοποιήσεις</string>
+    <string name="bussiness_not_installed">Το WhatsApp Business δεν είναι εγκατεστημένο, εγκαταστήστε το Whatsapp Business για να λάβετε καταστάσεις.</string>
+    <string name="bussiness_not_installed_notifications">Το WhatsApp Business δεν είναι εγκατεστημένο, εγκαταστήστε το Whatsapp Business για να λαμβάνετε Ειδοποιήσεις</string>
+    <string name="message_copied">Το μήνυμα αντιγράφηκε!</string>
+    <string name="details">Λεπτομέριες</string>
+    <string name="languages">Γλώσσα</string>
+</resources>

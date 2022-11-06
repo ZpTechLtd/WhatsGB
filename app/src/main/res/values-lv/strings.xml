@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Atgūt izdzēstos ziņojumus</string>
+    <string name="permission">Atļaujas</string>
+    <string name="whatsgb_requires_following_permissions">Lietotnei ir nepieciešamas šādas atļaujas</string>
+    <string name="storage_permission">Uzglabāšanas atļauja:</string>
+    <string name="storage_permission_is_require_to_save_statuses_and_recover_deleted_media">Lai saglabātu statusus un atgūtu izdzēstos datu nesējus, ir nepieciešama krātuves atļauja.</string>
+    <string name="grant">Piešķirt</string>
+    <string name="notifications_permission">Paziņojumu atļauja:</string>
+    <string name="notification_permission_is_require_to_recover_deleted_messages">Lai atgūtu izdzēstos ziņojumus, ir nepieciešama paziņojumu atļauja.</string>
+    <string name="special_permissions">Īpašas mapes atļaujas:</string>
+    <string name="special_">Konfidencialitātes izmaiņu dēļ Tagad operētājsistēmām Android 10 un jaunākām versijām ir nepieciešama īpaša mapju atļauja, lai piekļūtu direktorijiem.</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="whatsapp_business">Bizness</string>
+    <string name="restart_service">Restartējiet pakalpojumu</string>
+    <string name="privacy_policy">Privātuma politika</string>
+    <string name="rate_us">Novērtē mūs</string>
+    <string name="share">Dalīties</string>
+    <string name="start">Sākt</string>
+    <string name="hello_blank_fragment">Sveiki tukšs fragments</string>
+    <string name="all_your_notifications_will_be_display_here">Šeit tiks parādīti visi jūsu paziņojumi</string>
+    <string name="statuses">Statusi</string>
+    <string name="downloaded">Lejupielādēts</string>
+    <string name="grant_permission">Atļaut atļauju</string>
+    <string name="image">Attēls</string>
+    <string name="video">Video</string>
+    <string name="message">Ziņa</string>
+    <string name="media_placeholder">Netika atrasts neviens dzēsts multivides līdzeklis</string>
+    <string name="download">Lejupielādēt</string>
+    <string name="chat_statuses_and_media">Tērzēšana, statusi un multivide</string>
+    <string name="please_grant_permissions">Lūdzu, piešķiriet atļaujas</string>
+    <string name="permission_denied">Lietotājs liedza atļauju</string>
+    <string name="granted">Piešķirts</string>
+    <string name="notifications">Paziņojumi</string>
+    <string name="recover_media">Atjaunots datu nesējs</string>
+    <string name="what_not_installed">WhatsApp nav instalēts. Lūdzu, instalējiet WhatsApp, lai iegūtu statusus.</string>
+    <string name="what_not_installed_notification">WhatsApp nav instalēts. Lūdzu, instalējiet Whatsapp, lai saņemtu paziņojumus</string>
+    <string name="bussiness_not_installed">WhatsApp Business nav instalēts. Lūdzu, instalējiet WhatsApp Business, lai iegūtu statusus.</string>
+    <string name="bussiness_not_installed_notifications">WhatsApp Business nav instalēts. Lūdzu, instalējiet WhatsApp Business, lai saņemtu paziņojumus</string>
+    <string name="message_copied">Ziņa nokopēta!</string>
+    <string name="details">Sīkāka informācija</string>
+    <string name="languages">Valoda</string>
+</resources>

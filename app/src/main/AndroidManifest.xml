@@ -6,8 +6,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
-
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
 
     <queries>
         <package android:name="com.whatsapp" />
@@ -25,22 +24,26 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WhatsGB">
         <activity
-            android:name=".ui.VideoActivity"
+            android:name=".ui.activities.LanguageActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activities.VideoActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.ImageViewActivity"
+            android:name=".ui.activities.ImageViewActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.MessagesActivity"
+            android:name=".ui.activities.MessagesActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.MainActivity"
+            android:name=".ui.activities.MainActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.PermissionsActivity"
+            android:name=".ui.activities.PermissionsActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity

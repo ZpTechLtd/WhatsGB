@@ -8,6 +8,7 @@ class PreferenceManager(private val context: Context) {
     private var editor: SharedPreferences.Editor? = null
     private var whatsappUri: String = "whatsappuri"
     private var businessUri: String = "businessuri"
+    private val languageCode: String = "languageCode"
 
     init {
         sharedPreferences = context.getSharedPreferences("chatPreference", Context.MODE_PRIVATE)
@@ -19,7 +20,7 @@ class PreferenceManager(private val context: Context) {
     }
 
     fun getWhatsAppUri(): String? {
-        return sharedPreferences?.getString(whatsappUri, "");
+        return sharedPreferences?.getString(whatsappUri, "")
     }
 
     fun setBusinessUri(uri: String) {
@@ -27,6 +28,14 @@ class PreferenceManager(private val context: Context) {
     }
 
     fun getBusinessUri(): String? {
-        return sharedPreferences?.getString(businessUri, "");
+        return sharedPreferences?.getString(businessUri, "")
+    }
+
+    fun setLanguageCode(code: String) {
+        editor?.putString(languageCode, code)?.commit()
+    }
+
+    fun getLanguageCode(): String? {
+        return sharedPreferences?.getString(languageCode, "en-US")
     }
 }

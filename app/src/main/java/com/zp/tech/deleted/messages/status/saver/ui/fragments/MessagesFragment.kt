@@ -13,7 +13,7 @@ import com.zp.tech.deleted.messages.status.saver.adapters.UsersAdapter
 import com.zp.tech.deleted.messages.status.saver.databinding.FragmentMessagesBinding
 import com.zp.tech.deleted.messages.status.saver.notificationService.NotificationMediaService.WHTAPP
 import com.zp.tech.deleted.messages.status.saver.notificationService.NotificationMediaService.WHTSBUSINESS
-import com.zp.tech.deleted.messages.status.saver.ui.MainActivity
+import com.zp.tech.deleted.messages.status.saver.ui.activities.MainActivity
 import com.zp.tech.deleted.messages.status.saver.utils.ItemDecorator
 import com.zp.tech.deleted.messages.status.saver.viewModels.SharedViewModel
 import com.zp.tech.deleted.messages.status.saver.widget.EmptyDataObserver
@@ -109,7 +109,7 @@ class MessagesFragment : BaseFragment() {
                     )
                     viewModel!!.setChatTypeMessage(MainActivity.ChatType.WHATSAPP)
                 } else {
-                    showDialog("WhatsApp is not installed, Please install Whatsapp to get Notifications")
+                    showDialog(getString(R.string.what_not_installed_notification))
                 }
             }
 
@@ -141,7 +141,7 @@ class MessagesFragment : BaseFragment() {
                     )
                     viewModel!!.setChatTypeMessage(MainActivity.ChatType.BUSINESS)
                 } else {
-                    showDialog("WhatsApp Business is not installed, Please install Whatsapp Business to get Notifications")
+                    showDialog(getString(R.string.bussiness_not_installed_notifications))
                 }
 
             }

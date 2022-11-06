@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">삭제된 메시지 복구</string>
+    <string name="permission">권한</string>
+    <string name="whatsgb_requires_following_permissions">앱에 다음 권한이 필요합니다.</string>
+    <string name="storage_permission">저장 권한:</string>
+    <string name="storage_permission_is_require_to_save_statuses_and_recover_deleted_media">상태를 저장하고 삭제된 미디어를 복구하려면 저장 권한이 필요합니다.</string>
+    <string name="grant">승인하다</string>
+    <string name="notifications_permission">알림 권한:</string>
+    <string name="notification_permission_is_require_to_recover_deleted_messages">삭제된 메시지를 복구하려면 알림 권한이 필요합니다.</string>
+    <string name="special_permissions">특수 폴더 권한:</string>
+    <string name="special_">개인 정보 변경으로 인해 이제 Android 10 이상에서는 디렉토리에 액세스하기 위해 특별한 폴더 권한이 필요합니다.</string>
+    <string name="whatsapp">왓츠앱</string>
+    <string name="whatsapp_business">사업</string>
+    <string name="restart_service">서비스 다시 시작</string>
+    <string name="privacy_policy">개인 정보 정책</string>
+    <string name="rate_us">평가</string>
+    <string name="share">공유하다</string>
+    <string name="start">시작</string>
+    <string name="hello_blank_fragment">안녕하세요 빈 조각</string>
+    <string name="all_your_notifications_will_be_display_here">모든 알림이 여기에 표시됩니다.</string>
+    <string name="statuses">상태</string>
+    <string name="downloaded">다운로드됨</string>
+    <string name="grant_permission">권한 허용</string>
+    <string name="image">영상</string>
+    <string name="video">동영상</string>
+    <string name="message">메시지</string>
+    <string name="media_placeholder">삭제된 미디어를 찾을 수 없습니다.</string>
+    <string name="download">다운로드</string>
+    <string name="chat_statuses_and_media">채팅, 상태 및 미디어</string>
+    <string name="please_grant_permissions">권한을 부여해주세요</string>
+    <string name="permission_denied">사용자가 권한을 거부했습니다.</string>
+    <string name="granted">부여된</string>
+    <string name="notifications">알림</string>
+    <string name="recover_media">복구된 미디어</string>
+    <string name="what_not_installed">WhatsApp이 설치되지 않았습니다. 상태를 확인하려면 Whatsapp을 설치하세요.</string>
+    <string name="what_not_installed_notification">WhatsApp이 설치되지 않았습니다. 알림을 받으려면 Whatsapp을 설치하세요.</string>
+    <string name="bussiness_not_installed">WhatsApp Business가 설치되어 있지 않습니다. 상태를 확인하려면 Whatsapp Business를 설치하세요.</string>
+    <string name="bussiness_not_installed_notifications">WhatsApp Business가 설치되지 않았습니다. 알림을 받으려면 Whatsapp Business를 설치하세요.</string>
+    <string name="message_copied">메시지가 복사되었습니다!</string>
+    <string name="details">세부</string>
+    <string name="languages">언어</string>
+</resources>

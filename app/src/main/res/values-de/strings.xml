@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Gelöschte Nachrichten wiederherstellen</string>
+    <string name="permission">Berechtigungen</string>
+    <string name="whatsgb_requires_following_permissions">App erfordert folgende Berechtigungen</string>
+    <string name="storage_permission">Speichererlaubnis:</string>
+    <string name="storage_permission_is_require_to_save_statuses_and_recover_deleted_media">Die Speicherberechtigung ist erforderlich, um Status zu speichern und gelöschte Medien wiederherzustellen.</string>
+    <string name="grant">Gewähren</string>
+    <string name="notifications_permission">Benachrichtigungsberechtigung:</string>
+    <string name="notification_permission_is_require_to_recover_deleted_messages">Zum Wiederherstellen gelöschter Nachrichten ist eine Benachrichtigungsberechtigung erforderlich.</string>
+    <string name="special_permissions">Spezielle Ordnerberechtigungen:</string>
+    <string name="special_">Aufgrund von Datenschutzänderungen erfordert jetzt Android 10 und höher eine spezielle Ordnerberechtigung für den Zugriff auf Verzeichnisse.</string>
+    <string name="whatsapp">Whatsapp</string>
+    <string name="whatsapp_business">Geschäft</string>
+    <string name="restart_service">Dienst neu starten</string>
+    <string name="privacy_policy">Datenschutz-Bestimmungen</string>
+    <string name="rate_us">Bewerten Sie uns</string>
+    <string name="share">Teilen</string>
+    <string name="start">Anfang</string>
+    <string name="hello_blank_fragment">Hallo leeres Fragment</string>
+    <string name="all_your_notifications_will_be_display_here">Alle Ihre Benachrichtigungen werden hier angezeigt</string>
+    <string name="statuses">Status</string>
+    <string name="downloaded">Heruntergeladen</string>
+    <string name="grant_permission">Erlaubnis zulassen</string>
+    <string name="image">Bild</string>
+    <string name="video">Video</string>
+    <string name="message">Nachricht</string>
+    <string name="media_placeholder">Keine gelöschten Medien gefunden</string>
+    <string name="download">Download</string>
+    <string name="chat_statuses_and_media">Chat, Status und Medien</string>
+    <string name="please_grant_permissions">Bitte erteilen Sie die Berechtigungen</string>
+    <string name="permission_denied">Berechtigung vom Benutzer verweigert</string>
+    <string name="granted">Gewährt</string>
+    <string name="notifications">Benachrichtigungen</string>
+    <string name="recover_media">Wiederhergestellte Medien</string>
+    <string name="what_not_installed">WhatsApp ist nicht installiert. Bitte installieren Sie WhatsApp, um den Status zu erhalten.</string>
+    <string name="what_not_installed_notification">WhatsApp ist nicht installiert. Bitte installieren Sie WhatsApp, um Benachrichtigungen zu erhalten</string>
+    <string name="bussiness_not_installed">WhatsApp Business ist nicht installiert. Bitte installieren Sie WhatsApp Business, um Status zu erhalten.</string>
+    <string name="bussiness_not_installed_notifications">WhatsApp Business ist nicht installiert. Bitte installieren Sie WhatsApp Business, um Benachrichtigungen zu erhalten</string>
+    <string name="message_copied">Nachricht kopiert!</string>
+    <string name="details">Einzelheiten</string>
+    <string name="languages">Sprache</string>
+</resources>

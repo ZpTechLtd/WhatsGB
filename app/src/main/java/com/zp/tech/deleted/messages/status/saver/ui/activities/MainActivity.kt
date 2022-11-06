@@ -1,4 +1,4 @@
-package com.zp.tech.deleted.messages.status.saver.ui
+package com.zp.tech.deleted.messages.status.saver.ui.activities
 
 import android.content.Intent
 import android.content.res.ColorStateList
@@ -6,12 +6,8 @@ import android.net.Uri
 import android.os.Bundle
 import android.view.MenuItem
 import android.view.View
-import androidx.core.content.ContextCompat
 import androidx.core.view.GravityCompat
 import androidx.lifecycle.ViewModelProvider
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.viewpager2.widget.ViewPager2
-import com.applovin.sdk.AppLovinSdk
 import com.google.android.material.navigation.NavigationView
 import com.google.android.material.tabs.TabLayoutMediator
 import com.zp.tech.deleted.messages.status.saver.R
@@ -22,7 +18,7 @@ import com.zp.tech.deleted.messages.status.saver.ui.fragments.DownloadFragment
 import com.zp.tech.deleted.messages.status.saver.ui.fragments.MediaFragment
 import com.zp.tech.deleted.messages.status.saver.ui.fragments.MessagesFragment
 import com.zp.tech.deleted.messages.status.saver.ui.fragments.StatusFragment
-import com.zp.tech.deleted.messages.status.saver.utils.PreferenceManager
+import com.zp.tech.deleted.messages.status.saver.utils.IS_FROM_PERMISSIONS_SCREEN
 import com.zp.tech.deleted.messages.status.saver.utils.ShareUtils
 import com.zp.tech.deleted.messages.status.saver.viewModels.SharedViewModel
 
@@ -34,7 +30,10 @@ class MainActivity : BaseActivity<ActivityMainBinding>(),
     }
 
     private var viewModel: SharedViewModel? = null
-    private val titleList = arrayListOf("Notifications", "Statuses", "Downloaded", "Recovered Media")
+    private val titleList = arrayListOf(R.string.notifications,
+        R.string.statuses,
+        R.string.downloaded,
+        R.string.recover_media)
     private val WHTSBUSINESS = "com.whatsapp.w4b"
     private val WHTAPP = "com.whatsapp"
     private var chatType: ChatType? = null
@@ -51,6 +50,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>(),
         binding!!.navigationView.itemIconTintList =
             ColorStateList.valueOf(resources.getColor(R.color.purple_500))
         binding!!.imgToggle.setOnClickListener(this::onClick)
+        binding!!.imgLanguage.setOnClickListener { onClick(it) }
 
         viewModel!!.observeChatTypeMessages().observe(this, {
             if (it == ChatType.WHATSAPP) {
@@ -72,7 +72,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>(),
         TabLayoutMediator(
             binding!!.tabLayout,
             binding!!.viewPager
-        ) { tab, position -> tab.text = titleList[position] }.attach()
+        ) { tab, position -> tab.text = getString(titleList[position]) }.attach()
 
         adsManager.loadNativeBannerMax(binding!!.relAds)
         adsManager.loadMaxInterstitial()
@@ -125,6 +125,10 @@ class MainActivity : BaseActivity<ActivityMainBinding>(),
                 } else {
                     binding!!.draweLayout.openDrawer(GravityCompat.START)
                 }
+            }
+            R.id.imgLanguage -> {
+                startActivity(Intent(this, LanguageActivity::class.java).putExtra(
+                    IS_FROM_PERMISSIONS_SCREEN, false))
             }
         }
 

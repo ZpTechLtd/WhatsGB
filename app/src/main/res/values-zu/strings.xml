@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Buyisela Imilayezo Esusiwe</string>
+    <string name="permission">Izimvume</string>
+    <string name="whatsgb_requires_following_permissions">Uhlelo lokusebenza ludinga izimvume ezilandelayo</string>
+    <string name="storage_permission">Imvume Yesitoreji:</string>
+    <string name="storage_permission_is_require_to_save_statuses_and_recover_deleted_media">Imvume Yesitoreji iyadingeka ukuze ulondoloze izimo futhi ubuyisele imidiya esusiwe.</string>
+    <string name="grant">Grant</string>
+    <string name="notifications_permission">Imvume Yezaziso:</string>
+    <string name="notification_permission_is_require_to_recover_deleted_messages">Imvume yesaziso iyadingeka ukuze kubuyiselwe imilayezo esusiwe.</string>
+    <string name="special_permissions">Izimvume Zefolda Ezikhethekile:</string>
+    <string name="special_">Ngenxa yezinguquko zobumfihlo Manje i-Android 10 nangaphezulu idinga imvume yefolda ekhethekile ukuze ifinyelele uhla lwemibhalo.</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="whatsapp_business">Ibhizinisi</string>
+    <string name="restart_service">Qala kabusha Isevisi</string>
+    <string name="privacy_policy">Inqubomgomo yobumfihlo</string>
+    <string name="rate_us">Linganisa Us</string>
+    <string name="share">Yabelana</string>
+    <string name="start">Qala</string>
+    <string name="hello_blank_fragment">Sawubona isiqeshana esingenalutho</string>
+    <string name="all_your_notifications_will_be_display_here">Zonke izaziso zakho zizoboniswa lapha</string>
+    <string name="statuses">Izimo</string>
+    <string name="downloaded">Ilandiwe</string>
+    <string name="grant_permission">Vumela Imvume</string>
+    <string name="image">Isithombe</string>
+    <string name="video">Ividiyo</string>
+    <string name="message">Umlayezo</string>
+    <string name="media_placeholder">Ayikho imidiya esusiwe etholiwe</string>
+    <string name="download">Landa</string>
+    <string name="chat_statuses_and_media">Ingxoxo, Izimo kanye Nemidiya</string>
+    <string name="please_grant_permissions">Sicela unikeze izimvume</string>
+    <string name="permission_denied">Imvume Inqatshelwe umsebenzisi</string>
+    <string name="granted">Kuyavunywa</string>
+    <string name="notifications">Izaziso</string>
+    <string name="recover_media">Imidiya etholiwe</string>
+    <string name="what_not_installed">I-WhatsApp ayifakiwe, Sicela ufake iWhatsapp ukuze uthole Izimo.</string>
+    <string name="what_not_installed_notification">I-WhatsApp ayifakiwe, Sicela ufake iWhatsapp ukuze uthole Izaziso</string>
+    <string name="bussiness_not_installed">I-WhatsApp Business ayifakiwe, Sicela ufake i-Whatsapp Business ukuze uthole Izimo.</string>
+    <string name="bussiness_not_installed_notifications">I-WhatsApp Business ayifakiwe, Sicela ufake I-Whatsapp Business ukuze uthole Izaziso</string>
+    <string name="message_copied">Umlayezo Ukopishiwe!</string>
+    <string name="details">Imininingwane</string>
+    <string name="languages">Ulimi</string>
+</resources>

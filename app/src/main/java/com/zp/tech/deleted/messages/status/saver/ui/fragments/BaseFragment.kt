@@ -27,7 +27,7 @@ abstract class BaseFragment : Fragment() {
 
 
     fun showDialog(message: String) {
-        MaterialAlertDialogBuilder(requireActivity()).setTitle("Message").setMessage(message)
+        MaterialAlertDialogBuilder(requireActivity()).setTitle(resources.getString(R.string.message)).setMessage(message)
             .setPositiveButton(
                 "Ok"
             ) { _, _ -> }.show().getButton(AlertDialog.BUTTON_POSITIVE)

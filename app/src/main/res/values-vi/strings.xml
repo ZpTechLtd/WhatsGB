@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Khôi phục tin nhắn đã xóa</string>
+    <string name="permission">Quyền</string>
+    <string name="whatsgb_requires_following_permissions">Ứng dụng yêu cầu các quyền sau</string>
+    <string name="storage_permission">Quyền lưu trữ:</string>
+    <string name="storage_permission_is_require_to_save_statuses_and_recover_deleted_media">Quyền lưu trữ được yêu cầu để lưu trạng thái và khôi phục phương tiện đã xóa.</string>
+    <string name="grant">Ban cho</string>
+    <string name="notifications_permission">Quyền thông báo:</string>
+    <string name="notification_permission_is_require_to_recover_deleted_messages">Quyền thông báo được yêu cầu để khôi phục các tin nhắn đã xóa.</string>
+    <string name="special_permissions">Quyền đối với Thư mục Đặc biệt:</string>
+    <string name="special_">Do những thay đổi về quyền riêng tư Giờ đây, Android 10 trở lên yêu cầu quyền thư mục đặc biệt để truy cập các thư mục.</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="whatsapp_business">Việc kinh doanh</string>
+    <string name="restart_service">Khởi động lại dịch vụ</string>
+    <string name="privacy_policy">Chính sách bảo mật</string>
+    <string name="rate_us">Đánh giá chúng tôi</string>
+    <string name="share">Đăng lại</string>
+    <string name="start">Bắt đầu</string>
+    <string name="hello_blank_fragment">Xin chào đoạn trống</string>
+    <string name="all_your_notifications_will_be_display_here">Tất cả các thông báo của bạn sẽ được hiển thị ở đây</string>
+    <string name="statuses">Trạng thái</string>
+    <string name="downloaded">Đã tải xuống</string>
+    <string name="grant_permission">Cho phép Quyền</string>
+    <string name="image">Hình ảnh</string>
+    <string name="video">Video</string>
+    <string name="message">Thông điệp</string>
+    <string name="media_placeholder">Không tìm thấy phương tiện đã xóa</string>
+    <string name="download">Tải xuống</string>
+    <string name="chat_statuses_and_media">Trò chuyện, Trạng thái và Phương tiện</string>
+    <string name="please_grant_permissions">Vui lòng cấp quyền</string>
+    <string name="permission_denied">Quyền bị người dùng từ chối</string>
+    <string name="granted">Được cấp</string>
+    <string name="notifications">Thông báo</string>
+    <string name="recover_media">Phương tiện được khôi phục</string>
+    <string name="what_not_installed">WhatsApp chưa được cài đặt, Vui lòng cài đặt Whatsapp để nhận Trạng thái.</string>
+    <string name="what_not_installed_notification">WhatsApp chưa được cài đặt, Vui lòng cài đặt Whatsapp để nhận Thông báo</string>
+    <string name="bussiness_not_installed">WhatsApp Business chưa được cài đặt, Vui lòng cài đặt Whatsapp Business để nhận Trạng thái.</string>
+    <string name="bussiness_not_installed_notifications">WhatsApp Business chưa được cài đặt, Vui lòng cài đặt Whatsapp Business để nhận Thông báo</string>
+    <string name="message_copied">Đã sao chép tin nhắn!</string>
+    <string name="details">Thông tin chi tiết</string>
+    <string name="languages">Ngôn ngữ</string>
+</resources>
