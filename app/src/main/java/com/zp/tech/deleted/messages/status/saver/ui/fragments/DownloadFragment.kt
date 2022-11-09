@@ -37,7 +37,7 @@ class DownloadFragment : BaseFragment() {
         val gridLayoutManager = GridLayoutManager(requireActivity(), 3)
         binding!!.recyclerviewDownloaded.layoutManager = gridLayoutManager
         addGesture(binding!!.recyclerviewDownloaded)
-        binding!!.recyclerviewDownloaded.addItemDecoration(GridSpacingItemDecoration(3,resources.getDimensionPixelOffset(R.dimen._10sdp),true))
+        binding!!.recyclerviewDownloaded.addItemDecoration(GridSpacingItemDecoration(3,resources.getDimensionPixelOffset(R.dimen._12sdp),true))
 
         viewModel!!.observeDownloadStatuses().observe(requireActivity(), {
             downloadAdapter = DownloadAdapter(this, it)

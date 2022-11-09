@@ -17,10 +17,15 @@ android {
         applicationId "com.zp.tech.deleted.messages.status.saver"
         minSdk 21
         targetSdk 31
-        versionCode 5
-        versionName "1.4"
+        versionCode 6
+        versionName "1.5"
         multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        bundle {
+            language {
+                enableSplit = false
+            }
+        }
     }
 
     buildTypes {
@@ -28,6 +33,7 @@ android {
             minifyEnabled true
             shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            debuggable false
         }
     }
     compileOptions {

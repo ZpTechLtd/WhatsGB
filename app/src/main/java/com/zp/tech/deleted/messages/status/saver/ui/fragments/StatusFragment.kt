@@ -100,12 +100,10 @@ class StatusFragment : BaseFragment() {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_status, container, false)
         viewModel = ViewModelProvider(requireActivity())[SharedViewModel::class.java]
 
-        binding!!.bottomButtons.txtWhatsApp.setBackgroundColor(
-            ContextCompat.getColor(
-                requireContext(),
-                R.color.purple_500
-            )
-        )
+        binding!!.bottomButtons.txtWhatsApp.background=ContextCompat.getDrawable(
+            requireActivity(),
+            R.drawable.bottom_button_bg)
+
         binding!!.bottomButtons.txtWhatsApp.setTextColor(
             ContextCompat.getColor(
                 requireContext(),
@@ -121,7 +119,7 @@ class StatusFragment : BaseFragment() {
         binding!!.bottomButtons.txtBusiness.setBackgroundColor(
             ContextCompat.getColor(
                 requireContext(),
-                R.color.bottomButtonUnselected
+                R.color.white
             )
         )
 
@@ -132,9 +130,9 @@ class StatusFragment : BaseFragment() {
 
         binding!!.recyclerviewStatuses.setHasFixedSize(true)
         addGesture(binding!!.recyclerviewStatuses)
-        val gridLayoutManager = GridLayoutManager(requireActivity(),2)
+        val gridLayoutManager = GridLayoutManager(requireActivity(),3)
         binding!!.recyclerviewStatuses.layoutManager = gridLayoutManager
-        binding!!.recyclerviewStatuses.addItemDecoration(GridSpacingItemDecoration(2,resources.getDimensionPixelOffset(R.dimen._10sdp),true))
+        binding!!.recyclerviewStatuses.addItemDecoration(GridSpacingItemDecoration(3,resources.getDimensionPixelOffset(R.dimen._12sdp),true))
 
         return binding?.root
     }
@@ -177,12 +175,9 @@ class StatusFragment : BaseFragment() {
             R.id.txtWhatsApp -> {
                 if (isAppInstalled(NotificationMediaService.WHTAPP)) {
                     hidePermissionViews()
-                    binding!!.bottomButtons.txtWhatsApp.setBackgroundColor(
-                        ContextCompat.getColor(
-                            requireActivity(),
-                            R.color.purple_500
-                        )
-                    )
+                    binding!!.bottomButtons.txtWhatsApp.background=ContextCompat.getDrawable(
+                        requireActivity(),
+                        R.drawable.bottom_button_bg)
                     binding!!.bottomButtons.txtWhatsApp.setTextColor(
                         ContextCompat.getColor(
                             requireActivity(),
@@ -198,7 +193,7 @@ class StatusFragment : BaseFragment() {
                     binding!!.bottomButtons.txtBusiness.setBackgroundColor(
                         ContextCompat.getColor(
                             requireActivity(),
-                            R.color.bottomButtonUnselected
+                            R.color.white
                         )
                     )
                     viewModel!!.setStatusType(MainActivity.ChatType.WHATSAPP)
@@ -212,12 +207,7 @@ class StatusFragment : BaseFragment() {
             R.id.txtBusiness -> {
                 if (isAppInstalled(NotificationMediaService.WHTSBUSINESS)) {
                     hidePermissionViews()
-                    binding!!.bottomButtons.txtBusiness.setBackgroundColor(
-                        ContextCompat.getColor(
-                            requireActivity(),
-                            R.color.purple_500
-                        )
-                    )
+                    binding!!.bottomButtons.txtBusiness.background=ContextCompat.getDrawable(requireActivity(),R.drawable.bottom_button_bg)
                     binding!!.bottomButtons.txtBusiness.setTextColor(
                         ContextCompat.getColor(
                             requireActivity(),
@@ -233,7 +223,7 @@ class StatusFragment : BaseFragment() {
                     binding!!.bottomButtons.txtWhatsApp.setBackgroundColor(
                         ContextCompat.getColor(
                             requireActivity(),
-                            R.color.bottomButtonUnselected
+                            R.color.white
                         )
                     )
                     viewModel!!.setStatusType(MainActivity.ChatType.BUSINESS)

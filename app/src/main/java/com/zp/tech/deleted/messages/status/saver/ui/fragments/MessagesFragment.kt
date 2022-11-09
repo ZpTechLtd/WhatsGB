@@ -24,7 +24,7 @@ class MessagesFragment : BaseFragment() {
     private var adapter: UsersAdapter? = null
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
+        savedInstanceState: Bundle?,
     ): View {
         // Inflate the layout for requireContext() fragment
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_messages, container, false)
@@ -40,16 +40,14 @@ class MessagesFragment : BaseFragment() {
         addGesture(binding!!.recyclerView)
         binding!!.recyclerView.layoutManager = LinearLayoutManager(requireActivity())
         binding!!.recyclerView.addItemDecoration(ItemDecorator(resources.getDimensionPixelOffset(R.dimen._10sdp)))
-		binding!!.emptyView.buttonRoot.setBackgroundColor(resources.getColor(R.color.white))
+        binding!!.emptyView.buttonRoot.setBackgroundColor(resources.getColor(R.color.white))
         adapter = UsersAdapter(this, ArrayList())
-        adapter!!.registerAdapterDataObserver(EmptyDataObserver(binding!!.recyclerView, binding!!.emptyView.root))
+        adapter!!.registerAdapterDataObserver(EmptyDataObserver(binding!!.recyclerView,
+            binding!!.emptyView.root))
         binding!!.recyclerView.adapter = adapter
-        binding!!.bottomButtons.txtWhatsApp.setBackgroundColor(
-            ContextCompat.getColor(
-                requireContext(),
-                R.color.purple_500
-            )
-        )
+        binding!!.bottomButtons.txtWhatsApp.background = ContextCompat.getDrawable(
+            requireActivity(),
+            R.drawable.bottom_button_bg)
         binding!!.bottomButtons.txtWhatsApp.setTextColor(
             ContextCompat.getColor(
                 requireContext(),
@@ -65,7 +63,7 @@ class MessagesFragment : BaseFragment() {
         binding!!.bottomButtons.txtBusiness.setBackgroundColor(
             ContextCompat.getColor(
                 requireContext(),
-                R.color.bottomButtonUnselected
+                R.color.white
             )
         )
         viewModel!!.observerUsers().observe(requireActivity(), { users ->
@@ -83,12 +81,9 @@ class MessagesFragment : BaseFragment() {
 
             R.id.txtWhatsApp -> {
                 if (isAppInstalled(WHTAPP)) {
-                    binding!!.bottomButtons.txtWhatsApp.setBackgroundColor(
-                        ContextCompat.getColor(
-                            requireContext(),
-                            R.color.purple_500
-                        )
-                    )
+                    binding!!.bottomButtons.txtWhatsApp.background = ContextCompat.getDrawable(
+                        requireActivity(),
+                        R.drawable.bottom_button_bg)
                     binding!!.bottomButtons.txtWhatsApp.setTextColor(
                         ContextCompat.getColor(
                             requireContext(),
@@ -104,7 +99,7 @@ class MessagesFragment : BaseFragment() {
                     binding!!.bottomButtons.txtBusiness.setBackgroundColor(
                         ContextCompat.getColor(
                             requireContext(),
-                            R.color.bottomButtonUnselected
+                            R.color.white
                         )
                     )
                     viewModel!!.setChatTypeMessage(MainActivity.ChatType.WHATSAPP)
@@ -115,12 +110,9 @@ class MessagesFragment : BaseFragment() {
 
             R.id.txtBusiness -> {
                 if (isAppInstalled(WHTSBUSINESS)) {
-                    binding!!.bottomButtons.txtBusiness.setBackgroundColor(
-                        ContextCompat.getColor(
-                            requireContext(),
-                            R.color.purple_500
-                        )
-                    )
+                    binding!!.bottomButtons.txtBusiness.background = ContextCompat.getDrawable(
+                        requireActivity(),
+                        R.drawable.bottom_button_bg)
                     binding!!.bottomButtons.txtBusiness.setTextColor(
                         ContextCompat.getColor(
                             requireContext(),
@@ -136,7 +128,7 @@ class MessagesFragment : BaseFragment() {
                     binding!!.bottomButtons.txtWhatsApp.setBackgroundColor(
                         ContextCompat.getColor(
                             requireContext(),
-                            R.color.bottomButtonUnselected
+                            R.color.white
                         )
                     )
                     viewModel!!.setChatTypeMessage(MainActivity.ChatType.BUSINESS)
@@ -148,7 +140,7 @@ class MessagesFragment : BaseFragment() {
         }
     }
 
-    fun showInterstitial(){
+    fun showInterstitial() {
         (activity as MainActivity).showAd()
     }
 }

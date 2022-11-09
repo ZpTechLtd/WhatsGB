@@ -1,6 +1,5 @@
 package com.zp.tech.deleted.messages.status.saver.adapters
 
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -40,7 +39,7 @@ class LiveStatusAdapter(
             if (uri.toString().contains(".mp4")) View.VISIBLE else View.GONE
         } else if (uri.path.contains(".mp4")) View.VISIBLE else View.GONE
 
-        holder.binding.image.setOnClickListener {
+        holder.binding.card.setOnClickListener {
             context.onItemClick(uri, true)
             context.showInterstitial()
         }

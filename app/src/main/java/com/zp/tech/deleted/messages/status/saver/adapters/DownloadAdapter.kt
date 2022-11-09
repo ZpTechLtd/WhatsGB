@@ -40,7 +40,7 @@ class DownloadAdapter(
         holder.binding.videoIcon.visibility = if (uri.usesUri) {
             if (uri.toString().contains(".mp4")) View.VISIBLE else View.GONE
         } else  if (uri.path.contains(".mp4")) View.VISIBLE else View.GONE
-        holder.binding.image.setOnClickListener {
+        holder.binding.card.setOnClickListener {
             context.onItemClick(uri,false)
             context.showInterstitial()
         }
