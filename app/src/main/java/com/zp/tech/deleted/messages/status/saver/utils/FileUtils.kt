@@ -49,6 +49,10 @@ suspend fun Context.copyFileOrDirectory(statusModel: StatusModel) {
             showToast("Failed to save...")
             Constants.isStatusSaved = false
         }
+    } catch (exp:IllegalArgumentException){
+        exp.printStackTrace()
+    } catch (ep:FileNotFoundException){
+        ep.printStackTrace()
     }
 }
 
@@ -79,13 +83,17 @@ suspend fun Context.copyFileR(inputFile: String, sourceUri: Uri) {
             Constants.isStatusSaved = true
         }
 
-    } catch (exception: IOException) {
+    } catch (exception: Exception) {
         exception.printStackTrace()
         withContext(Dispatchers.Main) {
             showToast("Failed to save...")
             Constants.isStatusSaved = false
         }
-
+    }
+    catch (exp:IllegalArgumentException){
+        exp.printStackTrace()
+    } catch (ep:FileNotFoundException){
+        ep.printStackTrace()
     }
 }
 

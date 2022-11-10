@@ -26,30 +26,33 @@ class ImageViewActivity : BaseActivity<ActivityImageViewBinding>() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setLayoutResource(R.layout.activity_image_view)
-        window.statusBarColor = ContextCompat.getColor(this, R.color.black)
+        try {
+            window.statusBarColor = ContextCompat.getColor(this, R.color.black)
+            statusMode = intent.getParcelableExtra(modelIntent) as? StatusModel
 
-        statusMode = intent.getParcelableExtra(modelIntent) as? StatusModel
+            binding!!.backToolbar.txtTitle.text = getString(R.string.image)
 
-        binding!!.backToolbar.txtTitle.text = getString(R.string.image)
+            Glide.with(this).load(if (statusMode!!.usesUri) statusMode!!.uri else statusMode!!.path)
+                .into(binding!!.image)
 
-        Glide.with(this).load(if (statusMode!!.usesUri) statusMode!!.uri else statusMode!!.path)
-            .into(binding!!.image)
-
-        binding!!.btndownload.visibility =
-            if (intent.getBooleanExtra(
-                    showDownloadButton,
-                    false
-                )
-            ) View.VISIBLE else View.GONE
-        binding!!.btnshare.visibility =
-            if (intent.getBooleanExtra(showDownloadButton, false)) View.GONE else View.VISIBLE
+            binding!!.btndownload.visibility =
+                if (intent.getBooleanExtra(
+                        showDownloadButton,
+                        false
+                    )
+                ) View.VISIBLE else View.GONE
+            binding!!.btnshare.visibility =
+                if (intent.getBooleanExtra(showDownloadButton, false)) View.GONE else View.VISIBLE
 
 
-        binding!!.backToolbar.btnBack.setOnClickListener(this::onClick)
-        binding!!.btndownload.setOnClickListener(this::onClick)
-        binding!!.btnshare.setOnClickListener(this::onClick)
+            binding!!.backToolbar.btnBack.setOnClickListener(this::onClick)
+            binding!!.btndownload.setOnClickListener(this::onClick)
+            binding!!.btnshare.setOnClickListener(this::onClick)
 
-        adsManager.loadNativeBannerMax(binding!!.relAds)
+            adsManager.loadNativeBannerMax(binding!!.relAds)
+        } catch (exp: Exception) {
+            exp.printStackTrace()
+        }
 
     }
 
@@ -72,9 +75,9 @@ class ImageViewActivity : BaseActivity<ActivityImageViewBinding>() {
 
             R.id.btnshare -> {
                 if (statusMode!!.path.contains(".mp4", ignoreCase = true)) {
-                    ShareUtils.shareMedia(this,statusMode!!.path,"video/*")
+                    ShareUtils.shareMedia(this, statusMode!!.path, "video/*")
                 } else {
-                    ShareUtils.shareMedia(this,statusMode!!.path,"image/*")
+                    ShareUtils.shareMedia(this, statusMode!!.path, "image/*")
                 }
             }
         }

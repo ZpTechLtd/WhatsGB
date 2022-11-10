@@ -30,6 +30,9 @@ import com.zp.tech.deleted.messages.status.saver.ui.activities.MainActivity;
 
 import org.apache.commons.io.FileUtils;
 
+import kotlinx.coroutines.CoroutineScope;
+import kotlinx.coroutines.Dispatchers;
+
 
 public class MediaFileObserver extends FileObserver {
     private Context mContext;
@@ -181,11 +184,11 @@ public class MediaFileObserver extends FileObserver {
     private void deleteMediaFile(String str) {
         try {
             File file = new File(str);
-            FileUtils.delete(file);
-        } catch (FileNotFoundException fileNotFoundException) {
-            fileNotFoundException.printStackTrace();
-        } catch (Exception exception) {
-            exception.printStackTrace();
+            if (file.exists()) {
+                FileUtils.delete(file);
+            }
+        } catch (Exception exp) {
+            exp.printStackTrace();
         }
 
     }

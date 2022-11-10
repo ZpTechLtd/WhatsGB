@@ -29,8 +29,6 @@ public class NotificationMediaService extends NotificationListenerService {
     private MyRepository chatRepository;
 
 
-
-
     @Override
     public void onCreate() {
         super.onCreate();
@@ -45,78 +43,86 @@ public class NotificationMediaService extends NotificationListenerService {
     @Override
     public void onNotificationPosted(StatusBarNotification sbn) {
         super.onNotificationPosted(sbn);
+        try {
+            try {
+                if (sbn.getPackageName().equals(WHTAPP) || sbn.getPackageName().equals(WHTSBUSINESS)) {
+                    Bundle bundle = sbn.getNotification().extras;
+                    if (!bundle.getBoolean("android.isGroupConversation", false)) {
+                        String title = bundle.getString("android.title");
+                        String text = bundle.getString("android.text");
+                        long row_id = bundle.getLong("last_row_id");
+                        String time = getTime(sbn.getPostTime());
+                        String date = getDate(sbn.getPostTime());
+                        if (row_id != 0) {
 
-        if (sbn.getPackageName().equals(WHTAPP) || sbn.getPackageName().equals(WHTSBUSINESS)) {
-            Bundle bundle = sbn.getNotification().extras;
-            if (!bundle.getBoolean("android.isGroupConversation", false)) {
-                String title = bundle.getString("android.title");
-                String text = bundle.getString("android.text");
-                long row_id = bundle.getLong("last_row_id");
-                String time = getTime(sbn.getPostTime());
-                String date = getDate(sbn.getPostTime());
-                if (row_id != 0) {
+                            if (text != null) {
+                                Users users;
+                                Messages messages;
+                                if (text.equals("This message was deleted")) {
+                                    // users = new Users(title, text, time, row_id, sbn.getPackageName());
+                                    // messages = new Messages(title, text, time, row_id, sbn.getPackageName(), true);
+                                    chatRepository.updateMessages(true, row_id, title);
+                                    String message = chatRepository.getDeletedMessage(title, row_id);
+                                    if (message != null && !message.isEmpty()) {
+                                        showNotification(title, title + " : " + message);
+                                    }
 
-                    if (text != null) {
-                        Users users;
-                        Messages messages;
-                        if (text.equals("This message was deleted")) {
-                            // users = new Users(title, text, time, row_id, sbn.getPackageName());
-                            // messages = new Messages(title, text, time, row_id, sbn.getPackageName(), true);
-                            chatRepository.updateMessages(true, row_id, title);
-                            String message = chatRepository.getDeletedMessage(title, row_id);
-                            if (message != null && !message.isEmpty()) {
-                                showNotification(title, title + " : " + message);
+
+                                } else {
+                                    users = new Users(title, text, time, date, row_id, sbn.getPackageName(), false);
+                                    messages = new Messages(title, text, time, date, row_id, sbn.getPackageName(), false);
+                                    chatRepository.insertUser(users);
+                                    chatRepository.insertMessages(messages);
+
+                                }
+
                             }
-
-
-                        } else {
-                            users = new Users(title, text, time, date, row_id, sbn.getPackageName(), false);
-                            messages = new Messages(title, text, time, date, row_id, sbn.getPackageName(), false);
-                            chatRepository.insertUser(users);
-                            chatRepository.insertMessages(messages);
-
                         }
-
-                    }
-                }
-            } else {
-                String conversationTitle = bundle.getString("android.conversationTitle");
-                String title = bundle.getString("android.title");
-                String text = bundle.getString("android.text");
-                String time = getTime(sbn.getPostTime());
-                String date = getDate(sbn.getPostTime());
-                String message = title.substring(title.indexOf(":") + 1, title.length()) + ":" + text;
-                String groupTitle = "";
-                long last_row_id = bundle.getLong("last_row_id");
-                if (last_row_id != 0) {
-                    if (conversationTitle.contains("(")) {
-                        groupTitle = conversationTitle.substring(0, conversationTitle.indexOf("(") - 1);
                     } else {
-                        groupTitle = conversationTitle;
-                    }
-                    Users users;
-                    Messages messages;
-
-
-                    if (text != null) {
-                        if (text.equals("This message was deleted")) {
-                            //users = new Users(groupTitle, message, time, last_row_id, sbn.getPackageName());
-                            // messages = new Messages(groupTitle, message, time, last_row_id, sbn.getPackageName(), true);
-                            chatRepository.updateMessages(true, last_row_id, groupTitle);
-                            String messageDeleted = chatRepository.getDeletedMessage(title, last_row_id);
-                            if (messageDeleted != null && !messageDeleted.isEmpty()) {
-                                showNotification(title, title + " : " + message);
+                        String conversationTitle = bundle.getString("android.conversationTitle");
+                        String title = bundle.getString("android.title");
+                        String text = bundle.getString("android.text");
+                        String time = getTime(sbn.getPostTime());
+                        String date = getDate(sbn.getPostTime());
+                        String message = title.substring(title.indexOf(":") + 1, title.length()) + ":" + text;
+                        String groupTitle = "";
+                        long last_row_id = bundle.getLong("last_row_id");
+                        if (last_row_id != 0) {
+                            if (conversationTitle.contains("(")) {
+                                groupTitle = conversationTitle.substring(0, conversationTitle.indexOf("(") - 1);
+                            } else {
+                                groupTitle = conversationTitle;
                             }
+                            Users users;
+                            Messages messages;
 
-                        } else {
-                            users = new Users(groupTitle, message, time, date, last_row_id, sbn.getPackageName(), true);
-                            messages = new Messages(groupTitle, message, time, date, last_row_id, sbn.getPackageName(), false);
-                            chatRepository.insertUser(users);
-                            chatRepository.insertMessages(messages);
+
+                            if (text != null) {
+                                if (text.equals("This message was deleted")) {
+                                    //users = new Users(groupTitle, message, time, last_row_id, sbn.getPackageName());
+                                    // messages = new Messages(groupTitle, message, time, last_row_id, sbn.getPackageName(), true);
+                                    chatRepository.updateMessages(true, last_row_id, groupTitle);
+                                    String messageDeleted = chatRepository.getDeletedMessage(title, last_row_id);
+                                    if (messageDeleted != null && !messageDeleted.isEmpty()) {
+                                        showNotification(title, title + " : " + message);
+                                    }
+
+                                } else {
+                                    users = new Users(groupTitle, message, time, date, last_row_id, sbn.getPackageName(), true);
+                                    messages = new Messages(groupTitle, message, time, date, last_row_id, sbn.getPackageName(), false);
+                                    chatRepository.insertUser(users);
+                                    chatRepository.insertMessages(messages);
+                                }
+                            }
                         }
                     }
                 }
+
+            } catch (StringIndexOutOfBoundsException exp) {
+                exp.printStackTrace();
             }
+        } catch (Exception exp) {
+            exp.printStackTrace();
         }
     }
 

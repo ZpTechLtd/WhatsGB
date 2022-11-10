@@ -21,6 +21,7 @@ class MessagesActivity : BaseActivity<ActivityMessagesBinding>() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setLayoutResource(R.layout.activity_messages)
+        try {
         viewModel = ViewModelProvider(this)[MessageViewModel::class.java]
 
         title = intent.getStringExtra("title")
@@ -49,5 +50,7 @@ class MessagesActivity : BaseActivity<ActivityMessagesBinding>() {
         }
 
         adsManager.loadNativeBannerMax(binding!!.relAds)
+
+        }catch (exp:Exception){exp.printStackTrace()}
     }
 }

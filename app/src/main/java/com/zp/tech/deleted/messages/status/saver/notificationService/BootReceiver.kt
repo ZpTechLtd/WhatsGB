@@ -12,13 +12,13 @@ class BootReceiver : BroadcastReceiver() {
     @SuppressLint("UnsafeProtectedBroadcastReceiver")
     override fun onReceive(context: Context?, intent: Intent?) {
         if (context != null) {
-            if (!isServiceRunning(context, NotificationMediaService::class.java)) {
-                context.startService(Intent(context, NotificationMediaService::class.java))
+            if (!isServiceRunning(context.applicationContext, NotificationMediaService::class.java)) {
+                context.applicationContext.startService(Intent(context.applicationContext, NotificationMediaService::class.java))
             }
 
             if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.Q) {
-                if (context.isPermissionGranted()) {
-                    context.startService(Intent(context, MediaService::class.java))
+                if (context.applicationContext.isPermissionGranted()) {
+                    context.applicationContext.startService(Intent(context.applicationContext, MediaService::class.java))
                 }
             }
         }
