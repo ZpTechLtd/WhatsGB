@@ -44,4 +44,13 @@
     <string name="message_copied">Message Copied!</string>
     <string name="details">Details</string>
     <string name="languages">Language</string>
+
+    <!--- TESTING ADS IDS-->
+<!--            <string name="admob_interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>-->
+<!--            <string name="admob_native" translatable="false">ca-app-pub-3940256099942544/2247696110</string>-->
+<!--            <string name="admob_open" translatable="false">ca-app-pub-3940256099942544/3419835294</string>-->
+
+    <string name="admob_interstitial" translatable="false">ca-app-pub-3784717186068608/3666628367</string>
+    <string name="admob_native" translatable="false">ca-app-pub-3784717186068608/4596566652</string>
+    <string name="admob_open" translatable="false">ca-app-pub-3784717186068608/6078041423</string>
 </resources>

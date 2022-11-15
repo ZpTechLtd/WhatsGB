@@ -6,19 +6,29 @@ import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.os.Build
+import androidx.core.content.ContextCompat.startForegroundService
 import com.zp.tech.deleted.messages.status.saver.utils.isPermissionGranted
 
 class BootReceiver : BroadcastReceiver() {
     @SuppressLint("UnsafeProtectedBroadcastReceiver")
     override fun onReceive(context: Context?, intent: Intent?) {
         if (context != null) {
-            if (!isServiceRunning(context.applicationContext, NotificationMediaService::class.java)) {
-                context.applicationContext.startService(Intent(context.applicationContext, NotificationMediaService::class.java))
+            if (!isServiceRunning(context.applicationContext,
+                    NotificationMediaService::class.java)
+            ) {
+                context.applicationContext.startService(Intent(context.applicationContext,
+                    NotificationMediaService::class.java))
             }
 
             if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.Q) {
                 if (context.applicationContext.isPermissionGranted()) {
-                    context.applicationContext.startService(Intent(context.applicationContext, MediaService::class.java))
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                        context.applicationContext.startForegroundService(Intent(context.applicationContext,
+                            MediaService::class.java))
+                    } else {
+                        context.applicationContext.startService(Intent(context.applicationContext,
+                            MediaService::class.java))
+                    }
                 }
             }
         }

@@ -5,11 +5,13 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.text.TextUtils
+import android.util.Log
 import com.google.android.gms.tasks.OnSuccessListener
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.remoteconfig.ktx.remoteConfig
 import com.google.firebase.remoteconfig.ktx.remoteConfigSettings
 import com.zp.tech.deleted.messages.status.saver.R
+import com.zp.tech.deleted.messages.status.saver.ads.AdsManager
 import com.zp.tech.deleted.messages.status.saver.ads.PreferenceManager
 import com.zp.tech.deleted.messages.status.saver.databinding.ActivitySplashBinding
 import com.zp.tech.deleted.messages.status.saver.ui.activities.BaseActivity
@@ -23,7 +25,7 @@ class SplashActivity : BaseActivity<ActivitySplashBinding>() {
         super.onCreate(savedInstanceState)
         setLayoutResource(R.layout.activity_splash)
 
-
+        val adsManager=AdsManager(this@SplashActivity)
         val preferenceManager = PreferenceManager(this@SplashActivity)
         com.zp.tech.deleted.messages.status.saver.utils.PreferenceManager(this@SplashActivity)
             .getLanguageCode()
@@ -32,6 +34,8 @@ class SplashActivity : BaseActivity<ActivitySplashBinding>() {
         val configSettings = remoteConfigSettings {
             minimumFetchIntervalInSeconds = 0
         }
+        adsManager.loadNativeLarge(binding!!.addLayout)
+        adsManager.loadAdmobInterstitial()
         remoteConfig.setConfigSettingsAsync(configSettings)
         remoteConfig.fetch(0)
             .addOnSuccessListener(OnSuccessListener<Void?> {
@@ -56,6 +60,24 @@ class SplashActivity : BaseActivity<ActivitySplashBinding>() {
                     }
 //                    Log.d("TAG", "onCreate:remote== ${remoteConfig.getString("max_banner_Noti_and_media")} ")
 
+                    if (!TextUtils.isEmpty(remoteConfig.getString("admob_inters_noti_and_media"))) {
+                        preferenceManager.admobInterstitial =
+                            remoteConfig.getString("admob_inters_noti_and_media")
+                    }
+
+//                    Log.d("TAG", "onCreate: admob_interstitial="+remoteConfig.getString("admob_inters_noti_and_media"))
+                    if (!TextUtils.isEmpty(remoteConfig.getString("admob_open_noti_and_med"))) {
+                        preferenceManager.admobOpen =
+                            remoteConfig.getString("admob_open_noti_and_med")
+                    }
+//                    Log.d("TAG", "onCreate: Admob open="+remoteConfig.getString("admob_open_noti_and_med"))
+                    if (!TextUtils.isEmpty(remoteConfig.getString("admob_natlar_noti_med"))) {
+                        preferenceManager.admoB_native =
+                            remoteConfig.getString("admob_natlar_noti_med")
+                    }
+
+//                    Log.d("TAG", "onCreate: Ringtone_native_large_wf="+remoteConfig.getString("admob_natlar_noti_med"))
+
                 }, 3000)
             })
 
@@ -65,6 +87,7 @@ class SplashActivity : BaseActivity<ActivitySplashBinding>() {
             } else {
                 startActivity(Intent(this, PermissionsActivity::class.java))
             }
+            adsManager.showAdmobInterstitial()
             finish()
         }, 8000)
     }

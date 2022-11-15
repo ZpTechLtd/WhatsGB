@@ -57,7 +57,12 @@ abstract class BaseActivity<Binding : ViewDataBinding> : AppCompatActivity() {
     private fun startMediaService() {
         if (isPermissionGranted()) {
             if (!isServiceRunning(MediaService::class.java)) {
-                startService(Intent(this, MediaService::class.java))
+               if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                    startForegroundService(Intent(this, MediaService::class.java))
+                }
+                else {
+                    startService(Intent(this, MediaService::class.java))
+                }
             }
         }
     }

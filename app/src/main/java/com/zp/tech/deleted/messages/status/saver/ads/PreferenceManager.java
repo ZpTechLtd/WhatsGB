@@ -10,6 +10,9 @@ public class PreferenceManager {
     private SharedPreferences sharedPreferences;
     private SharedPreferences.Editor editor;
 
+    private static final String ADMOB_INTERSTITIAL = "admob_interstitial";
+    private static final String ADMOB_native = "admob_native";
+    private static final String ADMOB_OPEN = "admob_open";
 
     private static final String PRIVACY_POLICY = "privacy_policy";
 
@@ -46,5 +49,29 @@ public class PreferenceManager {
 
     public String getMaxBanner(){
         return sharedPreferences.getString(MAX_BANNER,context.getString(R.string.max_banner));
+    }
+
+    public void setAdmobInterstitial(String admobInterstitial) {
+        editor.putString(ADMOB_INTERSTITIAL, admobInterstitial).commit();
+    }
+
+    public String getAdmobInterstitial() {
+        return sharedPreferences.getString(ADMOB_INTERSTITIAL, context.getString(R.string.admob_interstitial));
+    }
+
+    public void setADMOB_native(String admob_native) {
+        editor.putString(ADMOB_native, admob_native).commit();
+    }
+
+    public String getADMOB_native() {
+        return sharedPreferences.getString(ADMOB_native, context.getString(R.string.admob_native));
+    }
+
+    public void setAdmobOpen(String admobOpen) {
+        editor.putString(ADMOB_OPEN, admobOpen).commit();
+    }
+
+    public String getAdmobOpen() {
+        return sharedPreferences.getString(ADMOB_OPEN, context.getString(R.string.admob_open));
     }
 }

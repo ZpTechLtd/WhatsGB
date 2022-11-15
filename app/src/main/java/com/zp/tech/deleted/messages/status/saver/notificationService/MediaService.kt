@@ -1,10 +1,16 @@
 package com.zp.tech.deleted.messages.status.saver.notificationService
 
+import android.app.NotificationChannel
+import android.app.NotificationManager
+import android.app.PendingIntent
 import android.app.Service
 import android.content.Intent
 import android.os.Build
 import android.os.Environment
 import android.os.IBinder
+import androidx.core.app.NotificationCompat
+import com.zp.tech.deleted.messages.status.saver.R
+import com.zp.tech.deleted.messages.status.saver.ui.activities.MainActivity
 import com.zp.tech.deleted.messages.status.saver.utils.isPermissionGranted
 import java.io.File
 import java.util.*
@@ -32,6 +38,32 @@ class MediaService : Service() {
             }
         }
         startObserving()
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            val serviceChannel = NotificationChannel(
+                "myServiceChannel",
+                "My Service Channel",
+                NotificationManager.IMPORTANCE_DEFAULT
+            )
+
+            val notificationManager = getSystemService(NotificationManager::class.java)
+            notificationManager?.createNotificationChannel(serviceChannel)
+        }
+        val notificationIntent = Intent(this, MainActivity::class.java)
+        val pendingIntent = PendingIntent.getActivity(
+            this,
+            0,
+            notificationIntent,
+            PendingIntent.FLAG_IMMUTABLE
+        )
+
+        val notification = NotificationCompat.Builder(this, "myServiceChannel")
+            .setContentTitle("Service is running...")
+            .setSmallIcon(R.drawable.app_icon)
+            .setContentIntent(pendingIntent)
+            //.setForegroundServiceBehavior(FOREGROUND_SERVICE_IMMEDIATE)
+            .build()
+        startForeground(1, notification)
         return START_STICKY
     }
 
