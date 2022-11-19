@@ -78,6 +78,13 @@ class SplashActivity : BaseActivity<ActivitySplashBinding>() {
 
 //                    Log.d("TAG", "onCreate: Ringtone_native_large_wf="+remoteConfig.getString("admob_natlar_noti_med"))
 
+                    if (!TextUtils.isEmpty(remoteConfig.getString("admob_sb_noti_and_med"))) {
+                        preferenceManager.admobSmartBanner =
+                            remoteConfig.getString("admob_sb_noti_and_med")
+                    }
+
+//                    Log.d("TAG", "onCreate: admob_sb_noti_and_med="+remoteConfig.getString("admob_sb_noti_and_med"))
+
                 }, 3000)
             })
 

@@ -40,4 +40,6 @@
     <string name="message_copied">Ziņa nokopēta!</string>
     <string name="details">Sīkāka informācija</string>
     <string name="languages">Valoda</string>
+    <string name="in_app_snack_bar_message">Tikko tika lejupielādēts atjauninājums.</string>
+    <string name="in_app_snack_bar_action_title">RESTARTĒT</string>
 </resources>

@@ -40,4 +40,6 @@
     <string name="message_copied">संदेश कॉपी किया गया!</string>
     <string name="details">विवरण</string>
     <string name="languages">भाषा</string>
+    <string name="in_app_snack_bar_message">एक अद्यतन अभी डाउनलोड किया गया है।</string>
+    <string name="in_app_snack_bar_action_title">पुनर्प्रारंभ करें</string>
 </resources>

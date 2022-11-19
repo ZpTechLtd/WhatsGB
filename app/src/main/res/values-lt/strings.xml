@@ -40,4 +40,6 @@
     <string name="message_copied">Pranešimas nukopijuotas!</string>
     <string name="details">Detalės</string>
     <string name="languages">Kalba</string>
+    <string name="in_app_snack_bar_message">Ką tik atsisiųstas naujinimas.</string>
+    <string name="in_app_snack_bar_action_title">PERKRAUTI</string>
 </resources>

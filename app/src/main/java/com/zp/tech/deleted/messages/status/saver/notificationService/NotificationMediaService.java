@@ -37,7 +37,11 @@ public class NotificationMediaService extends NotificationListenerService {
 
 
     public void onListenerConnected() {
-        getActiveNotifications();
+        try {
+            getActiveNotifications();
+        } catch (SecurityException exp) {
+            exp.printStackTrace();
+        }
     }
 
     @Override

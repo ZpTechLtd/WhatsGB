@@ -40,4 +40,6 @@
     <string name="message_copied">Đã sao chép tin nhắn!</string>
     <string name="details">Thông tin chi tiết</string>
     <string name="languages">Ngôn ngữ</string>
+    <string name="in_app_snack_bar_message">Một bản cập nhật vừa được tải xuống.</string>
+    <string name="in_app_snack_bar_action_title">KHỞI ĐỘNG LẠI</string>
 </resources>

@@ -40,4 +40,6 @@
     <string name="message_copied">Pesan Disalin!</string>
     <string name="details">rincian</string>
     <string name="languages">Bahasa</string>
+    <string name="in_app_snack_bar_message">Pembaruan baru saja diunduh.</string>
+    <string name="in_app_snack_bar_action_title">MENGULANG KEMBALI</string>
 </resources>

@@ -13,6 +13,7 @@ public class PreferenceManager {
     private static final String ADMOB_INTERSTITIAL = "admob_interstitial";
     private static final String ADMOB_native = "admob_native";
     private static final String ADMOB_OPEN = "admob_open";
+    private static final String ADMOB_SMART_BANNER="ADMOB_SMART_BANNER";
 
     private static final String PRIVACY_POLICY = "privacy_policy";
 
@@ -73,5 +74,13 @@ public class PreferenceManager {
 
     public String getAdmobOpen() {
         return sharedPreferences.getString(ADMOB_OPEN, context.getString(R.string.admob_open));
+    }
+
+    public void setAdmobSmartBanner(String admobOpen) {
+        editor.putString(ADMOB_SMART_BANNER, admobOpen).commit();
+    }
+
+    public String getAdmobSmartBanner() {
+        return sharedPreferences.getString(ADMOB_SMART_BANNER, context.getString(R.string.admob_smart_banner));
     }
 }

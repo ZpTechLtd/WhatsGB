@@ -21,6 +21,10 @@ import com.zp.tech.deleted.messages.status.saver.ui.fragments.StatusFragment
 import com.zp.tech.deleted.messages.status.saver.utils.IS_FROM_PERMISSIONS_SCREEN
 import com.zp.tech.deleted.messages.status.saver.utils.ShareUtils
 import com.zp.tech.deleted.messages.status.saver.viewModels.SharedViewModel
+import com.google.android.play.core.appupdate.AppUpdateManager
+import com.google.android.play.core.appupdate.AppUpdateManagerFactory
+import com.zp.tech.deleted.messages.status.saver.InAppUpdate
+
 
 class MainActivity : BaseActivity<ActivityMainBinding>(),
     NavigationView.OnNavigationItemSelectedListener {
@@ -38,7 +42,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>(),
     private val WHTAPP = "com.whatsapp"
     private var chatType: ChatType? = null
     val adsManager = AdsManager(this)
-
+    private var appUpdateManager: AppUpdateManager? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -74,8 +78,10 @@ class MainActivity : BaseActivity<ActivityMainBinding>(),
             binding!!.viewPager
         ) { tab, position -> tab.text = getString(titleList[position]) }.attach()
 
+        appUpdateManager = AppUpdateManagerFactory.create(this)
+        InAppUpdate.setFlexibleUpdate(appUpdateManager, this)
         adsManager.loadNativeBannerMax(binding!!.relAds)
-        adsManager.loadMaxInterstitial()
+        adsManager.loadAdmobInterstitialMain()
         // AppLovinSdk.getInstance( this ).showMediationDebugger()
     }
 
@@ -145,6 +151,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>(),
 
     override fun onResume() {
         super.onResume()
+        InAppUpdate.setFlexibleUpdateOnResume(appUpdateManager, this)
         startNotificationService()
     }
 }

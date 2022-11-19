@@ -40,4 +40,6 @@
     <string name="message_copied">メッセージをコピーしました!</string>
     <string name="details">詳細</string>
     <string name="languages">言語</string>
+    <string name="in_app_snack_bar_message">アップデートがダウンロードされました。</string>
+    <string name="in_app_snack_bar_action_title">再起動</string>
 </resources>

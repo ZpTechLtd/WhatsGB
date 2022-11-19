@@ -40,4 +40,6 @@
     <string name="message_copied">Sõnum kopeeritud!</string>
     <string name="details">üksikasjad</string>
     <string name="languages">Üksikasjad</string>
+    <string name="in_app_snack_bar_message">Värskendus laaditi just alla.</string>
+    <string name="in_app_snack_bar_action_title">TAASKÄIVITA</string>
 </resources>

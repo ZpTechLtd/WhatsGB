@@ -30,6 +30,8 @@ import com.google.android.gms.ads.AdError;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdLoader;
 import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdSize;
+import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.FullScreenContentCallback;
 import com.google.android.gms.ads.LoadAdError;
 import com.google.android.gms.ads.VideoController;
@@ -41,6 +43,7 @@ import com.google.android.gms.ads.nativead.NativeAd;
 import com.google.android.gms.ads.nativead.NativeAdOptions;
 import com.google.android.gms.ads.nativead.NativeAdView;
 import com.zp.tech.deleted.messages.status.saver.R;
+
 import org.jetbrains.annotations.NotNull;
 
 public class AdsManager {
@@ -78,7 +81,7 @@ public class AdsManager {
 
             @Override
             public void onNativeAdLoadFailed(final String adUnitId, final MaxError error) {
-                loadBannerMAxMediation(relativeLayout);
+                loadAdmobBanner(relativeLayout);
                 // We recommend retrying with exponentially higher delays up to a maximum delay
             }
 
@@ -108,12 +111,12 @@ public class AdsManager {
 
 
     public void showInterstitial() {
-        if (maxInterstitialAd.isReady()) {
-            maxInterstitialAd.showAd();
-        } else if (mInterstitialAdmob != null) {
+        if (mInterstitialAdmob != null) {
             mInterstitialAdmob.show(context);
-        }  else {
-            loadMaxInterstitial();
+        } else if (maxInterstitialAd!=null && maxInterstitialAd.isReady()) {
+            maxInterstitialAd.showAd();
+        } else {
+            loadAdmobInterstitialMain();
         }
     }
 
@@ -145,7 +148,6 @@ public class AdsManager {
             @Override
             public void onAdLoadFailed(String adUnitId, MaxError error) {
                 Log.d("TAG", "onAdLoadFailed: ");
-                loadAdmobInterstitial();
             }
 
             @Override
@@ -154,6 +156,54 @@ public class AdsManager {
             }
         });
         maxInterstitialAd.loadAd();
+    }
+
+    private void loadAdmobBanner(@NotNull RelativeLayout relativeLayout) {
+        AdView adView = new AdView(context);
+        adView.setAdSize(AdSize.BANNER);
+        adView.setAdUnitId(new PreferenceManager(context).getAdmobSmartBanner());
+        adView.setAdListener(new AdListener() {
+            @Override
+            public void onAdClicked() {
+                // Code to be executed when the user clicks on an ad.
+            }
+
+            @Override
+            public void onAdClosed() {
+                // Code to be executed when the user is about to return
+                // to the app after tapping on an ad.
+            }
+
+            @Override
+            public void onAdFailedToLoad(LoadAdError adError) {
+                // Code to be executed when an ad request fails.
+                loadBannerMAxMediation(relativeLayout);
+            }
+
+            @Override
+            public void onAdImpression() {
+                // Code to be executed when an impression is recorded
+                // for an ad.
+            }
+
+            @Override
+            public void onAdLoaded() {
+                relativeLayout.setVisibility(View.VISIBLE);
+                relativeLayout.addView(adView);
+                // Code to be executed when an ad finishes loading.
+            }
+
+            @Override
+            public void onAdOpened() {
+                // Code to be executed when an ad opens an overlay that
+                // covers the screen.
+            }
+        });
+
+        AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest);
+
+
     }
 
     public void loadBannerMAxMediation(@NotNull RelativeLayout relTopBanner) {
@@ -213,6 +263,7 @@ public class AdsManager {
         // Load the ad
         adView.loadAd();
     }
+
     public void loadNativeLarge(FrameLayout frameLayout) {
         AdLoader.Builder builder = new AdLoader.Builder(context, new PreferenceManager(context).getADMOB_native());
 
@@ -388,6 +439,50 @@ public class AdsManager {
                     @Override
                     public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
                         mInterstitialAdmob = null;
+                    }
+                });
+    }
+
+    public void loadAdmobInterstitialMain() {
+        AdRequest adRequest = new AdRequest.Builder().build();
+
+        InterstitialAd.load(context, new PreferenceManager(context).getAdmobInterstitial(), adRequest,
+                new InterstitialAdLoadCallback() {
+                    @Override
+                    public void onAdLoaded(@NonNull InterstitialAd interstitialAd) {
+                        mInterstitialAdmob = interstitialAd;
+                        mInterstitialAdmob.setFullScreenContentCallback(
+                                new FullScreenContentCallback() {
+                                    @Override
+                                    public void onAdDismissedFullScreenContent() {
+                                        // Called when fullscreen content is dismissed.
+                                        // Make sure to set your reference to null so you don't
+                                        // show it a second time.
+                                        mInterstitialAdmob = null;
+                                        Log.d("TAG", "The ad was dismissed.");
+                                    }
+
+                                    @Override
+                                    public void onAdFailedToShowFullScreenContent(AdError adError) {
+                                        // Called when fullscreen content failed to show.
+                                        // Make sure to set your reference to null so you don't
+                                        // show it a second time.
+                                        mInterstitialAdmob = null;
+                                        Log.d("TAG", "The ad failed to show.");
+                                    }
+
+                                    @Override
+                                    public void onAdShowedFullScreenContent() {
+                                        // Called when fullscreen content is shown.
+                                        Log.d("TAG", "The ad was shown.");
+                                    }
+                                });
+                    }
+
+                    @Override
+                    public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
+                        mInterstitialAdmob = null;
+                        loadMaxInterstitial();
                     }
                 });
     }

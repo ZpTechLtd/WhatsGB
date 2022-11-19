@@ -40,4 +40,6 @@
     <string name="message_copied">Mensagem copiada!</string>
     <string name="details">Detalhes</string>
     <string name="languages">Linguagem</string>
+    <string name="in_app_snack_bar_message">Uma atualização acabou de ser baixada.</string>
+    <string name="in_app_snack_bar_action_title">REINICIAR</string>
 </resources>

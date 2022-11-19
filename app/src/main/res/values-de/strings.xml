@@ -40,4 +40,6 @@
     <string name="message_copied">Nachricht kopiert!</string>
     <string name="details">Einzelheiten</string>
     <string name="languages">Sprache</string>
+    <string name="in_app_snack_bar_message">En opdatering er lige blevet downloadet.</string>
+    <string name="in_app_snack_bar_action_title">NEU STARTEN</string>
 </resources>

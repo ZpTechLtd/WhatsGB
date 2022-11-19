@@ -40,4 +40,6 @@
     <string name="message_copied">پیغام کاپی ہو گیا!</string>
     <string name="details">تفصیلات</string>
     <string name="languages">زبان</string>
+    <string name="in_app_snack_bar_message">ایک اپ ڈیٹ ابھی ڈاؤن لوڈ کیا گیا ہے۔</string>
+    <string name="in_app_snack_bar_action_title">دوبارہ شروع کریں</string>
 </resources>

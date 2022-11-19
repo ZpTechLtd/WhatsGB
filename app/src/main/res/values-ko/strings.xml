@@ -40,4 +40,6 @@
     <string name="message_copied">메시지가 복사되었습니다!</string>
     <string name="details">세부</string>
     <string name="languages">언어</string>
+    <string name="in_app_snack_bar_message">업데이트가 방금 다운로드되었습니다.</string>
+    <string name="in_app_snack_bar_action_title">재시작</string>
 </resources>

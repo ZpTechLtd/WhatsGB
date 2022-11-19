@@ -40,4 +40,6 @@
     <string name="message_copied">Mesej Disalin!</string>
     <string name="details">Butiran</string>
     <string name="languages">Bahasa</string>
+    <string name="in_app_snack_bar_message">Kemas kini baru sahaja dimuat turun.</string>
+    <string name="in_app_snack_bar_action_title">MULA SEMULA</string>
 </resources>

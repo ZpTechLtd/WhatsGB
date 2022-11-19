@@ -40,4 +40,6 @@
     <string name="message_copied">Zpráva zkopírována!</string>
     <string name="details">Podrobnosti</string>
     <string name="languages">Jazyk</string>
+    <string name="in_app_snack_bar_message">Právě byla stažena aktualizace.</string>
+    <string name="in_app_snack_bar_action_title">RESTART</string>
 </resources>
