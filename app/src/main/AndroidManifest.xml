@@ -3,6 +3,7 @@
     package="com.zp.tech.deleted.messages.status.saver">
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -48,6 +49,23 @@
             android:name=".ui.activities.PermissionsActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.scanner.QrCreatedDetailsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.scanner.QRCreationActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.scanner.ScannerDetailsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ScannerActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".ui.SplashActivity"
             android:exported="true"

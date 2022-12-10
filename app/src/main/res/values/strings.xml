@@ -46,7 +46,105 @@
     <string name="languages">Language</string>
     <string name="in_app_snack_bar_message">An update has just been downloaded.</string>
     <string name="in_app_snack_bar_action_title">RESTART</string>
-
+    <string name="name_qr" translatable="false">Name: </string>
+    <string name="nick_name_qr" translatable="false">Nick Name: </string>
+    <string name="pronounciation_qr" translatable="false">Pronunciation: </string>
+    <string name="phone_numbers_qr" translatable="false">Numbers: </string>
+    <string name="phoneTypes_qr" translatable="false">Phone Types: </string>
+    <string name="emails_qr" translatable="false">Emails: </string>
+    <string name="emailTypes_qr" translatable="false">Email Types:</string>
+    <string name="instantMessenger_qr" translatable="false">Messenger: </string>
+    <string name="note_qr" translatable="false">Note: </string>
+    <string name="addresses_qr" translatable="false">Addresses: </string>
+    <string name="addressTypes_qr" translatable="false">Address Types: </string>
+    <string name="org_qr" translatable="false">Org: </string>
+    <string name="birthday_qr" translatable="false">Birthday: </string>
+    <string name="title_qr" translatable="false">Title: </string>
+    <string name="urls_qr" translatable="false">URL: </string>
+    <string name="geo_qr" translatable="false">Geo: </string>
+    <string name="tos_qr" translatable="false">Tos:</string>
+    <string name="ccs_qr" translatable="false">Ccs:</string>
+    <string name="bccs_qr" translatable="false">Bccs:</string>
+    <string name="subject_qr" translatable="false">Subject:</string>
+    <string name="body_qr" translatable="false">Body:</string>
+    <string name="product_id_qr" translatable="false">Product ID:</string>
+    <string name="normalized_id_qr" translatable="false">Normalized ID:</string>
+    <string name="uri_qr" translatable="false">URI:</string>
+    <string name="query_qr" translatable="false">Query:</string>
+    <string name="latitude_qr" translatable="false">Latitude:</string>
+    <string name="longitude_qr" translatable="false">Longitude:</string>
+    <string name="altitude_qr" translatable="false">Altitude:</string>
+    <string name="number_qr" translatable="false">Number:</string>
+    <string name="tel_uri_qr" translatable="false">Tel URI:</string>
+    <string name="vias_qr" translatable="false">Vias:</string>
+    <string name="summary_qr" translatable="false">Summary:</string>
+    <string name="start_qr" translatable="false">Start:</string>
+    <string name="startAllDay_qr" translatable="false">Start All Day</string>
+    <string name="end_qr" translatable="false">End:</string>
+    <string name="location_qr" translatable="false">Location:</string>
+    <string name="organizer_qr" translatable="false">Organizer:</string>
+    <string name="attendees_qr" translatable="false">Attendees:</string>
+    <string name="description_qr" translatable="false">Description:</string>
+    <string name="network_name_qr" translatable="false">Network Name:</string>
+    <string name="security_type_qr" translatable="false">Security type:</string>
+    <string name="password_qr" translatable="false">Password:</string>
+    <string name="vin_qr" translatable="false">Vin:</string>
+    <string name="worldManufacturerID_qr" translatable="false">Manufacturer ID:</string>
+    <string name="vehicleDescriptorSection_qr" translatable="false">Descriptor:</string>
+    <string name="vehicleIdentifierSection_qr" translatable="false">Identifier:</string>
+    <string name="countryCode_qr" translatable="false">Country Code:</string>
+    <string name="vehicleAttributes_qr" translatable="false">Attributes:</string>
+    <string name="modelYear_qr" translatable="false">Model Year:</string>
+    <string name="plantCode_qr" translatable="false">Plant Code:</string>
+    <string name="sequentialNumber_qr" translatable="false">Sequential No:</string>
+    <string name="scanned_qr">Scanned</string>
+    <string name="generated_qr">Generated</string>
+    <string name="please_enter_message">Please enter message</string>
+    <string name="enter_title_qr">Enter Title</string>
+    <string name="enter_description_qr">Enter Desciption</string>
+    <string name="please_enter_title">Please enter Title</string>
+    <string name="scan">Scan</string>
+    <string name="create">Create</string>
+    <string name="history">History</string>
+    <string name="no_qr_bar_code_found">No QR Code/Bar Code Found</string>
+    <string name="close">Close</string>
+    <string name="make_sure_you_are_scanning_the_right_image">Make sure you\'re scanning the right image.</string>
+    <string name="share_qr">Share</string>
+    <string name="copy_qr">Copy</string>
+    <string name="delete_message_qr">Are your sure you want to delete.</string>
+    <string name="yes_qr">Yes</string>
+    <string name="no_qr">No</string>
+    <string name="copied_qr">Copied</string>
+    <string name="add_to_contact_qr">Add to Contacts</string>
+    <string name="copy_password_qr">Copy Password</string>
+    <string name="qr_Creation">Qr Creation</string>
+    <string name="wifi_cr">Wi-Fi</string>
+    <string name="website_cr">Website</string>
+    <string name="text_cr">Text</string>
+    <string name="contatcs_cr">Contacts</string>
+    <string name="tel_cr">Tel</string>
+    <string name="email_cr">Email</string>
+    <string name="sms_cr">SMS</string>
+    <string name="calendar_cr">Calendar</string>
+    <string name="wpa_wpa2" translatable="false">WPA/WPA2</string>
+    <string name="wep" translatable="false">WEP</string>
+    <string name="none" translatable="false">None</string>
+    <string name="please_enter_network_name">Please enter Network Name</string>
+    <string name="please_enter_url">Please enter url</string>
+    <string name="enter_text">Enter Text Here</string>
+    <string name="enter_name_qr">Enter name</string>
+    <string name="enter_email_qr">Enter email</string>
+    <string name="enter_number_qr">"Enter phone number "</string>
+    <string name="please_enter_number">Please enter number</string>
+    <string name="enter_email_address__qr">Enter email address</string>
+    <string name="please_enter_email_address_qr">Please enter email address</string>
+    <string name="enter_message_here">"Enter Message "</string>
+    <string name="save_qr">Save</string>
+    <string name="please_enter_text">Please enter text</string>
+    <string name="please_enter_name">Please enter name</string>
+    <string name="network_name_ip">Enter Network  SSID</string>
+    <string name="password_ip">Enter Password</string>
+    <string name="urls_ip">Enter URL</string>
 
     <!--- TESTING ADS IDS-->
 <!--    <string name="admob_interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>-->
@@ -58,4 +156,5 @@
         <string name="admob_native" translatable="false">ca-app-pub-3784717186068608/4596566652</string>
         <string name="admob_open" translatable="false">ca-app-pub-3784717186068608/6078041423</string>
         <string name="admob_smart_banner" translatable="false">ca-app-pub-3784717186068608/4832919113</string>
+
 </resources>

@@ -12,6 +12,10 @@ import androidx.core.content.ContextCompat.startActivity
 import androidx.core.content.FileProvider
 import com.zp.tech.deleted.messages.status.saver.BuildConfig
 import com.zp.tech.deleted.messages.status.saver.R
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 import java.io.File
 import java.lang.Exception
 import java.lang.IllegalArgumentException
@@ -44,6 +48,43 @@ object ShareUtils {
             Toast.makeText(context, "Exception sharing...", Toast.LENGTH_SHORT).show()
         } catch (exception: NullPointerException) {
             Toast.makeText(context, "Exception sharing...", Toast.LENGTH_SHORT).show()
+        }
+    }
+
+    fun shareMedia(context: Context, path: Uri?, mimeType: String?) {
+        try {
+            val intent = Intent()
+            intent.action = Intent.ACTION_SEND
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+            intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
+            intent.type = mimeType
+            intent.putExtra(Intent.EXTRA_STREAM, path)
+            context.startActivity(intent)
+        } catch (exception: IllegalStateException) {
+            CoroutineScope(Dispatchers.IO).launch {
+                showToast(context)
+            }
+        } catch (exception: IllegalArgumentException) {
+            CoroutineScope(Dispatchers.IO).launch {
+                showToast(context)
+            }
+        } catch (exception: ActivityNotFoundException) {
+            CoroutineScope(Dispatchers.IO).launch {
+                showToast(context)
+            }
+        } catch (exception: NullPointerException) {
+            CoroutineScope(Dispatchers.IO).launch {
+                showToast(context)
+            }
+
+        }
+    }
+
+
+   suspend fun showToast(context: Context) {
+        withContext(Dispatchers.Main){
+        Toast.makeText(context, "Exception sharing...", Toast.LENGTH_SHORT).show()
+
         }
     }
 

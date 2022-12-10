@@ -24,6 +24,7 @@ import com.zp.tech.deleted.messages.status.saver.viewModels.SharedViewModel
 import com.google.android.play.core.appupdate.AppUpdateManager
 import com.google.android.play.core.appupdate.AppUpdateManagerFactory
 import com.zp.tech.deleted.messages.status.saver.InAppUpdate
+import com.zp.tech.deleted.messages.status.saver.ui.ScannerActivity
 
 
 class MainActivity : BaseActivity<ActivityMainBinding>(),
@@ -55,6 +56,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>(),
             ColorStateList.valueOf(resources.getColor(R.color.purple_500))
         binding!!.imgToggle.setOnClickListener(this::onClick)
         binding!!.imgLanguage.setOnClickListener { onClick(it) }
+        binding!!.imgScanner.setOnClickListener { onClick(it) }
 
         viewModel!!.observeChatTypeMessages().observe(this, {
             if (it == ChatType.WHATSAPP) {
@@ -135,6 +137,10 @@ class MainActivity : BaseActivity<ActivityMainBinding>(),
             R.id.imgLanguage -> {
                 startActivity(Intent(this, LanguageActivity::class.java).putExtra(
                     IS_FROM_PERMISSIONS_SCREEN, false))
+            }
+
+            R.id.imgScanner -> {
+                startActivity(Intent(this,ScannerActivity::class.java))
             }
         }
 

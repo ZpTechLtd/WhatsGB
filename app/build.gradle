@@ -17,8 +17,8 @@ android {
         applicationId "com.zp.tech.deleted.messages.status.saver"
         minSdk 21
         targetSdk 31
-        versionCode 11
-        versionName "1.8.1"
+        versionCode 12
+        versionName "1.8.2"
         multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         bundle {
@@ -96,4 +96,6 @@ dependencies {
     implementation 'com.google.android.gms:play-services-ads-identifier:18.0.1'
     implementation 'com.google.android.gms:play-services-ads:21.3.0'
     implementation("com.google.android.play:app-update-ktx:2.0.1")
+    implementation project(':Zxing-embeded')
+    implementation 'com.google.code.gson:gson:2.10'
 }

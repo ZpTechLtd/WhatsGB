@@ -20,3 +20,5 @@ buildscript {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+ext.zxingCore = 'com.google.zxing:core:3.4.1'

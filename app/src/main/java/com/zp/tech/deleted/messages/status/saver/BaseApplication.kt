@@ -15,6 +15,7 @@ import com.google.android.gms.ads.appopen.AppOpenAd
 import com.vanniktech.emoji.EmojiManager
 import com.vanniktech.emoji.google.GoogleEmojiProvider
 import com.zp.tech.deleted.messages.status.saver.ads.PreferenceManager
+import com.zp.tech.deleted.messages.status.saver.database.ScannerDB
 import com.zp.tech.deleted.messages.status.saver.database.repository.MyDatabase
 import com.zp.tech.deleted.messages.status.saver.database.repository.MyRepository
 import com.zp.tech.deleted.messages.status.saver.notificationService.MediaService
@@ -26,6 +27,7 @@ private const val LOG_TAG = "MyApplication"
 class BaseApplication : MultiDexApplication(), Application.ActivityLifecycleCallbacks,
     LifecycleObserver, LifecycleEventObserver {
 
+    private var scannerDB: ScannerDB? = null
     private lateinit var appOpenAdManager: AppOpenAdManager
     private var currentActivity: Activity? = null
     private val lifecycleEventObserver = LifecycleEventObserver { source, event ->
@@ -48,6 +50,13 @@ class BaseApplication : MultiDexApplication(), Application.ActivityLifecycleCall
 
     val database by lazy { MyDatabase.getDatabase(this) }
     val repository by lazy { MyRepository(database.ChatDao()) }
+
+    fun getScannerDB(): ScannerDB {
+        if (scannerDB == null) {
+            scannerDB = ScannerDB.getInstance(this@BaseApplication)
+        }
+        return scannerDB!!
+    }
 
     /** ActivityLifecycleCallback methods. */
     override fun onActivityCreated(activity: Activity, savedInstanceState: Bundle?) {}

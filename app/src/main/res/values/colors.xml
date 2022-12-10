@@ -19,4 +19,9 @@
     <color name="permissionSubTitleColor">#515151</color>
     <color name="splah_bg">#D7F1E2</color>
     <color name="menubg">#0E9E6C</color>
+    <color name="maskColor">#A3000000</color>
+    <color name="frameColor">#ffffff</color>
+    <color name="grey_qr">#6C6B6B</color>
+    <color name="greydark_qr">#9E9E9E</color>
+    <color name="histroyscreenbg">#F0F4F2</color>
 </resources>

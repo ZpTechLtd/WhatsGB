@@ -94,6 +94,39 @@ public class AdsManager {
         maxNativeAdLoader.loadAd(createNativeAdView());
 
     }
+    public void loadNativeBannerMaxTransparent(RelativeLayout relativeLayout) {
+        maxNativeAdLoader = new MaxNativeAdLoader(new PreferenceManager(context).getMaxNativeSmall(), context);
+        maxNativeAdLoader.setNativeAdListener(new MaxNativeAdListener() {
+            @Override
+            public void onNativeAdLoaded(final MaxNativeAdView nativeAdView, final MaxAd ad) {
+                // Clean up any pre-existing native ad to prevent memory leaks.
+                if (maxNativeAd != null) {
+                    maxNativeAdLoader.destroy(maxNativeAd);
+                }
+
+                // Save ad for cleanup.
+                maxNativeAd = ad;
+
+                // Add ad view to view.
+                relativeLayout.setVisibility(View.VISIBLE);
+                relativeLayout.removeAllViews();
+                relativeLayout.addView(nativeAdView);
+            }
+
+            @Override
+            public void onNativeAdLoadFailed(final String adUnitId, final MaxError error) {
+                // We recommend retrying with exponentially higher delays up to a maximum delay
+            }
+
+            @Override
+            public void onNativeAdClicked(final MaxAd ad) {
+                // Optional click callback
+            }
+        });
+
+        maxNativeAdLoader.loadAd(createNativeAdViewtransparent());
+
+    }
 
     private MaxNativeAdView createNativeAdView() {
         MaxNativeAdViewBinder binder = new MaxNativeAdViewBinder.Builder(R.layout.max_native_small)
@@ -109,6 +142,19 @@ public class AdsManager {
         return new MaxNativeAdView(binder, context);
     }
 
+    private MaxNativeAdView createNativeAdViewtransparent() {
+        MaxNativeAdViewBinder binder = new MaxNativeAdViewBinder.Builder(R.layout.max_native_small_transparent)
+                .setTitleTextViewId(R.id.title_text_view)
+                .setBodyTextViewId(R.id.body_text_view)
+//                .setAdvertiserTextViewId( R.id.advertiser_textView )
+                .setIconImageViewId(R.id.icon_image_view)
+//                .setMediaContentViewGroupId( R.id.media_view_container )
+                .setOptionsContentViewGroupId(R.id.options_view)
+                .setCallToActionButtonId(R.id.cta_button)
+                .build();
+
+        return new MaxNativeAdView(binder, context);
+    }
 
     public void showInterstitial() {
         if (mInterstitialAdmob != null) {
@@ -295,6 +341,46 @@ public class AdsManager {
                                 new AdListener() {
                                     @Override
                                     public void onAdFailedToLoad(LoadAdError loadAdError) {
+                                    }
+                                })
+                        .build();
+
+        adLoader.loadAd(new AdRequest.Builder().build());
+
+    }
+
+    public void loadNativeLarge2(FrameLayout frameLayout,RelativeLayout relativeLayout) {
+        AdLoader.Builder builder = new AdLoader.Builder(context, new PreferenceManager(context).getADMOB_native());
+
+        builder.forNativeAd(
+                new NativeAd.OnNativeAdLoadedListener() {
+                    // OnLoadedListener implementation.
+                    @Override
+                    public void onNativeAdLoaded(NativeAd nativeAd) {
+
+                        NativeAdView adView =
+                                (NativeAdView) context.getLayoutInflater().inflate(R.layout.ad_unified, null);
+                        populateNativeAdView(nativeAd, adView);
+                        frameLayout.removeAllViews();
+                        frameLayout.addView(adView);
+                    }
+                });
+
+        VideoOptions videoOptions =
+                new VideoOptions.Builder().setStartMuted(true).build();
+
+        NativeAdOptions adOptions =
+                new NativeAdOptions.Builder().setVideoOptions(videoOptions).build();
+
+        builder.withNativeAdOptions(adOptions);
+
+        AdLoader adLoader =
+                builder
+                        .withAdListener(
+                                new AdListener() {
+                                    @Override
+                                    public void onAdFailedToLoad(LoadAdError loadAdError) {
+                                        loadNativeBannerMax(relativeLayout);
                                     }
                                 })
                         .build();
