@@ -40,6 +40,7 @@
             android:id="@+id/relAds"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
             android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="parent">
 

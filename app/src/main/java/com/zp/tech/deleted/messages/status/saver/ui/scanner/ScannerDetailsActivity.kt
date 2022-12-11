@@ -17,6 +17,7 @@ import com.zp.tech.deleted.messages.status.saver.ads.AdsManager
 import com.zp.tech.deleted.messages.status.saver.database.Scanner
 import com.zp.tech.deleted.messages.status.saver.databinding.*
 import com.zp.tech.deleted.messages.status.saver.ui.ScannerBaseActivity
+import com.zp.tech.deleted.messages.status.saver.utils.ShareUtils
 import com.zp.tech.deleted.messages.status.saver.utils.convertTime
 import kotlinx.coroutines.launch
 
@@ -794,7 +795,7 @@ class ScannerDetailsActivity : ScannerBaseActivity<ActivityScannerDetailsBinding
                     itemQrWifiBinding.txtpassword.apply {
                         if (!wifi.password.isNullOrEmpty()) {
                             text = wifi.password
-                            stringCopy!!.append(wifi.password)
+                            stringCopy!!.append(getString(R.string.password_qr)).append(wifi.password)
                             binding!!.btnGeneric.text = getString(R.string.copy_password_qr)
                             binding!!.btnGeneric.visibility = View.VISIBLE
                         }
@@ -971,7 +972,7 @@ class ScannerDetailsActivity : ScannerBaseActivity<ActivityScannerDetailsBinding
         if (view.id == R.id.btnBack) {
             finish()
         } else if (view.id == R.id.btnShare) {
-
+            ShareUtils.shareText(this@ScannerDetailsActivity,stringCopy.toString())
         } else if (view.id == R.id.btnCopy) {
             copy(stringCopy.toString())
 

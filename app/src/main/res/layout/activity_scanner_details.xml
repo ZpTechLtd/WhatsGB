@@ -70,7 +70,7 @@
                     <LinearLayout
                         android:id="@+id/lnActions"
                         android:layout_width="match_parent"
-                        android:layout_height="@dimen/_35sdp"
+                        android:layout_height="@dimen/_40sdp"
                         android:layout_below="@id/viewStub"
                         android:layout_marginTop="@dimen/_20sdp"
                         android:weightSum="3">
@@ -79,11 +79,11 @@
                             android:id="@+id/btnGeneric"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_marginHorizontal="@dimen/_10sdp"
+                            android:layout_marginEnd="@dimen/_5sdp"
                             android:layout_weight="1"
                             android:background="@drawable/outline_button"
                             android:textColor="@color/white"
-                            android:textSize="@dimen/_10ssp"
+                            android:textSize="@dimen/_9ssp"
                             android:visibility="invisible" />
 
                         <Button
@@ -100,7 +100,7 @@
                             android:id="@+id/btnShare"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_marginHorizontal="@dimen/_10sdp"
+                            android:layout_marginStart="@dimen/_5sdp"
                             android:layout_weight="1"
                             android:background="@drawable/outline_button"
                             android:text="@string/share_qr"
