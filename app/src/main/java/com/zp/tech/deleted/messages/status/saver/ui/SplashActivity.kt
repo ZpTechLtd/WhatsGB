@@ -1,5 +1,6 @@
 package com.zp.tech.deleted.messages.status.saver.ui
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
@@ -19,6 +20,7 @@ import com.zp.tech.deleted.messages.status.saver.ui.activities.MainActivity
 import com.zp.tech.deleted.messages.status.saver.ui.activities.PermissionsActivity
 import com.zp.tech.deleted.messages.status.saver.utils.isPermissionGranted
 
+@SuppressLint("CustomSplashScreen")
 class SplashActivity : BaseActivity<ActivitySplashBinding>() {
     private var handlerConfiguration: Handler? = null
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -76,7 +78,7 @@ class SplashActivity : BaseActivity<ActivitySplashBinding>() {
                             remoteConfig.getString("admob_natlar_noti_med")
                     }
 
-//                    Log.d("TAG", "onCreate: Ringtone_native_large_wf="+remoteConfig.getString("admob_natlar_noti_med"))
+//                    Log.d("TAG", "onCreate: native_large="+remoteConfig.getString("admob_natlar_noti_med"))
 
                     if (!TextUtils.isEmpty(remoteConfig.getString("admob_sb_noti_and_med"))) {
                         preferenceManager.admobSmartBanner =
