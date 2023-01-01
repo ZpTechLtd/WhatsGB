@@ -331,6 +331,7 @@ class StatusFragment : BaseFragment() {
 
     fun showInterstitial(){
         (activity as MainActivity).showAd()
+        logEvent("LIVE_STATUS_FRAGMENT")
     }
 
 }

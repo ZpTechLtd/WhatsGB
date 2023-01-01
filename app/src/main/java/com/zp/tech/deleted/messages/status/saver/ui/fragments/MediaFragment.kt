@@ -66,5 +66,6 @@ class MediaFragment : BaseFragment() {
 
     fun showInterstitial(){
         (activity as MainActivity).showAd()
+        logEvent("DELETED_MEDIA_FRAGMENT")
     }
 }

@@ -11,14 +11,14 @@ applovin {
     apiKey "-BsdvAIErq2MZJMcRNGegvkHp9xWHcpAhtQGCsPXl4GUh0iCOxrsCRcD9AP4LJb48gRB0u91c1l3q0kr8FK1rP"
 }
 android {
-    compileSdk 31
+    compileSdk 33
     buildToolsVersion "30.0.3"
     defaultConfig {
         applicationId "com.zp.tech.deleted.messages.status.saver"
         minSdk 21
-        targetSdk 31
-        versionCode 15
-        versionName "1.9"
+        targetSdk 33
+        versionCode 16
+        versionName "2.0"
         multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         bundle {
@@ -81,20 +81,20 @@ dependencies {
     implementation 'com.github.bumptech.glide:glide:4.13.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.13.0'
 
-    implementation 'com.google.android.exoplayer:exoplayer:2.18.1'
+    implementation 'com.google.android.exoplayer:exoplayer:2.18.2'
 
     implementation 'commons-io:commons-io:2.11.0'
 
-    implementation 'com.facebook.android:audience-network-sdk:6.8.0'
+    implementation 'com.facebook.android:audience-network-sdk:6.12.0'
     implementation 'com.applovin.mediation:facebook-adapter:6.8.0.8'
     def multidex_version = "2.0.1"
     implementation "androidx.multidex:multidex:$multidex_version"
     implementation 'com.google.firebase:firebase-config-ktx:21.2.0'
     implementation 'com.google.firebase:firebase-crashlytics-ktx:18.3.2'
     implementation 'com.google.firebase:firebase-analytics:21.2.0'
-    implementation 'com.applovin:applovin-sdk:11.4.4'
+    implementation 'com.applovin:applovin-sdk:11.6.0'
     implementation 'com.google.android.gms:play-services-ads-identifier:18.0.1'
-    implementation 'com.google.android.gms:play-services-ads:21.3.0'
+    implementation 'com.google.android.gms:play-services-ads:21.4.0'
     implementation("com.google.android.play:app-update-ktx:2.0.1")
     implementation project(':Zxing-embeded')
     implementation 'com.google.code.gson:gson:2.10'

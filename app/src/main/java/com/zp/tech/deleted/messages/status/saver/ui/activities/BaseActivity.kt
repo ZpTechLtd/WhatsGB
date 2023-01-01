@@ -8,6 +8,7 @@ import android.content.Intent
 import android.content.pm.PackageManager
 import android.content.res.Configuration
 import android.os.Build
+import android.os.Bundle
 import android.provider.Settings
 import android.service.notification.NotificationListenerService
 import android.text.TextUtils
@@ -17,6 +18,7 @@ import androidx.core.app.NotificationManagerCompat
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
+import com.google.firebase.analytics.FirebaseAnalytics
 import com.zp.tech.deleted.messages.status.saver.notificationService.MediaService
 import com.zp.tech.deleted.messages.status.saver.notificationService.NotificationMediaService
 import com.zp.tech.deleted.messages.status.saver.utils.isPermissionGranted
@@ -27,6 +29,12 @@ abstract class BaseActivity<Binding : ViewDataBinding> : AppCompatActivity() {
 
     var binding: Binding? = null
     private val ENABLED_NOTIFICATION_LISTENERS = "enabled_notification_listeners"
+    private var mFirebaseAnalytics: FirebaseAnalytics? = null
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this)
+    }
 
     fun setLayoutResource(resourceId: Int) {
         binding = DataBindingUtil.setContentView(this, resourceId)
@@ -178,5 +186,11 @@ abstract class BaseActivity<Binding : ViewDataBinding> : AppCompatActivity() {
             config,
             this.resources.displayMetrics
         )
+    }
+
+    fun logEvent(event:String){
+        val params = Bundle()
+        params.putString("SCREEN_NAME", event)
+        mFirebaseAnalytics!!.logEvent("SCREEN_EVENT", params)
     }
 }

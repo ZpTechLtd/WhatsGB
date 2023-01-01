@@ -82,5 +82,6 @@ class DownloadFragment : BaseFragment() {
 
     fun showInterstitial() {
         (activity as MainActivity).showAd()
+        logEvent("DOWNLOADED_STATUS_FRAGMENT")
     }
 }

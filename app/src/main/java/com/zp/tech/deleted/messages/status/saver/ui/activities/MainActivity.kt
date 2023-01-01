@@ -141,6 +141,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>(),
 
             R.id.imgScanner -> {
                 startActivity(Intent(this,ScannerActivity::class.java))
+                logEvent("SCANNER_ACTIVITY")
             }
         }
 
